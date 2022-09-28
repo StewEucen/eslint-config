@@ -1,0 +1,23 @@
+{
+  "name": "@steweucen/eslint-config",
+  "version": "0.0.0",
+  "description": "ESLint config by Stew Eucen.",
+  "main": ".eslintrc.yml",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StewEucen/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "Stew Eucen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StewEucen/eslint-config/issues"
+  },
+  "homepage": "https://github.com/StewEucen/eslint-config#readme"
+}
