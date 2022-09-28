@@ -1,0 +1,12 @@
+#### environment
+node_modules
+
+#### for Windows
+Thumbs.db
+
+#### for Mac
+.DS_Store
+
+#### environment to develop
+.vscode/*
+!.vscode/cspell.json
