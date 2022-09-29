@@ -7,3 +7,5 @@ env:
   node: true
 extends:
   - eslint:all
+ignorePatterns:
+  - playground/
