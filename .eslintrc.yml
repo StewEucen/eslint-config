@@ -9,3 +9,5 @@ extends:
   - eslint:all
 ignorePatterns:
   - playground/
+parserOptions:
+  ecmaVersion: latest
