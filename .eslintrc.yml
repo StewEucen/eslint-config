@@ -279,6 +279,7 @@ rules:
       properties: true
   new-parens:
     - error
+    - always
   newline-per-chained-call:
     - error
   no-alert:
