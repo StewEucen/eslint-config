@@ -178,6 +178,12 @@ rules:
       exceptionPatterns: []
   id-match:
     - error
+    # - ^[a-z]+([A-Z][a-z]+)*$
+    # -
+    #   properties: false
+    #   classFields: false
+    #   onlyDeclarations: false
+    #   ignoreDestructuring: false
   implicit-arrow-linebreak:
     - error
   init-declarations:
