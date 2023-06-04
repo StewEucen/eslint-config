@@ -38,6 +38,9 @@ rules:
     - never
   array-callback-return:
     - error
+    -
+      allowImplicit: false
+      checkForEach: false
   array-element-newline:
     - error
   arrow-body-style:
