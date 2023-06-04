@@ -485,6 +485,10 @@ rules:
     - error
   no-multiple-empty-lines:
     - error
+    -
+      max: 2
+      maxBOF: 2
+      maxEOF: 2
   no-negated-condition:
     - error
   no-nested-ternary:
