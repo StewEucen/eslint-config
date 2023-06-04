@@ -121,6 +121,7 @@ rules:
     - error
   dot-location:
     - error
+    - object
   dot-notation:
     - error
   eol-last:
