@@ -12,6 +12,7 @@ ignorePatterns:
 parserOptions:
   ecmaVersion: latest
 rules:
+  # When adding a new rule, please add a empty inline comment to changed options.
   indent:
     - error
     - 2 #
