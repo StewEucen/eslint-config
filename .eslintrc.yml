@@ -43,6 +43,7 @@ rules:
       checkForEach: false
   array-element-newline:
     - error
+    - always
   arrow-body-style:
     - error
   arrow-parens:
