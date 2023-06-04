@@ -447,6 +447,9 @@ rules:
     - error
   no-labels:
     - error
+    -
+      allowLoop: false
+      allowSwitch: false
   no-lone-blocks:
     - error
   no-lonely-if:
@@ -457,6 +460,8 @@ rules:
     - error
   no-magic-numbers:
     - error
+    -
+      ignore: []
   no-misleading-character-class:
     - error
   no-mixed-operators:
