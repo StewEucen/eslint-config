@@ -226,6 +226,9 @@ rules:
       enforceForIfStatements: false
   max-classes-per-file:
     - error
+    -
+      max: 1
+      ignoreExpressions: false
   max-depth:
     - error
   max-len:
