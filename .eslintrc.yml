@@ -268,8 +268,15 @@ rules:
     - starred-block
   multiline-ternary:
     - error
+    - always
   new-cap:
     - error
+    -
+      newIsCap: true
+      capIsNew: true
+      newIsCapExceptions: []
+      capIsNewExceptions: []
+      properties: true
   new-parens:
     - error
   newline-per-chained-call:
