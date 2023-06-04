@@ -407,6 +407,12 @@ rules:
     - error
   no-implicit-coercion:
     - error
+    -
+      boolean: true
+      number: true
+      string: true
+      disallowTemplateShorthand: false
+      allow: []
   no-implicit-globals:
     - error
   no-implied-eval:
