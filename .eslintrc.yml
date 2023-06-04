@@ -231,6 +231,7 @@ rules:
       ignoreExpressions: false
   max-depth:
     - error
+    - 4
   max-len:
     - error
   max-lines:
