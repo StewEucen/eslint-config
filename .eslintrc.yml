@@ -54,6 +54,9 @@ rules:
     - always
   arrow-spacing:
     - error
+    -
+      before: true
+      after: true
   block-scoped-var:
     - error
   block-spacing:
