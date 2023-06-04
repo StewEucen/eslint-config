@@ -221,6 +221,9 @@ rules:
       exceptAfterSingleLine: false
   logical-assignment-operators:
     - error
+    - always
+    -
+      enforceForIfStatements: false
   max-classes-per-file:
     - error
   max-depth:
