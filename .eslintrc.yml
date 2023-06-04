@@ -92,6 +92,7 @@ rules:
       after: true
   comma-style:
     - error
+    - last
   complexity:
     - error
   computed-property-spacing:
