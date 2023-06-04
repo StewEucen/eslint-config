@@ -69,6 +69,12 @@ rules:
       allowSingleLine: false
   camelcase:
     - error
+    -
+      properties: always
+      ignoreDestructuring: false
+      ignoreImports: false
+      ignoreGlobals: false
+      allow: []
   capitalized-comments:
     - error
   class-methods-use-this:
