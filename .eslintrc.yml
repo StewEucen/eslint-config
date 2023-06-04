@@ -216,6 +216,9 @@ rules:
       beforeBlockComment: true
   lines-between-class-members:
     - error
+    - always
+    -
+      exceptAfterSingleLine: false
   logical-assignment-operators:
     - error
   max-classes-per-file:
