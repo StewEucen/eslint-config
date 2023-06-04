@@ -359,6 +359,8 @@ rules:
     - error
   no-empty-function:
     - error
+    -
+      allow: []
   no-empty-pattern:
     - error
   no-eq-null:
