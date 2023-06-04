@@ -163,6 +163,7 @@ rules:
       allowImplicit: false
   grouped-accessor-pairs:
     - error
+    - anyOrder
   guard-for-in:
     - error
   id-denylist:
