@@ -186,6 +186,7 @@ rules:
     #   ignoreDestructuring: false
   implicit-arrow-linebreak:
     - error
+    - beside
   init-declarations:
     - error
   jsx-quotes:
