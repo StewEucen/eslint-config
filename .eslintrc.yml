@@ -513,6 +513,9 @@ rules:
     - error
   no-param-reassign:
     - error
+    -
+      props: false
+      # ignorePropertyModificationsFor: []
   no-plusplus:
     - error
   no-promise-executor-return:
