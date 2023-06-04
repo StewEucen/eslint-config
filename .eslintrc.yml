@@ -61,6 +61,7 @@ rules:
     - error
   block-spacing:
     - error
+    - always
   brace-style:
     - error
   camelcase:
