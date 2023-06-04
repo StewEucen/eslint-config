@@ -473,6 +473,8 @@ rules:
     - error
   no-multi-assign:
     - error
+    -
+      ignoreNonDeclaration: false
   no-multi-spaces:
     - error
   no-multi-str:
