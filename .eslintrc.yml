@@ -201,6 +201,9 @@ rules:
       mode: strict
   keyword-spacing:
     - error
+    -
+      before: true
+      after: true
   line-comment-position:
     - error
   linebreak-style:
