@@ -212,6 +212,8 @@ rules:
     - unix
   lines-around-comment:
     - error
+    -
+      beforeBlockComment: true
   lines-between-class-members:
     - error
   logical-assignment-operators:
