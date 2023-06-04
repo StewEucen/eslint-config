@@ -349,6 +349,8 @@ rules:
       includeExports: false
   no-else-return:
     - error
+    -
+      allowElseIf: true
   no-empty:
     - error
   no-empty-character-class:
