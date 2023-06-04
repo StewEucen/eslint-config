@@ -528,6 +528,8 @@ rules:
     - error
   no-redeclare:
     - error
+    -
+      builtinGlobals: true
   no-regex-spaces:
     - error
   no-restricted-exports:
