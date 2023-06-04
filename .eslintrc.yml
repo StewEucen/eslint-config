@@ -345,6 +345,8 @@ rules:
     - error
   no-duplicate-imports:
     - error
+    -
+      includeExports: false
   no-else-return:
     - error
   no-empty:
