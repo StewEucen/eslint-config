@@ -51,6 +51,7 @@ rules:
       requireReturnForObjectLiteral: false
   arrow-parens:
     - error
+    - always
   arrow-spacing:
     - error
   block-scoped-var:
