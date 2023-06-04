@@ -151,6 +151,7 @@ rules:
     - always
   function-paren-newline:
     - error
+    - multiline
   generator-star-spacing:
     - error
   getter-return:
