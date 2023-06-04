@@ -477,6 +477,10 @@ rules:
       ignoreNonDeclaration: false
   no-multi-spaces:
     - error
+    -
+      ignoreEOLComments: false
+      exceptions:
+        Property: true
   no-multi-str:
     - error
   no-multiple-empty-lines:
