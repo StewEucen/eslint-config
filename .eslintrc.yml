@@ -131,6 +131,7 @@ rules:
     - always
   eqeqeq:
     - error
+    - always
   for-direction:
     - error
   func-call-spacing:
