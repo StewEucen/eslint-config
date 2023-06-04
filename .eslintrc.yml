@@ -154,6 +154,9 @@ rules:
     - multiline
   generator-star-spacing:
     - error
+    -
+      before: true
+      after: false
   getter-return:
     - error
   grouped-accessor-pairs:
