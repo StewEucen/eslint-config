@@ -209,6 +209,7 @@ rules:
     - above
   linebreak-style:
     - error
+    - unix
   lines-around-comment:
     - error
   lines-between-class-members:
