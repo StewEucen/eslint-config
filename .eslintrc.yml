@@ -107,6 +107,7 @@ rules:
       treatUndefinedAsUnspecified: false
   consistent-this:
     - error
+    - that
   constructor-super:
     - error
   curly:
