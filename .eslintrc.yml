@@ -304,6 +304,7 @@ rules:
     - error
   no-cond-assign:
     - error
+    - except-parens
   no-confusing-arrow:
     - error
   no-console:
