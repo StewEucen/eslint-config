@@ -396,6 +396,9 @@ rules:
     - error
   no-fallthrough:
     - error
+    -
+      allowEmptyCase: true
+      # commentPattern: RegExp
   no-floating-decimal:
     - error
   no-func-assign:
