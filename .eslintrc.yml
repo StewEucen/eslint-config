@@ -98,6 +98,9 @@ rules:
     - 20
   computed-property-spacing:
     - error
+    - never
+    -
+      enforceForClassMembers: true
   consistent-return:
     - error
   consistent-this:
