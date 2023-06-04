@@ -159,6 +159,8 @@ rules:
       after: false
   getter-return:
     - error
+    -
+      allowImplicit: false
   grouped-accessor-pairs:
     - error
   guard-for-in:
