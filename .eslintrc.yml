@@ -265,6 +265,7 @@ rules:
       max: 1
   multiline-comment-style:
     - error
+    - starred-block
   multiline-ternary:
     - error
   new-cap:
