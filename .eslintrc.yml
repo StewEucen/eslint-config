@@ -534,6 +534,14 @@ rules:
     - error
   no-restricted-exports:
     - error
+    # -
+    #   restrictedNamedExports: []
+    #   restrictDefaultExports:
+    #     direct: false
+    #     named: false
+    #     defaultFrom: false
+    #     namedFrom: false
+    #     namespaceFrom: false
   no-restricted-globals:
     - error
   no-restricted-imports:
