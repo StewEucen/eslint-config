@@ -206,6 +206,7 @@ rules:
       after: true
   line-comment-position:
     - error
+    - above
   linebreak-style:
     - error
   lines-around-comment:
