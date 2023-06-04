@@ -255,6 +255,7 @@ rules:
     - 10
   max-params:
     - error
+    - 3
   max-statements:
     - error
   max-statements-per-line:
