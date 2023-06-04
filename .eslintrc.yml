@@ -466,6 +466,9 @@ rules:
     - error
   no-mixed-operators:
     - error
+    -
+      allowSamePrecedence: true
+      # groups: []
   no-mixed-spaces-and-tabs:
     - error
   no-multi-assign:
