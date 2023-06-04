@@ -24,6 +24,10 @@ rules:
     - never # always
   accessor-pairs:
     - error
+    -
+      setWithoutGet: true
+      getWithoutSet: false
+      enforceForClassMembers: true
   array-bracket-newline:
     - error
   array-bracket-spacing:
