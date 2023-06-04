@@ -425,6 +425,7 @@ rules:
     - error
   no-inner-declarations:
     - error
+    - functions
   no-invalid-regexp:
     - error
   no-invalid-this:
