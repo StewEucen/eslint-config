@@ -556,6 +556,7 @@ rules:
     # - has some options
   no-return-assign:
     - error
+    - except-parens
   no-return-await:
     - error
   no-script-url:
