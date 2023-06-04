@@ -46,6 +46,9 @@ rules:
     - always
   arrow-body-style:
     - error
+    - as-needed
+    -
+      requireReturnForObjectLiteral: false
   arrow-parens:
     - error
   arrow-spacing:
