@@ -95,6 +95,7 @@ rules:
     - last
   complexity:
     - error
+    - 20
   computed-property-spacing:
     - error
   consistent-return:
