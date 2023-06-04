@@ -245,6 +245,11 @@ rules:
       skipComments: false
   max-lines-per-function:
     - error
+    -
+      max: 50
+      skipBlankLines: false
+      skipComments: false
+      IIFEs: false
   max-nested-callbacks:
     - error
   max-params:
