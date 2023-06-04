@@ -428,6 +428,8 @@ rules:
     - functions
   no-invalid-regexp:
     - error
+    # -
+    #   allowConstructorFlags: []
   no-invalid-this:
     - error
   no-irregular-whitespace:
