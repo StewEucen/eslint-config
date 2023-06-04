@@ -252,6 +252,7 @@ rules:
       IIFEs: false
   max-nested-callbacks:
     - error
+    - 10
   max-params:
     - error
   max-statements:
