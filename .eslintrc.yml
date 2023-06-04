@@ -139,6 +139,7 @@ rules:
     - never
   func-name-matching:
     - error
+    - always
   func-names:
     - error
   func-style:
