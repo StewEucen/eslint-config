@@ -381,6 +381,17 @@ rules:
     - error
   no-extra-parens:
     - error
+    - all
+    -
+      conditionalAssign: false
+      returnAssign: false
+      nestedBinaryExpressions: false
+      ignoreJSX: none
+      enforceForArrowConditionals: false
+      enforceForSequenceExpressions: false
+      enforceForNewInMemberExpressions: false
+      enforceForFunctionPrototypeMethods: false
+      # allowParensAfterCommentPattern: RegExp
   no-extra-semi:
     - error
   no-fallthrough:
