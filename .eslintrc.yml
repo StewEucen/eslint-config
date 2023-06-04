@@ -436,6 +436,11 @@ rules:
       capIsConstructor: true
   no-irregular-whitespace:
     - error
+    -
+      skipComments: true
+      skipRegExps: true
+      skipStrings: true
+      skipTemplates: true
   no-iterator:
     - error
   no-label-var:
