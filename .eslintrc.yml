@@ -307,6 +307,8 @@ rules:
     - except-parens
   no-confusing-arrow:
     - error
+    -
+      allowParens: true
   no-console:
     - error
   no-const-assign:
