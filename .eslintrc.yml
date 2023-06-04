@@ -258,6 +258,7 @@ rules:
     - 3
   max-statements:
     - error
+    - 10
   max-statements-per-line:
     - error
   multiline-comment-style:
