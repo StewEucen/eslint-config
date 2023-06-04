@@ -311,6 +311,8 @@ rules:
       allowParens: true
   no-console:
     - error
+    # -
+    #   allow: []
   no-const-assign:
     - error
   no-constant-binary-expression:
