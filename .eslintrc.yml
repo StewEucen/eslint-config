@@ -192,6 +192,7 @@ rules:
     - always
   jsx-quotes:
     - error
+    - prefer-double
   key-spacing:
     - error
   keyword-spacing:
