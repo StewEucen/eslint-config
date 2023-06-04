@@ -103,6 +103,8 @@ rules:
       enforceForClassMembers: true
   consistent-return:
     - error
+    -
+      treatUndefinedAsUnspecified: false
   consistent-this:
     - error
   constructor-super:
