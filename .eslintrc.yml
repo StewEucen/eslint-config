@@ -432,6 +432,8 @@ rules:
     #   allowConstructorFlags: []
   no-invalid-this:
     - error
+    -
+      capIsConstructor: true
   no-irregular-whitespace:
     - error
   no-iterator:
