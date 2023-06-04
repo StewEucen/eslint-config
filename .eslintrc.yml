@@ -80,6 +80,8 @@ rules:
     - always
   class-methods-use-this:
     - error
+    -
+      enforceForClassFields: true
   comma-dangle:
     - error
   comma-spacing:
