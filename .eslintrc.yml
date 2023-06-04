@@ -319,6 +319,8 @@ rules:
     - error
   no-constant-condition:
     - error
+    -
+      checkLoops: true
   no-constructor-return:
     - error
   no-continue:
