@@ -550,8 +550,10 @@ rules:
     # - has some options
   no-restricted-properties:
     - error
+    # - has some options
   no-restricted-syntax:
     - error
+    # - has some options
   no-return-assign:
     - error
   no-return-await:
