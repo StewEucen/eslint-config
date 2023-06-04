@@ -518,6 +518,8 @@ rules:
       # ignorePropertyModificationsFor: []
   no-plusplus:
     - error
+    -
+      allowForLoopAfterthoughts: false
   no-promise-executor-return:
     - error
   no-proto:
