@@ -112,6 +112,7 @@ rules:
     - error
   curly:
     - error
+    - all
   default-case:
     - error
   default-case-last:
