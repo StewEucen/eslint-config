@@ -544,8 +544,10 @@ rules:
     #     namespaceFrom: false
   no-restricted-globals:
     - error
+    # - has some options
   no-restricted-imports:
     - error
+    # - has some options
   no-restricted-properties:
     - error
   no-restricted-syntax:
