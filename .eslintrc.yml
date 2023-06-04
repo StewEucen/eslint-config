@@ -189,6 +189,7 @@ rules:
     - beside
   init-declarations:
     - error
+    - always
   jsx-quotes:
     - error
   key-spacing:
