@@ -15,13 +15,13 @@ rules:
   # When adding a new rule, please add a empty inline comment to changed options.
   indent:
     - error
-    - 2 #
+    - 2 # 4
   quotes:
     - error
-    - single #
+    - single # double
   semi:
     - error
-    - never #
+    - never # always
   accessor-pairs:
     - error
   array-bracket-newline:
