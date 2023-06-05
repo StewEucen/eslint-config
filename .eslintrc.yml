@@ -717,6 +717,7 @@ rules:
       overrides: {}
   object-curly-newline:
     - error
+    # - has some options
   object-curly-spacing:
     - error
   object-property-newline:
