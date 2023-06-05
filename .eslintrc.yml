@@ -875,6 +875,7 @@ rules:
       exceptions: []
   strict:
     - error
+    - safe
   switch-colon-spacing:
     - error
   symbol-description:
