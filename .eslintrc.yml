@@ -695,6 +695,8 @@ rules:
     - error
   no-void:
     - error
+    -
+      allowAsStatement: false
   no-warning-comments:
     - error
   no-whitespace-before-property:
