@@ -894,6 +894,9 @@ rules:
     - never
   use-isnan:
     - error
+    -
+      enforceForSwitchCase: true
+      enforceForIndexOf: false
   valid-typeof:
     - error
   vars-on-top:
