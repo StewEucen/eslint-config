@@ -632,6 +632,8 @@ rules:
     - error
   no-unsafe-negation:
     - error
+    -
+      enforceForOrderingRelations: false
   no-unsafe-optional-chaining:
     - error
   no-unused-expressions:
