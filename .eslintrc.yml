@@ -891,6 +891,7 @@ rules:
     - never
   unicode-bom:
     - error
+    - never
   use-isnan:
     - error
   valid-typeof:
