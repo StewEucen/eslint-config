@@ -752,6 +752,9 @@ rules:
         :: before
   padded-blocks:
     - error
+    - always
+    -
+      allowSingleLineBlocks: false
   padding-line-between-statements:
     - error
   prefer-arrow-callback:
