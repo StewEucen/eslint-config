@@ -736,6 +736,7 @@ rules:
       # methodsIgnorePattern: ^_
   one-var:
     - error
+    - always
   one-var-declaration-per-line:
     - error
   operator-assignment:
