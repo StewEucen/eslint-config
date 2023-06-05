@@ -720,6 +720,8 @@ rules:
     # - has some options
   object-curly-spacing:
     - error
+    - never
+    - {}
   object-property-newline:
     - error
   object-shorthand:
