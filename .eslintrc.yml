@@ -745,6 +745,11 @@ rules:
     - always
   operator-linebreak:
     - error
+    - after
+    -
+      overrides:
+        ?: before
+        :: before
   padded-blocks:
     - error
   padding-line-between-statements:
