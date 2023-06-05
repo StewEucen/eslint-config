@@ -802,6 +802,7 @@ rules:
     - always
   radix:
     - error
+    - always
   require-atomic-updates:
     - error
   require-await:
