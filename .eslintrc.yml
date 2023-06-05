@@ -850,6 +850,7 @@ rules:
       ignoreCase: false
   space-before-blocks:
     - error
+    - always
   space-before-function-paren:
     - error
   space-in-parens:
