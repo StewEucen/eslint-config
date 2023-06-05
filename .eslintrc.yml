@@ -823,6 +823,7 @@ rules:
       after: true
   semi-style:
     - error
+    - last
   sort-imports:
     - error
   sort-keys:
