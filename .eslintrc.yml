@@ -863,6 +863,10 @@ rules:
       int32Hint: false
   space-unary-ops:
     - error
+    -
+      words: true
+      nonwords: false
+      overrides: {}
   spaced-comment:
     - error
   strict:
