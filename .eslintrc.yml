@@ -888,6 +888,7 @@ rules:
     - never
   template-tag-spacing:
     - error
+    - never
   unicode-bom:
     - error
   use-isnan:
