@@ -799,6 +799,7 @@ rules:
     - error
   quote-props:
     - error
+    - always
   radix:
     - error
   require-atomic-updates:
