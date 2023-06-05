@@ -724,6 +724,8 @@ rules:
     - {}
   object-property-newline:
     - error
+    -
+      allowAllPropertiesOnSameLine: false
   object-shorthand:
     - error
   one-var:
