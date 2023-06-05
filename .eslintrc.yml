@@ -805,6 +805,8 @@ rules:
     - always
   require-atomic-updates:
     - error
+    -
+      allowProperties: false
   require-await:
     - error
   require-unicode-regexp:
