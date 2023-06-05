@@ -640,6 +640,11 @@ rules:
       disallowArithmeticOperators: false
   no-unused-expressions:
     - error
+    -
+      allowShortCircuit: false
+      allowTernary: false
+      allowTaggedTemplates: false
+      enforceForJSX: false
   no-unused-labels:
     - error
   no-unused-private-class-members:
