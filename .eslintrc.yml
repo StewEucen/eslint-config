@@ -583,6 +583,8 @@ rules:
     - error
   no-tabs:
     - error
+    -
+      allowIndentationTabs: false
   no-template-curly-in-string:
     - error
   no-ternary:
