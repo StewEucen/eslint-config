@@ -685,6 +685,10 @@ rules:
     - error
   no-useless-rename:
     - error
+    -
+      ignoreDestructuring: false
+      ignoreImport: false
+      ignoreExport: false
   no-useless-return:
     - error
   no-var:
