@@ -815,6 +815,7 @@ rules:
     - error
   rest-spread-spacing:
     - error
+    - never
   semi-spacing:
     - error
   semi-style:
