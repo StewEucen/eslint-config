@@ -675,6 +675,8 @@ rules:
     - error
   no-useless-computed-key:
     - error
+    -
+      enforceForClassMembers: false
   no-useless-concat:
     - error
   no-useless-constructor:
