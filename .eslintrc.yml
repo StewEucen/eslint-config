@@ -742,6 +742,7 @@ rules:
     - initializations
   operator-assignment:
     - error
+    - always
   operator-linebreak:
     - error
   padded-blocks:
