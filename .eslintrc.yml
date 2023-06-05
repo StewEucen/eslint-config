@@ -47,6 +47,8 @@ rules:
   semi:
     - error
     - never # always
+    -
+      beforeStatementContinuationChars: never
   accessor-pairs:
     - error
     -
