@@ -41,6 +41,9 @@ rules:
   quotes:
     - error
     - single # double
+    -
+      avoidEscape: true
+      allowTemplateLiterals: false
   semi:
     - error
     - never # always
