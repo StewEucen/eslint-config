@@ -785,6 +785,8 @@ rules:
     - error
   prefer-promise-reject-errors:
     - error
+    -
+      allowEmptyReject: false
   prefer-regex-literals:
     - error
   prefer-rest-params:
