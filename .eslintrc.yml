@@ -899,6 +899,8 @@ rules:
       enforceForIndexOf: false
   valid-typeof:
     - error
+    -
+      requireStringLiterals: false
   vars-on-top:
     - error
   wrap-iife:
