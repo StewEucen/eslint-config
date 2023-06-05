@@ -885,6 +885,7 @@ rules:
     - error
   template-curly-spacing:
     - error
+    - never
   template-tag-spacing:
     - error
   unicode-bom:
