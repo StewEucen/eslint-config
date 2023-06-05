@@ -765,8 +765,14 @@ rules:
       allowUnboundThis: true
   prefer-const:
     - error
+    -
+      destructuring: any
+      ignoreReadBeforeAssign: false
   prefer-destructuring:
     - error
+    -
+      array: true
+      object: true
   prefer-exponentiation-operator:
     - error
   prefer-named-capture-group:
