@@ -853,6 +853,7 @@ rules:
     - always
   space-before-function-paren:
     - error
+    - always
   space-in-parens:
     - error
   space-infix-ops:
