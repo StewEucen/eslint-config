@@ -912,5 +912,8 @@ rules:
     - error
   yield-star-spacing:
     - error
+    -
+      before: false
+      after: true
   yoda:
     - error
