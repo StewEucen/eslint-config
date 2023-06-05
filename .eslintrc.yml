@@ -905,6 +905,9 @@ rules:
     - error
   wrap-iife:
     - error
+    - outside
+    -
+      functionPrototypeMethods: false
   wrap-regex:
     - error
   yield-star-spacing:
