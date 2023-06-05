@@ -878,6 +878,9 @@ rules:
     - safe
   switch-colon-spacing:
     - error
+    -
+      before: false
+      after: true
   symbol-description:
     - error
   template-curly-spacing:
