@@ -712,6 +712,9 @@ rules:
     - error
   nonblock-statement-body-position:
     - error
+    - beside
+    -
+      overrides: {}
   object-curly-newline:
     - error
   object-curly-spacing:
