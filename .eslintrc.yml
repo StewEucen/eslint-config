@@ -789,6 +789,8 @@ rules:
       allowEmptyReject: false
   prefer-regex-literals:
     - error
+    -
+      disallowRedundantWrapping: false
   prefer-rest-params:
     - error
   prefer-spread:
