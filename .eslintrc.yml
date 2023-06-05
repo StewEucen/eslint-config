@@ -760,6 +760,9 @@ rules:
     # - has some options
   prefer-arrow-callback:
     - error
+    -
+      allowNamedFunctions: false
+      allowUnboundThis: true
   prefer-const:
     - error
   prefer-destructuring:
