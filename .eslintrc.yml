@@ -699,6 +699,13 @@ rules:
       allowAsStatement: false
   no-warning-comments:
     - error
+    -
+      terms:
+        - todo
+        - fixme
+        - xxx
+      location: start
+      # decoration: []
   no-whitespace-before-property:
     - error
   no-with:
