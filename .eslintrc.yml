@@ -622,6 +622,8 @@ rules:
     - error
   no-unneeded-ternary:
     - error
+    -
+      defaultAssignment: true
   no-unreachable:
     - error
   no-unreachable-loop:
