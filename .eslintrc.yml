@@ -563,6 +563,8 @@ rules:
     - error
   no-self-assign:
     - error
+    -
+      props: true
   no-self-compare:
     - error
   no-sequences:
