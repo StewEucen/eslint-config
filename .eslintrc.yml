@@ -636,6 +636,8 @@ rules:
       enforceForOrderingRelations: false
   no-unsafe-optional-chaining:
     - error
+    -
+      disallowArithmeticOperators: false
   no-unused-expressions:
     - error
   no-unused-labels:
