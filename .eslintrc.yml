@@ -757,6 +757,7 @@ rules:
       allowSingleLineBlocks: false
   padding-line-between-statements:
     - error
+    # - has some options
   prefer-arrow-callback:
     - error
   prefer-const:
