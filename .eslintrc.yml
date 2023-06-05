@@ -869,6 +869,10 @@ rules:
       overrides: {}
   spaced-comment:
     - error
+    - always
+    -
+      markers: []
+      exceptions: []
   strict:
     - error
   switch-colon-spacing:
