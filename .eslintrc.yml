@@ -728,6 +728,12 @@ rules:
       allowAllPropertiesOnSameLine: false
   object-shorthand:
     - error
+    - always
+    -
+      avoidQuotes: false
+      ignoreConstructors: false
+      avoidExplicitReturnArrows: false
+      # methodsIgnorePattern: ^_
   one-var:
     - error
   one-var-declaration-per-line:
