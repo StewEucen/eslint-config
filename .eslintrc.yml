@@ -595,6 +595,9 @@ rules:
     - error
   no-trailing-spaces:
     - error
+    -
+      skipBlankLines: false
+      ignoreComments: false
   no-undef:
     - error
   no-undef-init:
