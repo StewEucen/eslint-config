@@ -11,6 +11,8 @@
     "parens",
     "iife",
     "iifes",
+    "jsdoc",
+    "linebreak",
     "nonoctal",
     "nonblock",
     "nonwords",
@@ -19,8 +21,6 @@
     "typeof",
 
     "eucen",
-    "jsdoc",
-    "linebreak",
     "openreach",
     "openreachtech",
     "steweucen"
