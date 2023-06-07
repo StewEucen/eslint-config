@@ -1,5 +1,23 @@
 {
   "words": [
+    "backreference",
+    "builtins",
+    "camelcase",
+    "concat",
+    "cond",
+    "eqeqeq",
+    "isnan",
+    "paren",
+    "parens",
+    "iife",
+    "iifes",
+    "nonoctal",
+    "nonblock",
+    "nonwords",
+    "plusplus",
+    "proto",
+    "typeof",
+
     "eucen",
     "jsdoc",
     "linebreak",
