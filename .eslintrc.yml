@@ -18,8 +18,7 @@ rules:
   indent:
     - error
     - 2 # 4
-    -
-      ignoredNodes: []
+    - ignoredNodes: []
       SwitchCase: 0
       VariableDeclarator: 1
       outerIIFEBody: 1
@@ -43,32 +42,27 @@ rules:
   quotes:
     - error
     - single # double
-    -
-      avoidEscape: true
+    - avoidEscape: true
       allowTemplateLiterals: false
   semi:
     - error
     - never # always
-    -
-      beforeStatementContinuationChars: never
+    - beforeStatementContinuationChars: never
   accessor-pairs:
     - error
-    -
-      setWithoutGet: true
+    - setWithoutGet: true
       getWithoutSet: false
       enforceForClassMembers: true
   array-bracket-newline:
     - error
-    -
-      multiline: true
+    - multiline: true
       minItems: null
   array-bracket-spacing:
     - error
     - never
   array-callback-return:
     - error
-    -
-      allowImplicit: false
+    - allowImplicit: false
       checkForEach: false
   array-element-newline:
     - error
@@ -76,15 +70,13 @@ rules:
   arrow-body-style:
     - error
     - as-needed
-    -
-      requireReturnForObjectLiteral: false
+    - requireReturnForObjectLiteral: false
   arrow-parens:
     - error
     - always
   arrow-spacing:
     - error
-    -
-      before: true
+    - before: true
       after: true
   block-scoped-var:
     - error
@@ -94,12 +86,10 @@ rules:
   brace-style:
     - error
     - 1tbs # = One True Brace Style
-    -
-      allowSingleLine: false
+    - allowSingleLine: false
   camelcase:
     - error
-    -
-      properties: always
+    - properties: always
       ignoreDestructuring: false
       ignoreImports: false
       ignoreGlobals: false
@@ -109,15 +99,13 @@ rules:
     - always
   class-methods-use-this:
     - error
-    -
-      enforceForClassFields: true
+    - enforceForClassFields: true
   comma-dangle:
     - error
     - never
   comma-spacing:
     - error
-    -
-      before: false
+    - before: false
       after: true
   comma-style:
     - error
@@ -128,12 +116,10 @@ rules:
   computed-property-spacing:
     - error
     - never
-    -
-      enforceForClassMembers: true
+    - enforceForClassMembers: true
   consistent-return:
     - error
-    -
-      treatUndefinedAsUnspecified: false
+    - treatUndefinedAsUnspecified: false
   consistent-this:
     - error
     - that
@@ -153,8 +139,7 @@ rules:
     - object
   dot-notation:
     - error
-    -
-      allowKeywords: true
+    - allowKeywords: true
   eol-last:
     - error
     - always
@@ -183,13 +168,11 @@ rules:
     - multiline
   generator-star-spacing:
     - error
-    -
-      before: true
+    - before: true
       after: false
   getter-return:
     - error
-    -
-      allowImplicit: false
+    - allowImplicit: false
   grouped-accessor-pairs:
     - error
     - anyOrder
@@ -199,8 +182,7 @@ rules:
     - error
   id-length:
     - error
-    -
-      min: 2
+    - min: 2
       # max: Infinity
       properties: always
       exceptions: []
@@ -208,8 +190,7 @@ rules:
   id-match:
     - error
     # - ^[a-z]+([A-Z][a-z]+)*$
-    # -
-    #   properties: false
+    # - properties: false
     #   classFields: false
     #   onlyDeclarations: false
     #   ignoreDestructuring: false
@@ -347,14 +328,12 @@ rules:
     - prefer-double
   key-spacing:
     - error
-    -
-      beforeColon: false
+    - beforeColon: false
       afterColon: true
       mode: strict
   keyword-spacing:
     - error
-    -
-      before: true
+    - before: true
       after: true
   line-comment-position:
     - error
@@ -364,22 +343,18 @@ rules:
     - unix
   lines-around-comment:
     - error
-    -
-      beforeBlockComment: true
+    - beforeBlockComment: true
   lines-between-class-members:
     - error
     - always
-    -
-      exceptAfterSingleLine: false
+    - exceptAfterSingleLine: false
   logical-assignment-operators:
     - error
     - always
-    -
-      enforceForIfStatements: false
+    - enforceForIfStatements: false
   max-classes-per-file:
     - error
-    -
-      max: 1
+    - max: 1
       ignoreExpressions: false
   max-depth:
     - error
@@ -391,14 +366,12 @@ rules:
       tabWidth: 4
   max-lines:
     - error
-    -
-      max: 300
+    - max: 300
       skipBlankLines: false
       skipComments: false
   max-lines-per-function:
     - error
-    -
-      max: 50
+    - max: 50
       skipBlankLines: false
       skipComments: false
       IIFEs: false
@@ -413,8 +386,7 @@ rules:
     - 10
   max-statements-per-line:
     - error
-    -
-      max: 1
+    - max: 1
   multiline-comment-style:
     - error
     - starred-block
@@ -423,8 +395,7 @@ rules:
     - always
   new-cap:
     - error
-    -
-      newIsCap: true
+    - newIsCap: true
       capIsNew: true
       newIsCapExceptions: []
       capIsNewExceptions: []
@@ -434,8 +405,7 @@ rules:
     - always
   newline-per-chained-call:
     - error
-    -
-      ignoreChainWithDepth: 2
+    - ignoreChainWithDepth: 2
   no-alert:
     - error
   no-array-constructor:
@@ -459,20 +429,17 @@ rules:
     - except-parens
   no-confusing-arrow:
     - error
-    -
-      allowParens: true
+    - allowParens: true
   no-console:
     - error
-    # -
-    #   allow: []
+    # - allow: []
   no-const-assign:
     - error
   no-constant-binary-expression:
     - error
   no-constant-condition:
     - error
-    -
-      checkLoops: true
+    - checkLoops: true
   no-constructor-return:
     - error
   no-continue:
@@ -497,22 +464,18 @@ rules:
     - error
   no-duplicate-imports:
     - error
-    -
-      includeExports: false
+    - includeExports: false
   no-else-return:
     - error
-    -
-      allowElseIf: true
+    - allowElseIf: true
   no-empty:
     - error
-    -
-      allowEmptyCatch: false
+    - allowEmptyCatch: false
   no-empty-character-class:
     - error
   no-empty-function:
     - error
-    -
-      allow: []
+    - allow: []
   no-empty-pattern:
     - error
   no-eq-null:
@@ -534,8 +497,7 @@ rules:
   no-extra-parens:
     - error
     - all
-    -
-      conditionalAssign: false
+    - conditionalAssign: false
       returnAssign: false
       nestedBinaryExpressions: false
       ignoreJSX: none
@@ -548,8 +510,7 @@ rules:
     - error
   no-fallthrough:
     - error
-    -
-      allowEmptyCase: true
+    - allowEmptyCase: true
       # commentPattern: RegExp
   no-floating-decimal:
     - error
@@ -559,16 +520,14 @@ rules:
     - error
   no-implicit-coercion:
     - error
-    -
-      boolean: true
+    - boolean: true
       number: true
       string: true
       disallowTemplateShorthand: false
       allow: []
   no-implicit-globals:
     - error
-    -
-      lexicalBindings: false
+    - lexicalBindings: false
   no-implied-eval:
     - error
   no-import-assign:
@@ -580,16 +539,13 @@ rules:
     - functions
   no-invalid-regexp:
     - error
-    # -
-    #   allowConstructorFlags: []
+    - allowConstructorFlags: []
   no-invalid-this:
     - error
-    -
-      capIsConstructor: true
+    - capIsConstructor: true
   no-irregular-whitespace:
     - error
-    -
-      skipComments: true
+    - skipComments: true
       skipRegExps: true
       skipStrings: true
       skipTemplates: true
@@ -599,8 +555,7 @@ rules:
     - error
   no-labels:
     - error
-    -
-      allowLoop: false
+    - allowLoop: false
       allowSwitch: false
   no-lone-blocks:
     - error
@@ -612,33 +567,28 @@ rules:
     - error
   no-magic-numbers:
     - error
-    -
-      ignore: []
+    - ignore: []
   no-misleading-character-class:
     - error
   no-mixed-operators:
     - error
-    -
-      allowSamePrecedence: true
-      # groups: []
+    - allowSamePrecedence: true
+      # groups: [] ##########################################
   no-mixed-spaces-and-tabs:
     - error
   no-multi-assign:
     - error
-    -
-      ignoreNonDeclaration: false
+    - ignoreNonDeclaration: false
   no-multi-spaces:
     - error
-    -
-      ignoreEOLComments: false
+    - ignoreEOLComments: false
       exceptions:
         Property: true
   no-multi-str:
     - error
   no-multiple-empty-lines:
     - error
-    -
-      max: 2
+    - max: 2
       maxBOF: 2
       maxEOF: 2
   no-negated-condition:
@@ -665,13 +615,11 @@ rules:
     - error
   no-param-reassign:
     - error
-    -
-      props: false
+    - props: false
       # ignorePropertyModificationsFor: []
   no-plusplus:
     - error
-    -
-      allowForLoopAfterthoughts: false
+    - allowForLoopAfterthoughts: false
   no-promise-executor-return:
     - error
   no-proto:
@@ -680,14 +628,12 @@ rules:
     - error
   no-redeclare:
     - error
-    -
-      builtinGlobals: true
+    - builtinGlobals: true
   no-regex-spaces:
     - error
   no-restricted-exports:
     - error
-    # -
-    #   restrictedNamedExports: []
+    # - restrictedNamedExports: []
     #   restrictDefaultExports:
     #     direct: false
     #     named: false
@@ -715,28 +661,24 @@ rules:
     - error
   no-self-assign:
     - error
-    -
-      props: true
+    - props: true
   no-self-compare:
     - error
   no-sequences:
     - error
-    -
-      allowInParentheses: true
+    - allowInParentheses: true
   no-setter-return:
     - error
   no-shadow:
     - error
-    -
-      builtinGlobals: false
+    - builtinGlobals: false
   no-shadow-restricted-names:
     - error
   no-sparse-arrays:
     - error
   no-tabs:
     - error
-    -
-      allowIndentationTabs: false
+    - allowIndentationTabs: false
   no-template-curly-in-string:
     - error
   no-ternary:
@@ -747,8 +689,7 @@ rules:
     - error
   no-trailing-spaces:
     - error
-    -
-      skipBlankLines: false
+    - skipBlankLines: false
       ignoreComments: false
   no-undef:
     - error
@@ -758,8 +699,7 @@ rules:
     - error
   no-underscore-dangle:
     - error
-    -
-      allow: []
+    - allow: []
       allowAfterThis: false
       allowAfterSuper: false
       allowAfterThisConstructor: false
@@ -774,8 +714,7 @@ rules:
     - error
   no-unneeded-ternary:
     - error
-    -
-      defaultAssignment: true
+    - defaultAssignment: true
   no-unreachable:
     - error
   no-unreachable-loop:
@@ -784,16 +723,14 @@ rules:
     - error
   no-unsafe-negation:
     - error
-    -
-      enforceForOrderingRelations: false
+    - enforceForOrderingRelations: false
   no-unsafe-optional-chaining:
     - error
     -
       disallowArithmeticOperators: false
   no-unused-expressions:
     - error
-    -
-      allowShortCircuit: false
+    - allowShortCircuit: false
       allowTernary: false
       allowTaggedTemplates: false
       enforceForJSX: false
@@ -803,8 +740,7 @@ rules:
     - error
   no-unused-vars:
     - error
-    -
-      vars: all
+    - vars: all
       args: after-used
       ignoreRestSiblings: false
       caughtErrors: none
@@ -814,8 +750,7 @@ rules:
       # varsIgnorePattern: ^_
   no-use-before-define:
     - error
-    -
-      functions: true
+    - functions: true
       classes: true
       variables: true
       allowNamedExports: false
@@ -827,8 +762,7 @@ rules:
     - error
   no-useless-computed-key:
     - error
-    -
-      enforceForClassMembers: false
+    - enforceForClassMembers: false
   no-useless-concat:
     - error
   no-useless-constructor:
@@ -837,8 +771,7 @@ rules:
     - error
   no-useless-rename:
     - error
-    -
-      ignoreDestructuring: false
+    - ignoreDestructuring: false
       ignoreImport: false
       ignoreExport: false
   no-useless-return:
@@ -847,12 +780,10 @@ rules:
     - error
   no-void:
     - error
-    -
-      allowAsStatement: false
+    - allowAsStatement: false
   no-warning-comments:
     - error
-    -
-      terms:
+    - terms:
         - todo
         - fixme
         - xxx
@@ -865,8 +796,7 @@ rules:
   nonblock-statement-body-position:
     - error
     - beside
-    -
-      overrides: {}
+    - overrides: {}
   object-curly-newline:
     - error
     # - has some options
@@ -881,8 +811,7 @@ rules:
   object-shorthand:
     - error
     - always
-    -
-      avoidQuotes: false
+    - avoidQuotes: false
       ignoreConstructors: false
       avoidExplicitReturnArrows: false
       # methodsIgnorePattern: ^_
@@ -898,32 +827,27 @@ rules:
   operator-linebreak:
     - error
     - after
-    -
-      overrides:
+    - overrides:
         ?: before
         :: before
   padded-blocks:
     - error
     - always
-    -
-      allowSingleLineBlocks: false
+    - allowSingleLineBlocks: false
   padding-line-between-statements:
     - error
     # - has some options
   prefer-arrow-callback:
     - error
-    -
-      allowNamedFunctions: false
+    - allowNamedFunctions: false
       allowUnboundThis: true
   prefer-const:
     - error
-    -
-      destructuring: any
+    - destructuring: any
       ignoreReadBeforeAssign: false
   prefer-destructuring:
     - error
-    -
-      array: true
+    - array: true
       object: true
   prefer-exponentiation-operator:
     - error
@@ -937,12 +861,10 @@ rules:
     - error
   prefer-promise-reject-errors:
     - error
-    -
-      allowEmptyReject: false
+    - allowEmptyReject: false
   prefer-regex-literals:
     - error
-    -
-      disallowRedundantWrapping: false
+    - disallowRedundantWrapping: false
   prefer-rest-params:
     - error
   prefer-spread:
@@ -957,8 +879,7 @@ rules:
     - always
   require-atomic-updates:
     - error
-    -
-      allowProperties: false
+    - allowProperties: false
   require-await:
     - error
   require-unicode-regexp:
@@ -970,16 +891,14 @@ rules:
     - never
   semi-spacing:
     - error
-    -
-      before: false
+    - before: false
       after: true
   semi-style:
     - error
     - last
   sort-imports:
     - error
-    -
-      ignoreCase: false
+    - ignoreCase: false
       ignoreDeclarationSort: false
       ignoreMemberSort: false
       memberSyntaxSortOrder:
@@ -991,15 +910,13 @@ rules:
   sort-keys:
     - error
     - asc
-    -
-      caseSensitive: true
+    - caseSensitive: true
       minKeys: 2
       natural: false
       allowLineSeparatedGroups: false
   sort-vars:
     - error
-    -
-      ignoreCase: false
+    - ignoreCase: false
   space-before-blocks:
     - error
     - always
@@ -1011,27 +928,23 @@ rules:
     - never
   space-infix-ops:
     - error
-    -
-      int32Hint: false
+    - int32Hint: false
   space-unary-ops:
     - error
-    -
-      words: true
+    - words: true
       nonwords: false
       overrides: {}
   spaced-comment:
     - error
     - always
-    -
-      markers: []
+    - markers: []
       exceptions: []
   strict:
     - error
     - safe
   switch-colon-spacing:
     - error
-    -
-      before: false
+    - before: false
       after: true
   symbol-description:
     - error
@@ -1046,26 +959,22 @@ rules:
     - never
   use-isnan:
     - error
-    -
-      enforceForSwitchCase: true
+    - enforceForSwitchCase: true
       enforceForIndexOf: false
   valid-typeof:
     - error
-    -
-      requireStringLiterals: false
+    - requireStringLiterals: false
   vars-on-top:
     - error
   wrap-iife:
     - error
     - outside
-    -
-      functionPrototypeMethods: false
+    - functionPrototypeMethods: false
   wrap-regex:
     - error
   yield-star-spacing:
     - error
-    -
-      before: false
+    - before: false
       after: true
   yoda:
     - error
