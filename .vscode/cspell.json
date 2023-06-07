@@ -1,8 +1,28 @@
 {
   "words": [
-    "eucen",
+    "backreference",
+    "builtins",
+    "camelcase",
+    "concat",
+    "cond",
+    "eqeqeq",
+    "isnan",
+    "paren",
+    "parens",
+    "iife",
+    "iifes",
     "jsdoc",
     "linebreak",
+    "nonoctal",
+    "nonblock",
+    "nonwords",
+    "plusplus",
+    "proto",
+    "typeof",
+
+    "eucen",
+    "openreach",
+    "openreachtech",
     "steweucen"
   ]
 }
