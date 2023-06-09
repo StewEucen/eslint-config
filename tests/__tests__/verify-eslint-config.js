@@ -4,13 +4,15 @@ const {
   ESLintInspector,
 } = require('@openreachtech/eslint-inspector')
 
-test('should work as expected', async () => {
-  const inspector = await ESLintInspector.createAsyncWithFilePaths([
-    'tests/intents/',
-  ])
+describe('verify ESLint config', () => {
+  test('should work as expected', async () => {
+    const inspector = await ESLintInspector.createAsyncWithFilePaths([
+      'tests/intents/',
+    ])
 
-  const unexpectedLog = await inspector.getFormattedLogIfUnexpected()
+    const unexpectedLog = await inspector.getFormattedLogIfUnexpected()
 
-  expect(unexpectedLog)
-    .toBeNull()
+    expect(unexpectedLog)
+      .toBeNull()
+  })
 })
