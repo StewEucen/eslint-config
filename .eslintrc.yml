@@ -364,7 +364,7 @@ rules:
     - error
     - 4
   max-len:
-    - error
+    - off # error
     - code: 80
       tabWidth: 4
   max-lines:
