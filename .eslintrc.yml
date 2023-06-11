@@ -838,7 +838,7 @@ rules:
         :: before
   padded-blocks:
     - error
-    - always
+    - never # always
     - allowSingleLineBlocks: false
   padding-line-between-statements:
     - error
