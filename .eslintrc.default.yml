@@ -109,7 +109,11 @@ rules:
       exceptMethods: []
   comma-dangle:
     - error
-    - never
+    - arrays: never
+      objects: never
+      imports: never
+      exports: never
+      functions: never
   comma-spacing:
     - error
     - before: false
