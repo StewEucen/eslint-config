@@ -162,7 +162,7 @@ rules:
     - error
     - always
   func-style:
-    - error
+    - off # error
     - expression
     - allowArrowFunctions: false
   function-call-argument-newline:
