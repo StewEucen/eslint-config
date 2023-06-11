@@ -338,7 +338,9 @@ rules:
       after: true
   line-comment-position:
     - error
-    - above
+    - position: above
+      applyDefaultIgnorePatterns: true
+      ignorePattern: ^$
   linebreak-style:
     - error
     - unix
