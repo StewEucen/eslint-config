@@ -888,6 +888,9 @@ rules:
   quote-props:
     - error
     - always
+    - keywords: false
+      unnecessary: true
+      numbers: false
   radix:
     - error
     - always
