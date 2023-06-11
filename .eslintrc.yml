@@ -499,7 +499,7 @@ rules:
   no-extra-label:
     - error
   no-extra-parens:
-    - error
+    - off # error
     - all
     - conditionalAssign: false
       returnAssign: false
