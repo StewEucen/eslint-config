@@ -828,7 +828,7 @@ rules:
       # methodsIgnorePattern: ^_
   one-var:
     - error
-    - always
+    - never # always
   one-var-declaration-per-line:
     - error
     - initializations
