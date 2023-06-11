@@ -340,8 +340,10 @@ rules:
     - before: true
       after: true
   line-comment-position:
-    - error
-    - above
+    - off # error
+    - position: above
+      applyDefaultIgnorePatterns: true
+      ignorePattern: ^$
   linebreak-style:
     - error
     - unix
