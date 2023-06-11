@@ -105,7 +105,11 @@ rules:
     - enforceForClassFields: true
   comma-dangle:
     - error
-    - never
+    - arrays: always-multiline # never
+      objects: always-multiline # never
+      imports: always-multiline # never
+      exports: always-multiline # never
+      functions: never
   comma-spacing:
     - error
     - before: false
