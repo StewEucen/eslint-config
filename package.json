@@ -5,7 +5,7 @@
   "main": ".eslintrc.yml",
   "scripts": {
     "l": "npm run l",
-    "lint": "npx eslint --ignore-pattern /tests/intents/ .",
+    "lint": "npx eslint --ignore-pattern /tests/linted/ .",
     "test": "jest --forceExit --detectOpenHandles"
   },
   "repository": {
