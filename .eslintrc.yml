@@ -888,7 +888,7 @@ rules:
     - error
   quote-props:
     - error
-    - always
+    - as-needed # always
     - keywords: false
       unnecessary: true
       numbers: false
