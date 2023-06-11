@@ -8,7 +8,7 @@ describe('verify ESLint config', () => {
   test('should work as expected', async () => {
     const inspector = await ESLintInspector.createAsyncWithFilePaths({
       filePaths: [
-        'tests/intents/',
+        'tests/linted/',
       ],
     })
 
