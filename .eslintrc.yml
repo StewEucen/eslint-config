@@ -912,7 +912,7 @@ rules:
         - single
       allowSeparatedGroups: false
   sort-keys:
-    - error
+    - off # error
     - asc
     - caseSensitive: true
       minKeys: 2
