@@ -337,7 +337,7 @@ rules:
     - before: true
       after: true
   line-comment-position:
-    - error
+    - off # error
     - position: above
       applyDefaultIgnorePatterns: true
       ignorePattern: ^$
