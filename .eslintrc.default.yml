@@ -533,7 +533,7 @@ rules:
     - error
   no-inline-comments:
     - error
-    - ignorePattern: null # RegExp
+    - ignorePattern: ^$
   no-inner-declarations:
     - error
     - functions
