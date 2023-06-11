@@ -161,6 +161,7 @@ rules:
   func-style:
     - error
     - expression
+    - allowArrowFunctions: false
   function-call-argument-newline:
     - error
     - always
