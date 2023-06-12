@@ -824,8 +824,7 @@ rules:
       objectsInObjects: false
   object-property-newline:
     - error
-    -
-      allowAllPropertiesOnSameLine: false
+    - allowAllPropertiesOnSameLine: false
   object-shorthand:
     - error
     - always
