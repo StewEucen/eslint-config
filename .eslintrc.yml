@@ -144,6 +144,7 @@ rules:
   dot-notation:
     - error
     - allowKeywords: true
+      allowPattern: ^$
   eol-last:
     - error
     - always
