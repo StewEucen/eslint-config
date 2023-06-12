@@ -170,7 +170,7 @@ rules:
     - always
   func-names:
     - error
-    - always
+    - as-needed # always
   func-style:
     - off # error
     - expression
