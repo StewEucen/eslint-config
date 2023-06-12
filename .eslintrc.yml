@@ -824,9 +824,9 @@ rules:
     # - has some options
   object-curly-spacing:
     - error
-    - never
-    - arraysInObjects: false
-      objectsInObjects: false
+    - always # never
+    - arraysInObjects: true # false
+      objectsInObjects: true # false
   object-property-newline:
     - error
     -
