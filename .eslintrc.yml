@@ -204,7 +204,7 @@ rules:
     #   onlyDeclarations: false
     #   ignoreDestructuring: false
   implicit-arrow-linebreak:
-    - error
+    - off # error
     - beside
   init-declarations:
     - error
