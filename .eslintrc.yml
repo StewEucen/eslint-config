@@ -819,7 +819,7 @@ rules:
       objectsInObjects: true # false
   object-property-newline:
     - error
-    - allowAllPropertiesOnSameLine: false
+    - allowAllPropertiesOnSameLine: true # false
   object-shorthand:
     - error
     - always
