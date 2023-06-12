@@ -98,8 +98,11 @@ rules:
       ignoreGlobals: false
       allow: []
   capitalized-comments:
-    - error
+    - off # error
     - always
+    - ignoreInlineComments: false
+      ignoreConsecutiveComments: false
+      ignorePattern: ^$
   class-methods-use-this:
     - error
     - enforceForClassFields: true
