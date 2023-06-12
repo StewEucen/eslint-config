@@ -574,7 +574,12 @@ rules:
     - error
   no-magic-numbers:
     - error
-    - ignore: []
+    - detectObjects: false
+      enforceConst: false
+      ignore: []
+      ignoreArrayIndexes: false
+      ignoreDefaultValues: false
+      # ignoreClassFieldInitialValues: false
   no-misleading-character-class:
     - error
   no-mixed-operators:

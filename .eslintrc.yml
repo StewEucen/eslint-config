@@ -573,8 +573,13 @@ rules:
   no-loss-of-precision:
     - error
   no-magic-numbers:
-    - error
-    - ignore: []
+    - off # error
+    - detectObjects: false
+      enforceConst: false
+      ignore: []
+      ignoreArrayIndexes: false
+      ignoreDefaultValues: false
+      # ignoreClassFieldInitialValues: false
   no-misleading-character-class:
     - error
   no-mixed-operators:
