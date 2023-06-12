@@ -69,7 +69,9 @@ rules:
       checkForEach: false
   array-element-newline:
     - error
-    - always
+    - consistent # always
+    - multiline: true # false
+      minItems: null
   arrow-body-style:
     - error
     - as-needed
