@@ -141,8 +141,9 @@ rules:
     - error
     - object
   dot-notation:
-    - error
+    - off # error
     - allowKeywords: true
+      allowPattern: ^$
   eol-last:
     - error
     - always
