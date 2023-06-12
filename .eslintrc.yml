@@ -177,7 +177,7 @@ rules:
     - allowArrowFunctions: false
   function-call-argument-newline:
     - error
-    - always
+    - consistent # always
   function-paren-newline:
     - error
     - multiline
