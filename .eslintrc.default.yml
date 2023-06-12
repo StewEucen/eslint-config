@@ -818,7 +818,8 @@ rules:
   object-curly-spacing:
     - error
     - never
-    - {}
+    - arraysInObjects: false
+      objectsInObjects: false
   object-property-newline:
     - error
     -
