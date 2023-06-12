@@ -67,6 +67,8 @@ rules:
   array-element-newline:
     - error
     - always
+    - multiline: false
+      minItems: null
   arrow-body-style:
     - error
     - as-needed
