@@ -394,7 +394,7 @@ rules:
     - error
     - max: 1
   multiline-comment-style:
-    - error
+    - off # error
     - starred-block
   multiline-ternary:
     - error
