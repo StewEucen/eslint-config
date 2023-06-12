@@ -176,7 +176,7 @@ rules:
     - consistent # always
   function-paren-newline:
     - error
-    - multiline
+    - consistent # multiline
   generator-star-spacing:
     - error
     - before: true
