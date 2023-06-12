@@ -146,7 +146,7 @@ rules:
     - error
   dot-location:
     - error
-    - object
+    - property # object
   dot-notation:
     - off # error
     - allowKeywords: true
