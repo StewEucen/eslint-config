@@ -63,7 +63,7 @@ rules:
   array-callback-return:
     - error
     - allowImplicit: false
-      checkForEach: false
+      checkForEach: true # false
   array-element-newline:
     - error
     - consistent # always
