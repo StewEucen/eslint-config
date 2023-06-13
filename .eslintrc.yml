@@ -533,7 +533,8 @@ rules:
   no-import-assign:
     - error
   no-inline-comments:
-    - error
+    - off # error
+    - ignorePattern: ^$
   no-inner-declarations:
     - error
     - functions
