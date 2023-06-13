@@ -106,6 +106,7 @@ rules:
   class-methods-use-this:
     - error
     - enforceForClassFields: true
+      exceptMethods: []
   comma-dangle:
     - error
     - arrays: always-multiline # never
