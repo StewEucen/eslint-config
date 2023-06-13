@@ -75,7 +75,8 @@ rules:
     - requireReturnForObjectLiteral: false
   arrow-parens:
     - error
-    - always
+    - as-needed # always
+    - requireForBlockBody: false
   arrow-spacing:
     - error
     - before: true
