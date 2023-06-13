@@ -651,6 +651,7 @@ rules:
     - error
     - props: false
       # ignorePropertyModificationsFor: []
+      # ignorePropertyModificationsForRegex: []
   no-plusplus:
     - error
     - allowForLoopAfterthoughts: false
