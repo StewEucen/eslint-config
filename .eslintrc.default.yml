@@ -79,6 +79,7 @@ rules:
   arrow-parens:
     - error
     - always
+    - requireForBlockBody: false
   arrow-spacing:
     - error
     - before: true
