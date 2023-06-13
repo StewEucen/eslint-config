@@ -358,6 +358,20 @@ rules:
   lines-around-comment:
     - error
     - beforeBlockComment: true
+      afterBlockComment: false
+      beforeLineComment: false
+      afterLineComment: false
+      allowArrayStart: false
+      allowArrayEnd: false
+      allowBlockStart: false
+      allowBlockEnd: false
+      allowClassStart: false
+      allowClassEnd: false
+      allowObjectStart: false
+      allowObjectEnd: false
+      ignorePattern: ''
+      applyDefaultIgnorePatterns: true
+      # afterHashbangComment: false
   lines-between-class-members:
     - error
     - always
