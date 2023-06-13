@@ -541,7 +541,7 @@ rules:
     - boolean: true
       number: true
       string: true
-      disallowTemplateShorthand: false
+      disallowTemplateShorthand: true # false
       allow: []
   no-implicit-globals:
     - error
