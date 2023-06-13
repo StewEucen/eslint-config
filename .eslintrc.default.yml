@@ -100,6 +100,7 @@ rules:
   class-methods-use-this:
     - error
     - enforceForClassFields: true
+      exceptMethods: []
   comma-dangle:
     - error
     - never
