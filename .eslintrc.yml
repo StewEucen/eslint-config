@@ -361,13 +361,13 @@ rules:
       afterBlockComment: false
       beforeLineComment: false
       afterLineComment: false
-      allowArrayStart: false
+      allowArrayStart: true # false
       allowArrayEnd: false
-      allowBlockStart: false
+      allowBlockStart: true # false
       allowBlockEnd: false
-      allowClassStart: false
+      allowClassStart: true # false
       allowClassEnd: false
-      allowObjectStart: false
+      allowObjectStart: true # false
       allowObjectEnd: false
       ignorePattern: ''
       applyDefaultIgnorePatterns: true
