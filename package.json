@@ -4,7 +4,7 @@
   "description": "ESLint config by Stew Eucen.",
   "main": ".eslintrc.yml",
   "scripts": {
-    "l": "npm run l",
+    "l": "npm run lint",
     "lint": "npx eslint --ignore-pattern /tests/linted/ .",
     "test": "jest --forceExit --detectOpenHandles"
   },
