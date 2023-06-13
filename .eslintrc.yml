@@ -60,6 +60,9 @@ rules:
   array-bracket-spacing:
     - error
     - never
+    - arraysInArrays: false
+      objectsInArrays: false
+      singleValue: false
   array-callback-return:
     - error
     - allowImplicit: false
