@@ -422,7 +422,7 @@ rules:
   no-await-in-loop:
     - error
   no-bitwise:
-    - error
+    - off # error
     - allow: []
       int32Hint: false
   no-caller:
