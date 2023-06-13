@@ -653,8 +653,9 @@ rules:
     - error
   no-param-reassign:
     - error
-    - props: false
+    - props: true # false
       # ignorePropertyModificationsFor: []
+      # ignorePropertyModificationsForRegex: []
   no-plusplus:
     - error
     - allowForLoopAfterthoughts: false
