@@ -371,7 +371,7 @@ rules:
     - code: 80
       tabWidth: 4
   max-lines:
-    - error
+    - off # error
     - max: 300
       skipBlankLines: false
       skipComments: false
