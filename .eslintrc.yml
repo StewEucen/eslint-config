@@ -929,7 +929,7 @@ rules:
       natural: false
       allowLineSeparatedGroups: false
   sort-vars:
-    - error
+    - off # error
     - ignoreCase: false
   space-before-blocks:
     - error
