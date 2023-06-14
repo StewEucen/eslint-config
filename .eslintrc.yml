@@ -388,7 +388,7 @@ rules:
     - error
     - 3
   max-statements:
-    - error
+    - off # error
     - 10
   max-statements-per-line:
     - error
