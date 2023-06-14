@@ -1,6 +1,6 @@
 'use strict'
 
-function maxLinesPerFunction (it) {
+function maxLinesPerFunctionFunc (it) {
   const array = [
     1000001,
     1000002,
@@ -61,4 +61,4 @@ function maxLinesPerFunction (it) {
   return array.concat(it)
 }
 
-module.exports = maxLinesPerFunction
+module.exports = maxLinesPerFunctionFunc
