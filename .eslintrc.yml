@@ -866,7 +866,7 @@ rules:
   prefer-exponentiation-operator:
     - error
   prefer-named-capture-group:
-    - error
+    - off # error
   prefer-numeric-literals:
     - error
   prefer-object-has-own:
