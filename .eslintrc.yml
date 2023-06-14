@@ -712,7 +712,7 @@ rules:
   no-undefined:
     - error
   no-underscore-dangle:
-    - error
+    - off # error
     - allow: []
       allowAfterThis: false
       allowAfterSuper: false
