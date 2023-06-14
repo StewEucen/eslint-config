@@ -407,7 +407,8 @@ rules:
     - 10
   max-params:
     - error
-    - 3
+    # for new Proxy({}, { set (target, property, value, receiver) {} })
+    - 4 # 3
   max-statements:
     - error
     - 10
