@@ -985,7 +985,7 @@ rules:
     - outside
     - functionPrototypeMethods: false
   wrap-regex:
-    - error
+    - off # error
   yield-star-spacing:
     - error
     - before: false
