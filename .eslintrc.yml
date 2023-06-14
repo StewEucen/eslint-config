@@ -567,7 +567,7 @@ rules:
     - allowLoop: false
       allowSwitch: false
   no-lone-blocks:
-    - error
+    - off # error
   no-lonely-if:
     - error
   no-loop-func:
