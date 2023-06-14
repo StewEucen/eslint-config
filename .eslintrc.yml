@@ -151,7 +151,7 @@ rules:
     - error
     - always
   for-direction:
-    - error
+    - off # error
   func-call-spacing:
     - error
     - never
