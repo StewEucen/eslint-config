@@ -383,7 +383,7 @@ rules:
   max-classes-per-file:
     - error
     - max: 1
-      ignoreExpressions: false
+      ignoreExpressions: true # false
   max-depth:
     - error
     - 4
