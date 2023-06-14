@@ -182,7 +182,7 @@ rules:
     - error
     - anyOrder
   guard-for-in:
-    - error
+    - off # error
   id-denylist:
     - error
   id-length:
