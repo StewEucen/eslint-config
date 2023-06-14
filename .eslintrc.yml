@@ -696,7 +696,7 @@ rules:
   no-template-curly-in-string:
     - error
   no-ternary:
-    - error
+    - off # error
   no-this-before-super:
     - error
   no-throw-literal:
