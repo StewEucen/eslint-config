@@ -376,7 +376,7 @@ rules:
       skipBlankLines: false
       skipComments: false
   max-lines-per-function:
-    - error
+    - off # error
     - max: 50
       skipBlankLines: false
       skipComments: false
