@@ -520,8 +520,7 @@ rules:
     - error
   no-extra-boolean-cast:
     - error
-    -
-      enforceForLogicalOperands: false
+    - enforceForLogicalOperands: true # false
   no-extra-label:
     - error
   no-extra-parens:
