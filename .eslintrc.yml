@@ -863,10 +863,21 @@ rules:
     - always
   operator-linebreak:
     - error
-    - after
-    - overrides:
-        ?: before
-        :: before
+    - before # after
+    - overrides: # replace all from default
+        =: after
+        +=: after
+        -=: after
+        '*=': after
+        /=: after
+        '%=': after
+        '**=': after
+        <<=: after
+        '>>=': after
+        '>>>=': after
+        '&=': after
+        '|=': after
+        ^=: after
   padded-blocks:
     - error
     - never # always
