@@ -883,7 +883,7 @@ rules:
     - allowSingleLineBlocks: false
   padding-line-between-statements:
     - error
-    # - has some options
+    - none
   prefer-arrow-callback:
     - error
     - allowNamedFunctions: false
