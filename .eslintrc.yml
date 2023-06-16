@@ -129,7 +129,7 @@ rules:
     - enforceForClassMembers: true
   consistent-return:
     - error
-    - treatUndefinedAsUnspecified: false
+    - treatUndefinedAsUnspecified: true # false
   consistent-this:
     - error
     - that
