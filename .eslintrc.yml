@@ -883,7 +883,21 @@ rules:
     - allowSingleLineBlocks: false
   padding-line-between-statements:
     - error
-    - none
+    # - none
+    - blankLine: always
+      prev: directive
+      next: "*"
+    - blankLine: always
+      prev: "*"
+      next:
+        - block
+        - break
+        - class
+        - continue
+        - function
+        - return
+        - throw
+        - try
   prefer-arrow-callback:
     - error
     - allowNamedFunctions: false
