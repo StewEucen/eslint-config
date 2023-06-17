@@ -505,7 +505,8 @@ rules:
     - error
   no-empty-function:
     - error
-    - allow: []
+    - allow: # []
+      - arrowFunctions
   no-empty-pattern:
     - error
   no-eq-null:
