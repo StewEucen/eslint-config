@@ -960,7 +960,7 @@ rules:
       after: true
   semi-style:
     - error
-    - last
+    - first # last
   sort-imports:
     - error
     - ignoreCase: false
