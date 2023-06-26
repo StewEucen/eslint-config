@@ -779,12 +779,12 @@ rules:
     - error
     - vars: all
       # varsIgnorePattern: none
-      args: after-used
+      args: none # after-used
       # argsIgnorePattern: none
       caughtErrors: none
       # caughtErrorsIgnorePattern: none
-      ignoreRestSiblings: false
-      # destructuredArrayIgnorePattern: none
+      ignoreRestSiblings: true # false
+      destructuredArrayIgnorePattern: ^_ # none
   no-use-before-define:
     - error
     - functions: true
