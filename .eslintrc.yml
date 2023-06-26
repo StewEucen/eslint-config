@@ -624,9 +624,9 @@ rules:
     - error
   no-multiple-empty-lines:
     - error
-    - max: 2
-      maxBOF: 2
-      maxEOF: 2
+    - max: 1 # 2
+      maxBOF: 0 # 2
+      maxEOF: 0 # 2
   no-negated-condition:
     - error
   no-nested-ternary:
