@@ -776,13 +776,13 @@ rules:
   no-unused-vars:
     - error
     - vars: all
+      # varsIgnorePattern: none
       args: after-used
-      ignoreRestSiblings: false
+      # argsIgnorePattern: none
       caughtErrors: none
-      # argsIgnorePattern: ^_
-      # caughtErrorsIgnorePattern: ^_
-      # destructuredArrayIgnorePattern: ^_
-      # varsIgnorePattern: ^_
+      # caughtErrorsIgnorePattern: none
+      ignoreRestSiblings: false
+      # destructuredArrayIgnorePattern: none
   no-use-before-define:
     - error
     - functions: true
