@@ -941,7 +941,7 @@ rules:
       numbers: false
   radix:
     - error
-    - always
+    - as-needed # always
   require-atomic-updates:
     - error
     - allowProperties: false
