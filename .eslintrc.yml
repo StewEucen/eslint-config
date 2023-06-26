@@ -1018,7 +1018,7 @@ rules:
     - never
   template-tag-spacing:
     - error
-    - never
+    - always # never
   unicode-bom:
     - error
     - never
