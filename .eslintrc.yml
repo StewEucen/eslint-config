@@ -1025,7 +1025,7 @@ rules:
   use-isnan:
     - error
     - enforceForSwitchCase: true
-      enforceForIndexOf: false
+      enforceForIndexOf: true # false
   valid-typeof:
     - error
     - requireStringLiterals: false
