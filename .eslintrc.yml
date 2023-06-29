@@ -181,7 +181,7 @@ rules:
   generator-star-spacing:
     - error
     - before: true
-      after: false
+      after: true # false
   getter-return:
     - error
     - allowImplicit: false
