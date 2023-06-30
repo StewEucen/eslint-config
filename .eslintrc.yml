@@ -763,8 +763,7 @@ rules:
     - enforceForOrderingRelations: false
   no-unsafe-optional-chaining:
     - error
-    -
-      disallowArithmeticOperators: false
+    - disallowArithmeticOperators: true # false
   no-unused-expressions:
     - error
     - allowShortCircuit: false
