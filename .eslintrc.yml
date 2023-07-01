@@ -713,8 +713,27 @@ rules:
       property: skip
       message: Remove `it.skip`
   no-restricted-syntax:
-    - error
-    # - has some options
+    - error # with no options
+    - selector: CallExpression[callee.property.name=forEach]
+      message: Never use forEach method
+    - selector: CallExpression[callee.type=MemberExpression][callee.property.name=/^(every|filter|find|findIndex|findLast|findLastIndex|flatMap|forEach|group|groupToMap|map|reduce|reduceRight|some)$/] IfStatement
+      message: Never use if in higher-order function
+    - selector: DoWhileStatement
+      message: Never use do-while
+    - selector: ForInStatement
+      message: Never use for-in
+    - selector: ForOfStatement
+      message: Never use for-of
+    - selector: ForStatement
+      message: Never use for
+    - selector: IfStatement IfStatement
+      message: Never use nested-if including else-if
+    - selector: SwitchStatement
+      message: Never use switch
+    - selector: VariableDeclaration[kind=let]
+      message: Never use let
+    - selector: WhileStatement
+      message: Never use while
   no-return-assign:
     - error
     - except-parens
