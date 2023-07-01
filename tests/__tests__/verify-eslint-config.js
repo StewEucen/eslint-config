@@ -6,6 +6,7 @@ const {
 
 const messageHash = {
   noDoWhile: 'Never use do-while',
+  noFor: 'Never use for',
 }
 
 describe('verify ESLint config', () => {
