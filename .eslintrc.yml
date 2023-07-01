@@ -693,8 +693,25 @@ rules:
     - error
     # - has some options
   no-restricted-properties:
-    - error
-    # - has some options
+    - error # with no options
+    - object: describe
+      property: skip
+      message: Remove `describe.skip`
+    - object: describe
+      property: only
+      message: Remove `describe.only`
+    - object: test
+      property: only
+      message: Remove `test.only`
+    - object: test
+      property: skip
+      message: Remove `test.skip`
+    - object: it
+      property: only
+      message: Remove `it.only`
+    - object: it
+      property: skip
+      message: Remove `it.skip`
   no-restricted-syntax:
     - error
     # - has some options
