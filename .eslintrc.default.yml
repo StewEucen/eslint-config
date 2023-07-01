@@ -97,6 +97,9 @@ rules:
   capitalized-comments:
     - error
     - always
+    - ignoreInlineComments: false
+      ignoreConsecutiveComments: false
+      ignorePattern: ^$
   class-methods-use-this:
     - error
     - enforceForClassFields: true
@@ -140,6 +143,7 @@ rules:
   dot-notation:
     - error
     - allowKeywords: true
+      allowPattern: ^$
   eol-last:
     - error
     - always
@@ -160,6 +164,7 @@ rules:
   func-style:
     - error
     - expression
+    - allowArrowFunctions: false
   function-call-argument-newline:
     - error
     - always
@@ -337,7 +342,9 @@ rules:
       after: true
   line-comment-position:
     - error
-    - above
+    - position: above
+      applyDefaultIgnorePatterns: true
+      ignorePattern: ^$
   linebreak-style:
     - error
     - unix
@@ -361,8 +368,7 @@ rules:
     - 4
   max-len:
     - error
-    -
-      code: 80
+    - code: 80
       tabWidth: 4
   max-lines:
     - error
@@ -416,6 +422,8 @@ rules:
     - error
   no-bitwise:
     - error
+    - allow: []
+      int32Hint: false
   no-caller:
     - error
   no-case-declarations:
@@ -534,6 +542,7 @@ rules:
     - error
   no-inline-comments:
     - error
+    - ignorePattern: ^$
   no-inner-declarations:
     - error
     - functions
@@ -567,7 +576,12 @@ rules:
     - error
   no-magic-numbers:
     - error
-    - ignore: []
+    - detectObjects: false
+      enforceConst: false
+      ignore: []
+      ignoreArrayIndexes: false
+      ignoreDefaultValues: false
+      # ignoreClassFieldInitialValues: false
   no-misleading-character-class:
     - error
   no-mixed-operators:

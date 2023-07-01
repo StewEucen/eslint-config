@@ -95,8 +95,11 @@ rules:
       ignoreGlobals: false
       allow: []
   capitalized-comments:
-    - error
+    - off # error
     - always
+    - ignoreInlineComments: false
+      ignoreConsecutiveComments: false
+      ignorePattern: ^$
   class-methods-use-this:
     - error
     - enforceForClassFields: true
@@ -138,8 +141,9 @@ rules:
     - error
     - object
   dot-notation:
-    - error
+    - off # error
     - allowKeywords: true
+      allowPattern: ^$
   eol-last:
     - error
     - always
@@ -147,7 +151,7 @@ rules:
     - error
     - always
   for-direction:
-    - error
+    - off # error
   func-call-spacing:
     - error
     - never
@@ -158,8 +162,9 @@ rules:
     - error
     - always
   func-style:
-    - error
+    - off # error
     - expression
+    - allowArrowFunctions: false
   function-call-argument-newline:
     - error
     - always
@@ -177,7 +182,7 @@ rules:
     - error
     - anyOrder
   guard-for-in:
-    - error
+    - off # error
   id-denylist:
     - error
   id-length:
@@ -195,7 +200,7 @@ rules:
     #   onlyDeclarations: false
     #   ignoreDestructuring: false
   implicit-arrow-linebreak:
-    - error
+    - off # error
     - beside
   init-declarations:
     - error
@@ -336,8 +341,10 @@ rules:
     - before: true
       after: true
   line-comment-position:
-    - error
-    - above
+    - off # error
+    - position: above
+      applyDefaultIgnorePatterns: true
+      ignorePattern: ^$
   linebreak-style:
     - error
     - unix
@@ -360,17 +367,16 @@ rules:
     - error
     - 4
   max-len:
-    - error
-    -
-      code: 80
+    - off # error
+    - code: 80
       tabWidth: 4
   max-lines:
-    - error
+    - off # error
     - max: 300
       skipBlankLines: false
       skipComments: false
   max-lines-per-function:
-    - error
+    - off # error
     - max: 50
       skipBlankLines: false
       skipComments: false
@@ -382,13 +388,13 @@ rules:
     - error
     - 3
   max-statements:
-    - error
+    - off # error
     - 10
   max-statements-per-line:
     - error
     - max: 1
   multiline-comment-style:
-    - error
+    - off # error
     - starred-block
   multiline-ternary:
     - error
@@ -415,7 +421,9 @@ rules:
   no-await-in-loop:
     - error
   no-bitwise:
-    - error
+    - off # error
+    - allow: []
+      int32Hint: false
   no-caller:
     - error
   no-case-declarations:
@@ -443,7 +451,7 @@ rules:
   no-constructor-return:
     - error
   no-continue:
-    - error
+    - off # error
   no-control-regex:
     - error
   no-debugger:
@@ -495,7 +503,7 @@ rules:
   no-extra-label:
     - error
   no-extra-parens:
-    - error
+    - off # error
     - all
     - conditionalAssign: false
       returnAssign: false
@@ -533,7 +541,8 @@ rules:
   no-import-assign:
     - error
   no-inline-comments:
-    - error
+    - off # error
+    - ignorePattern: ^$
   no-inner-declarations:
     - error
     - functions
@@ -558,7 +567,7 @@ rules:
     - allowLoop: false
       allowSwitch: false
   no-lone-blocks:
-    - error
+    - off # error
   no-lonely-if:
     - error
   no-loop-func:
@@ -566,8 +575,13 @@ rules:
   no-loss-of-precision:
     - error
   no-magic-numbers:
-    - error
-    - ignore: []
+    - off # error
+    - detectObjects: false
+      enforceConst: false
+      ignore: []
+      ignoreArrayIndexes: false
+      ignoreDefaultValues: false
+      # ignoreClassFieldInitialValues: false
   no-misleading-character-class:
     - error
   no-mixed-operators:
@@ -682,7 +696,7 @@ rules:
   no-template-curly-in-string:
     - error
   no-ternary:
-    - error
+    - off # error
   no-this-before-super:
     - error
   no-throw-literal:
@@ -698,7 +712,7 @@ rules:
   no-undefined:
     - error
   no-underscore-dangle:
-    - error
+    - off # error
     - allow: []
       allowAfterThis: false
       allowAfterSuper: false
@@ -852,7 +866,7 @@ rules:
   prefer-exponentiation-operator:
     - error
   prefer-named-capture-group:
-    - error
+    - off # error
   prefer-numeric-literals:
     - error
   prefer-object-has-own:
@@ -908,14 +922,14 @@ rules:
         - single
       allowSeparatedGroups: false
   sort-keys:
-    - error
+    - off # error
     - asc
     - caseSensitive: true
       minKeys: 2
       natural: false
       allowLineSeparatedGroups: false
   sort-vars:
-    - error
+    - off # error
     - ignoreCase: false
   space-before-blocks:
     - error
@@ -971,7 +985,7 @@ rules:
     - outside
     - functionPrototypeMethods: false
   wrap-regex:
-    - error
+    - off # error
   yield-star-spacing:
     - error
     - before: false
