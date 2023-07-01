@@ -467,6 +467,7 @@ rules:
   no-confusing-arrow:
     - error
     - allowParens: true
+      onlyOneSimpleParam: false
   no-console:
     - error
     # - allow: []
