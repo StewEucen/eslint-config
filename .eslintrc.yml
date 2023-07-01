@@ -122,7 +122,7 @@ rules:
     - last
   complexity:
     - error
-    - max: 20
+    - max: 8 # 20
   computed-property-spacing:
     - error
     - never
