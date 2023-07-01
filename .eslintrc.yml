@@ -714,6 +714,8 @@ rules:
       message: Remove `it.skip`
   no-restricted-syntax:
     - error # with no options
+    - selector: DoWhileStatement
+      message: Never use do-while
   no-return-assign:
     - error
     - except-parens
