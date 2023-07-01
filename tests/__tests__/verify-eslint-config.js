@@ -10,6 +10,7 @@ const messageHash = {
   noForEach: 'Never use forEach method',
   noForIn: 'Never use for-in',
   noForOf: 'Never use for-of',
+  noIfInHigherOrderFunc: 'Never use if in higher-order function',
   noLet: 'Never use let',
   noNestedIf: 'Never use nested-if including else-if',
   noSwitch: 'Never use switch',
