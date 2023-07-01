@@ -714,6 +714,8 @@ rules:
       message: Remove `it.skip`
   no-restricted-syntax:
     - error # with no options
+    - selector: CallExpression[callee.property.name=forEach]
+      message: Never use forEach method
     - selector: DoWhileStatement
       message: Never use do-while
     - selector: ForInStatement
