@@ -7,6 +7,7 @@ const {
 const messageHash = {
   noDoWhile: 'Never use do-while',
   noFor: 'Never use for',
+  noForEach: 'Never use forEach method',
   noForIn: 'Never use for-in',
   noForOf: 'Never use for-of',
   noLet: 'Never use let',
