@@ -9,6 +9,7 @@ const messageHash = {
   noFor: 'Never use for',
   noForIn: 'Never use for-in',
   noForOf: 'Never use for-of',
+  noSwitch: 'Never use switch',
   noWhile: 'Never use while',
 }
 
