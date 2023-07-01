@@ -722,6 +722,8 @@ rules:
       message: Never use for-of
     - selector: ForStatement
       message: Never use for
+    - selector: SwitchStatement
+      message: Never use switch
     - selector: WhileStatement
       message: Never use while
   no-return-assign:
