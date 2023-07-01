@@ -4,9 +4,13 @@ const {
   ESLintInspector,
 } = require('@openreachtech/eslint-inspector')
 
+const messageHash = {
+}
+
 describe('verify ESLint config', () => {
   test('should work as expected', async () => {
     const inspector = await ESLintInspector.createAsyncWithFilePaths({
+      messageHash,
       filePaths: [
         'tests/linted/',
       ],
