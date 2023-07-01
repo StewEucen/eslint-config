@@ -1001,8 +1001,17 @@ rules:
   spaced-comment:
     - error
     - always
-    - markers: []
-      exceptions: []
+    - line:
+        exceptions:
+          - '/'
+          - '-'
+          - '+'
+      block:
+        exceptions:
+          - '*'
+        balanced: true
+    # - markers: []
+    #   exceptions: []
   strict:
     - error
     - safe
