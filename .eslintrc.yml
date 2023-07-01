@@ -718,6 +718,8 @@ rules:
       message: Never use do-while
     - selector: ForInStatement
       message: Never use for-in
+    - selector: ForOfStatement
+      message: Never use for-of
     - selector: ForStatement
       message: Never use for
   no-return-assign:
