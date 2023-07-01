@@ -187,7 +187,7 @@ rules:
     - allowImplicit: false
   grouped-accessor-pairs:
     - error
-    - anyOrder
+    - getBeforeSet # anyOrder
   guard-for-in:
     - off # error
   id-denylist:
