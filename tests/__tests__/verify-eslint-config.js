@@ -5,6 +5,7 @@ const {
 } = require('@openreachtech/eslint-inspector')
 
 const messageHash = {
+  noDoWhile: 'Never use do-while',
 }
 
 describe('verify ESLint config', () => {
