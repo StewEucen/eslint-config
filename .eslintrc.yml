@@ -1039,7 +1039,7 @@ rules:
     - off # error
   yield-star-spacing:
     - error
-    - before: false
+    - before: true # false
       after: true
   yoda:
     - error
