@@ -578,7 +578,7 @@ rules:
     - error
     - skipComments: false
       skipRegExps: false
-      skipStrings: true
+      skipStrings: false # true
       skipTemplates: false
       # skipJSXText: false
   no-iterator:
