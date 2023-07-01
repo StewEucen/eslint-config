@@ -67,6 +67,8 @@ rules:
   array-element-newline:
     - error
     - always
+    - multiline: false
+      minItems: null
   arrow-body-style:
     - error
     - as-needed
@@ -74,6 +76,7 @@ rules:
   arrow-parens:
     - error
     - always
+    - requireForBlockBody: false
   arrow-spacing:
     - error
     - before: true
@@ -105,7 +108,11 @@ rules:
     - enforceForClassFields: true
   comma-dangle:
     - error
-    - never
+    - arrays: never
+      objects: never
+      imports: never
+      exports: never
+      functions: never
   comma-spacing:
     - error
     - before: false
@@ -115,7 +122,7 @@ rules:
     - last
   complexity:
     - error
-    - 20
+    - max: 20
   computed-property-spacing:
     - error
     - never
@@ -185,6 +192,10 @@ rules:
     - error
   id-denylist:
     - error
+    # - callback
+    # - data
+    # - item
+    # - list
   id-length:
     - error
     - min: 2
@@ -194,7 +205,7 @@ rules:
       exceptionPatterns: []
   id-match:
     - error
-    # - ^[a-z]+([A-Z][a-z]+)*$
+    # - ^$
     # - properties: false
     #   classFields: false
     #   onlyDeclarations: false
@@ -351,6 +362,20 @@ rules:
   lines-around-comment:
     - error
     - beforeBlockComment: true
+      afterBlockComment: false
+      beforeLineComment: false
+      afterLineComment: false
+      allowBlockStart: false
+      allowBlockEnd: false
+      allowClassStart: false
+      allowClassEnd: false
+      allowObjectStart: false
+      allowObjectEnd: false
+      allowArrayStart: false
+      allowArrayEnd: false
+      ignorePattern: ''
+      applyDefaultIgnorePatterns: true
+      # afterHashbangComment: false
   lines-between-class-members:
     - error
     - always
@@ -498,8 +523,7 @@ rules:
     - error
   no-extra-boolean-cast:
     - error
-    -
-      enforceForLogicalOperands: false
+    - enforceForLogicalOperands: false
   no-extra-label:
     - error
   no-extra-parens:
@@ -554,10 +578,11 @@ rules:
     - capIsConstructor: true
   no-irregular-whitespace:
     - error
-    - skipComments: true
-      skipRegExps: true
+    - skipComments: false
+      skipRegExps: false
       skipStrings: true
-      skipTemplates: true
+      skipTemplates: false
+      # skipJSXText: false
   no-iterator:
     - error
   no-label-var:
@@ -631,6 +656,7 @@ rules:
     - error
     - props: false
       # ignorePropertyModificationsFor: []
+      # ignorePropertyModificationsForRegex: []
   no-plusplus:
     - error
     - allowForLoopAfterthoughts: false
@@ -662,10 +688,14 @@ rules:
     # - has some options
   no-restricted-properties:
     - error
-    # - has some options
+    # - object: receiverName
+    #   property: propertyName
+    #   message: message
+    # - object: receiverName
+    #   property: propertyName
+    #   message: message
   no-restricted-syntax:
-    - error
-    # - has some options
+    - error # with no options
   no-return-assign:
     - error
     - except-parens
@@ -740,8 +770,7 @@ rules:
     - enforceForOrderingRelations: false
   no-unsafe-optional-chaining:
     - error
-    -
-      disallowArithmeticOperators: false
+    - disallowArithmeticOperators: false
   no-unused-expressions:
     - error
     - allowShortCircuit: false
@@ -755,13 +784,13 @@ rules:
   no-unused-vars:
     - error
     - vars: all
+      # varsIgnorePattern: none
       args: after-used
-      ignoreRestSiblings: false
+      # argsIgnorePattern: none
       caughtErrors: none
-      # argsIgnorePattern: ^_
-      # caughtErrorsIgnorePattern: ^_
-      # destructuredArrayIgnorePattern: ^_
-      # varsIgnorePattern: ^_
+      # caughtErrorsIgnorePattern: none
+      ignoreRestSiblings: false
+      # destructuredArrayIgnorePattern: none
   no-use-before-define:
     - error
     - functions: true
@@ -817,11 +846,11 @@ rules:
   object-curly-spacing:
     - error
     - never
-    - {}
+    - arraysInObjects: false
+      objectsInObjects: false
   object-property-newline:
     - error
-    -
-      allowAllPropertiesOnSameLine: false
+    - allowAllPropertiesOnSameLine: false
   object-shorthand:
     - error
     - always
@@ -850,7 +879,7 @@ rules:
     - allowSingleLineBlocks: false
   padding-line-between-statements:
     - error
-    # - has some options
+    # - none
   prefer-arrow-callback:
     - error
     - allowNamedFunctions: false
@@ -888,6 +917,9 @@ rules:
   quote-props:
     - error
     - always
+    - keywords: false
+      unnecessary: true
+      numbers: false
   radix:
     - error
     - always
