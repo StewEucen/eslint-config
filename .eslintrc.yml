@@ -716,6 +716,8 @@ rules:
     - error # with no options
     - selector: DoWhileStatement
       message: Never use do-while
+    - selector: ForStatement
+      message: Never use for
   no-return-assign:
     - error
     - except-parens
