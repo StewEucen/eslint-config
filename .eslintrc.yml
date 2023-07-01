@@ -576,10 +576,11 @@ rules:
     - capIsConstructor: true
   no-irregular-whitespace:
     - error
-    - skipComments: true
-      skipRegExps: true
+    - skipComments: false
+      skipRegExps: false
       skipStrings: true
-      skipTemplates: true
+      skipTemplates: false
+      # skipJSXText: false
   no-iterator:
     - error
   no-label-var:
