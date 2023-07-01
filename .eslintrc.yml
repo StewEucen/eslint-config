@@ -716,6 +716,8 @@ rules:
     - error # with no options
     - selector: CallExpression[callee.property.name=forEach]
       message: Never use forEach method
+    - selector: CallExpression[callee.type=MemberExpression][callee.property.name=/^(every|filter|find|findIndex|findLast|findLastIndex|flatMap|forEach|group|groupToMap|map|reduce|reduceRight|some)$/] IfStatement
+      message: Never use if in higher-order function
     - selector: DoWhileStatement
       message: Never use do-while
     - selector: ForInStatement
