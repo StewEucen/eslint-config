@@ -192,6 +192,10 @@ rules:
     - off # error
   id-denylist:
     - error
+    - callback
+    - data
+    - item
+    - list
     # - callback
     # - data
     # - item
