@@ -726,6 +726,8 @@ rules:
       message: Never use nested-if including else-if
     - selector: SwitchStatement
       message: Never use switch
+    - selector: VariableDeclaration[kind=let]
+      message: Never use let
     - selector: WhileStatement
       message: Never use while
   no-return-assign:
