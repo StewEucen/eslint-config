@@ -555,6 +555,7 @@ rules:
     - error
   no-global-assign:
     - error
+    - exceptions: []
   no-implicit-coercion:
     - error
     - boolean: true
