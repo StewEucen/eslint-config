@@ -693,8 +693,13 @@ rules:
     - error
     # - has some options
   no-restricted-properties:
-    - error
-    # - has some options
+    - error # with no options
+    # - object: receiverName
+    #   property: propertyName
+    #   message: message
+    # - object: receiverName
+    #   property: propertyName
+    #   message: message
   no-restricted-syntax:
     - error
     # - has some options
