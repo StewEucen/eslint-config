@@ -713,8 +713,7 @@ rules:
       property: skip
       message: Remove `it.skip`
   no-restricted-syntax:
-    - error
-    # - has some options
+    - error # with no options
   no-return-assign:
     - error
     - except-parens
