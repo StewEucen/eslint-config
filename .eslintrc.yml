@@ -209,11 +209,11 @@ rules:
       exceptionPatterns: []
   id-match:
     - error
-    # - ^$
-    # - properties: false
-    #   classFields: false
-    #   onlyDeclarations: false
-    #   ignoreDestructuring: false
+    - ^[\$\w]+$ # none
+    - properties: true # false
+      classFields: true # false
+      onlyDeclarations: false
+      ignoreDestructuring: false
   implicit-arrow-linebreak:
     - off # error
     - beside
