@@ -770,6 +770,7 @@ rules:
       allow: # []
         - it
         - name
+        - target
   no-shadow-restricted-names:
     - error
   no-sparse-arrays:
