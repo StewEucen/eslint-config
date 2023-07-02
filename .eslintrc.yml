@@ -835,7 +835,7 @@ rules:
       destructuredArrayIgnorePattern: ^_ # none
   no-use-before-define:
     - error
-    - functions: true
+    - functions: false # true
       classes: true
       variables: true
       allowNamedExports: false
