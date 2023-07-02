@@ -751,6 +751,7 @@ rules:
       ignoreComments: false
   no-undef:
     - error
+    - typeof: false
   no-undef-init:
     - error
   no-undefined:
