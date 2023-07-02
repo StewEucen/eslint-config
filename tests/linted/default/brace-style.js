@@ -38,12 +38,14 @@ function oneTabBraceStyleFunc () { // ✅ `brace-style`
 
 if (primary) { // ✅ `brace-style`
   doPrimary()
+// eslint-disable-next-line no-restricted-syntax
 } else if (secondary) { // ✅ `brace-style`
   doSecondary()
 } else { // ✅ `brace-style`
   doExtra()
 }
 
+// eslint-disable-next-line no-restricted-syntax
 switch (condition) { // ✅ `brace-style`
   case 0:
     doPrimary()
@@ -80,6 +82,7 @@ function stroustrupStyleFunc () { // ✅ `brace-style`
 if (primary) { // ✅ `brace-style`
   doPrimary()
 }
+// eslint-disable-next-line no-restricted-syntax
 else if (secondary) { // ❌ `brace-style`
   doSecondary()
 }
@@ -127,6 +130,7 @@ if (primary)
 { // ❌ `brace-style`
   doPrimary()
 }
+// eslint-disable-next-line no-restricted-syntax
 else if (secondary)
 { // ❌ `brace-style`
   doSecondary()
