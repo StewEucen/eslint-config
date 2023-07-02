@@ -14,6 +14,7 @@ const zeta = {
   firstFunc: function () {}, // ❌ `no-empty-function`
   // eslint-disable-next-line object-shorthand
   secondFunc: function * () {}, // ❌ `no-empty-function`
+  // eslint-disable-next-line object-shorthand
   thirdFunc: () => {}, // ✅ `no-empty-function`
   fourthFunc () {}, // ❌ `no-empty-function`
   * fifthFunc () {}, // ❌ `no-empty-function`
