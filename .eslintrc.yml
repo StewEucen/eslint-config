@@ -754,6 +754,9 @@ rules:
   no-shadow:
     - error
     - builtinGlobals: false
+      hoist: functions
+      ignoreOnInitialization: false
+      allow: []
   no-shadow-restricted-names:
     - error
   no-sparse-arrays:
