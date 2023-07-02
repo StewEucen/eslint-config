@@ -860,7 +860,7 @@ rules:
     - avoidQuotes: false
       ignoreConstructors: false
       avoidExplicitReturnArrows: false
-      # methodsIgnorePattern: ^_
+      # methodsIgnorePattern: ^$
   one-var:
     - error
     - always
