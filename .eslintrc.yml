@@ -753,7 +753,11 @@ rules:
     - error
   no-shadow:
     - error
-    - builtinGlobals: false
+    - builtinGlobals: true # false
+      hoist: all # functions
+      ignoreOnInitialization: true # false
+      allow: # []
+        - it
   no-shadow-restricted-names:
     - error
   no-sparse-arrays:
