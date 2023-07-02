@@ -47,7 +47,7 @@ rules:
   semi:
     - error
     - always
-    - beforeStatementContinuationChars: never
+    - beforeStatementContinuationChars: any
   accessor-pairs:
     - error
     - setWithoutGet: true
