@@ -1,8 +1,8 @@
 'use strict'
 
 function noWhileFunc (array) {
-  let total = 0
-  let index = 0
+  let total = 0 // eslint-disable-line no-restricted-syntax
+  let index = 0 // eslint-disable-line no-restricted-syntax
 
   while (index < array.length) { // ❌ { selector: 'WhileStatement' } of `no-restricted-syntax`
     total += array[index]
