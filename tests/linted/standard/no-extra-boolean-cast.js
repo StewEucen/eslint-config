@@ -36,16 +36,17 @@ if (Boolean(bool)) { // ❌ `no-extra-boolean-cast`
   // no-op
 }
 
-// eslint-disable-next-line no-implicit-coercion, no-unmodified-loop-condition
+// eslint-disable-next-line no-implicit-coercion, no-unmodified-loop-condition, no-restricted-syntax
 while (!!bool) { // ❌ `no-extra-boolean-cast`
   // no-op
 }
 
+// eslint-disable-next-line no-restricted-syntax
 do {
   // no-op
 } while (Boolean(bool)) // ❌ `no-extra-boolean-cast`
 
-// eslint-disable-next-line no-implicit-coercion, no-unmodified-loop-condition
+// eslint-disable-next-line no-implicit-coercion, no-unmodified-loop-condition, no-restricted-syntax
 for (; !!bool;) { // ❌ `no-extra-boolean-cast`
   // no-op
 }
@@ -57,7 +58,7 @@ if (!!alpha || beta) { // ❌ enforceForLogicalOperands:true of `no-extra-boolea
   // no-op
 }
 
-// eslint-disable-next-line no-implicit-coercion, no-unmodified-loop-condition
+// eslint-disable-next-line no-implicit-coercion, no-unmodified-loop-condition, no-restricted-syntax
 while (!!alpha && beta) { // ❌ enforceForLogicalOperands:true of `no-extra-boolean-cast`
   // no-op
 }
