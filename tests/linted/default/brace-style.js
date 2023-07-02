@@ -49,9 +49,11 @@ if (primary) { // ✅ `brace-style`
 switch (condition) { // ✅ `brace-style`
   case 0:
     doPrimary()
+
     break
   case 1:
     doSecondary()
+
     break
   default:
     doExtra()
@@ -90,12 +92,15 @@ else { // ❌ `brace-style`
   doExtra()
 }
 
+// eslint-disable-next-line no-restricted-syntax
 switch (condition) { // ✅ `brace-style`
   case 0:
     doPrimary()
+
     break
   case 1:
     doSecondary()
+
     break
   default:
     doExtra()
@@ -139,13 +144,16 @@ else { // ❌ `brace-style`
   doExtra()
 }
 
+// eslint-disable-next-line no-restricted-syntax
 switch (condition)
 { // ❌ `brace-style`
   case 0:
     doPrimary()
+
     break
   case 1:
     doSecondary()
+
     break
   default:
     doExtra()
