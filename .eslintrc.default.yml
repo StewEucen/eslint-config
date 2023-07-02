@@ -857,7 +857,22 @@ rules:
     - overrides: {}
   object-curly-newline:
     - error
-    # - has some options
+    - ObjectExpression:
+        consistent: true
+        multiline: false
+        # minProperties: Infinity
+      ObjectPattern:
+        consistent: true
+        multiline: false
+        # minProperties: Infinity
+      ImportDeclaration:
+        consistent: true
+        multiline: false
+        # minProperties: Infinity
+      ExportDeclaration:
+        consistent: true
+        multiline: false
+        # minProperties: Infinity
   object-curly-spacing:
     - error
     - never
