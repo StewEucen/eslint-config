@@ -898,7 +898,7 @@ rules:
     - always
     - avoidQuotes: false
       ignoreConstructors: false
-      avoidExplicitReturnArrows: false
+      avoidExplicitReturnArrows: true # false
       # methodsIgnorePattern: ^$
   one-var:
     - error
