@@ -618,7 +618,12 @@ rules:
   no-mixed-operators:
     - error
     - allowSamePrecedence: true
-      # groups: [] ##########################################
+      groups:
+        - ['+', '-', '*', '/', '%', '**']
+        - ['&', '|', '^', '~', '<<', '>>', '>>>']
+        - ['==', '!=', '===', '!==', '>', '>=', '<', '<=']
+        - ['&&', '||']
+        - ['in', 'instanceof']
   no-mixed-spaces-and-tabs:
     - error
   no-multi-assign:
