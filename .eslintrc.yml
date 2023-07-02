@@ -1059,7 +1059,9 @@ rules:
     - ignoreCase: false
   space-before-blocks:
     - error
-    - always
+    - functions: always
+      keywords: always
+      classes: always
   space-before-function-paren:
     - error
     - always
