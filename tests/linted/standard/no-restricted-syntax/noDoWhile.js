@@ -1,6 +1,7 @@
 'use strict'
 
 function noDoWhileFunc () {
+  // eslint-disable-next-line no-restricted-syntax
   let index = 0
 
   do { // ❌ { selector: 'DoWhileStatement' } of `no-restricted-syntax`
