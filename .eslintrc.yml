@@ -1064,7 +1064,9 @@ rules:
       classes: always
   space-before-function-paren:
     - error
-    - always
+    - anonymous: always
+      named: always
+      asyncArrow: always
   space-in-parens:
     - error
     - never
