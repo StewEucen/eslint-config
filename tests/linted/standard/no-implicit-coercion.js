@@ -13,7 +13,7 @@ const delta = 1 * foo // ❌ number:true of `no-implicit-coercion`
 
 function extraFunc () {
   /** @type {*} */
-  let zeta = 1
+  let zeta = 1 // eslint-disable-line no-restricted-syntax
   zeta += '' // ❌ string:true of `no-implicit-coercion`
 
   /**
