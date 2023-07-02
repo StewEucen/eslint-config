@@ -26,11 +26,11 @@ class PaddedBlock { // ❌ never `padded-blocks`
 
     switch (arg) { // ❌ never `padded-blocks`
 
-    case 'foo':
-      return 'foo'
-    case 'bar':
-      return 'bar'
-    default: // ❌ never `padded-blocks`
+      case 'foo':
+        return 'foo'
+      case 'bar':
+        return 'bar'
+      default: // ❌ never `padded-blocks`
 
     }
 
