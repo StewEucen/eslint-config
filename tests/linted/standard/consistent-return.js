@@ -16,9 +16,9 @@ function betaFunc (condition) { // ❌ `consistent-return`
   // no return
 }
 
-function gammaFunc (callback) {
-  if (callback) {
-    return void callback() // eslint-disable-line no-void
+function gammaFunc (teardownFunc) {
+  if (teardownFunc) {
+    return void teardownFunc() // eslint-disable-line no-void
   }
 
   return true // ❌ `consistent-return`
