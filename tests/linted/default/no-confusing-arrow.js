@@ -32,9 +32,9 @@ const zeroFunc = (first, second) => 1 // ❌ onlyOneSimpleParam:false of `no-con
   ? 2
   : 3
 
-const second = 3
+const defaultValue = 3
 // eslint-disable-next-line no-constant-condition
-const etaFunc = (first = second) => 1 // ❌ onlyOneSimpleParam:false of `no-confusing-arrow`
+const etaFunc = (first = defaultValue) => 1 // ❌ onlyOneSimpleParam:false of `no-confusing-arrow`
   ? 2
   : 3
 
