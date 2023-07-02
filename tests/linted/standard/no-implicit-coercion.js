@@ -8,8 +8,8 @@ const beta = ~foo.indexOf('.') // ❌ number:true of `no-implicit-coercion`
 const gamma = +foo // ❌ number:true of `no-implicit-coercion`
 const delta = 1 * foo // ❌ number:true of `no-implicit-coercion`
 
-// ❌ `prefer-template`
-// const epsilon = '' + foo // ❌ string:true of `no-implicit-coercion`
+// eslint-disable-next-line prefer-template
+const epsilon = '' + foo // ❌ string:true of `no-implicit-coercion`
 
 function extraFunc () {
   /** @type {*} */
@@ -40,6 +40,6 @@ module.exports = {
   beta,
   gamma,
   delta,
-  // epsilon,
+  epsilon,
   extraFunc,
 }
