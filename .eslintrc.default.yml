@@ -716,6 +716,9 @@ rules:
   no-shadow:
     - error
     - builtinGlobals: false
+      hoist: functions
+      ignoreOnInitialization: false
+      allow: []
   no-shadow-restricted-names:
     - error
   no-sparse-arrays:
@@ -857,7 +860,7 @@ rules:
     - avoidQuotes: false
       ignoreConstructors: false
       avoidExplicitReturnArrows: false
-      # methodsIgnorePattern: ^_
+      # methodsIgnorePattern: ^$
   one-var:
     - error
     - always

@@ -753,7 +753,11 @@ rules:
     - error
   no-shadow:
     - error
-    - builtinGlobals: false
+    - builtinGlobals: true # false
+      hoist: all # functions
+      ignoreOnInitialization: true # false
+      allow: # []
+        - it
   no-shadow-restricted-names:
     - error
   no-sparse-arrays:
@@ -831,7 +835,7 @@ rules:
       destructuredArrayIgnorePattern: ^_ # none
   no-use-before-define:
     - error
-    - functions: true
+    - functions: false # true
       classes: true
       variables: true
       allowNamedExports: false
@@ -894,8 +898,8 @@ rules:
     - always
     - avoidQuotes: false
       ignoreConstructors: false
-      avoidExplicitReturnArrows: false
-      # methodsIgnorePattern: ^_
+      avoidExplicitReturnArrows: true # false
+      # methodsIgnorePattern: ^$
   one-var:
     - error
     - never # always
