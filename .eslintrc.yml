@@ -986,6 +986,7 @@ rules:
     - error
     - array: true
       object: true
+    - enforceForRenamedProperties: false
   prefer-exponentiation-operator:
     - error
   prefer-named-capture-group:
