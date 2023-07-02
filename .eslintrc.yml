@@ -60,6 +60,9 @@ rules:
   array-bracket-spacing:
     - error
     - never
+    - arraysInArrays: false
+      objectsInArrays: false
+      singleValue: false
   array-callback-return:
     - error
     - allowImplicit: false
@@ -106,6 +109,7 @@ rules:
   class-methods-use-this:
     - error
     - enforceForClassFields: true
+      exceptMethods: []
   comma-dangle:
     - error
     - arrays: always-multiline # never
@@ -468,6 +472,7 @@ rules:
   no-confusing-arrow:
     - error
     - allowParens: true
+      onlyOneSimpleParam: false
   no-console:
     - error
     # - allow: []
@@ -556,6 +561,7 @@ rules:
     - error
   no-global-assign:
     - error
+    - exceptions: []
   no-implicit-coercion:
     - error
     - boolean: true
@@ -618,7 +624,12 @@ rules:
   no-mixed-operators:
     - error
     - allowSamePrecedence: true
-      # groups: [] ##########################################
+      groups:
+        - ['+', '-', '*', '/', '%', '**']
+        - ['&', '|', '^', '~', '<<', '>>', '>>>']
+        - ['==', '!=', '===', '!==', '>', '>=', '<', '<=']
+        - ['&&', '||']
+        - ['in', 'instanceof']
   no-mixed-spaces-and-tabs:
     - error
   no-multi-assign:
@@ -779,6 +790,7 @@ rules:
       ignoreComments: false
   no-undef:
     - error
+    - typeof: false
   no-undef-init:
     - error
   no-undefined:
@@ -884,7 +896,22 @@ rules:
     - overrides: {}
   object-curly-newline:
     - error
-    # - has some options
+    - ObjectExpression:
+        consistent: true
+        multiline: false
+        # minProperties: Infinity
+      ObjectPattern:
+        consistent: true
+        multiline: false
+        # minProperties: Infinity
+      ImportDeclaration:
+        consistent: true
+        multiline: false
+        # minProperties: Infinity
+      ExportDeclaration:
+        consistent: true
+        multiline: false
+        # minProperties: Infinity
   object-curly-spacing:
     - error
     - always # never
@@ -959,6 +986,7 @@ rules:
     - error
     - array: true
       object: true
+    - enforceForRenamedProperties: false
   prefer-exponentiation-operator:
     - error
   prefer-named-capture-group:
@@ -1032,10 +1060,14 @@ rules:
     - ignoreCase: false
   space-before-blocks:
     - error
-    - always
+    - functions: always
+      keywords: always
+      classes: always
   space-before-function-paren:
     - error
-    - always
+    - anonymous: always
+      named: always
+      asyncArrow: always
   space-in-parens:
     - error
     - never
