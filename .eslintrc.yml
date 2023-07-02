@@ -769,6 +769,7 @@ rules:
       ignoreOnInitialization: true # false
       allow: # []
         - it
+        - name
   no-shadow-restricted-names:
     - error
   no-sparse-arrays:
