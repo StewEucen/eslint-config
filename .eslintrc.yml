@@ -408,6 +408,12 @@ rules:
     - noDefaults: false
       unifyParentAndChildTypeChecks: false
       exemptTagContexts: []
+  jsdoc/check-values:
+    - error
+    - allowedAuthors: []
+      allowedLicenses: []
+      numericOnlyVariation: false
+      licensePattern: /([^\\n\\r]*)/gu
   jsx-quotes:
     - error
     - prefer-double
