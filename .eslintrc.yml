@@ -590,6 +590,11 @@ rules:
   jsdoc/require-returns-type:
     - error
     - contexts: []
+  jsdoc/require-throws:
+    - error
+    - exemptedBy:
+        - inheritdoc
+      contexts: []
   jsx-quotes:
     - error
     - prefer-double
