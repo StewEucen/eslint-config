@@ -558,6 +558,10 @@ rules:
   jsdoc/require-param-name:
     - error
     - contexts: []
+  jsdoc/require-param-type:
+    - error
+    - defaultDestructuredRootType: object
+      setDefaultDestructuredRootType: false
   jsx-quotes:
     - error
     - prefer-double
