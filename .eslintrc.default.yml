@@ -435,6 +435,9 @@ rules:
       # mainDescription: null
       # matchDescription: null
       # message: null
+  jsdoc/match-name:
+    - error
+    - match: []
   jsx-quotes:
     - error
     - prefer-double

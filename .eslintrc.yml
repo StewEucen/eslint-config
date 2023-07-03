@@ -442,6 +442,9 @@ rules:
       # mainDescription: ^$
       # matchDescription: ^$
       # message: ''
+  jsdoc/match-name:
+    - error
+    - match: []
   jsx-quotes:
     - error
     - prefer-double
