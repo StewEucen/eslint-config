@@ -353,6 +353,10 @@ rules:
     - error
   jsdoc/check-alignment:
     - error
+  jsdoc/check-indentation:
+    - error
+    - excludeTags:
+      - example
   jsx-quotes:
     - error
     - prefer-double
