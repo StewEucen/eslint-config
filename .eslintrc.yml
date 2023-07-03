@@ -466,6 +466,8 @@ rules:
         - ts-ignore
         - ts-nocheck
       preventAllMultiAsteriskBlocks: false
+  jsdoc/no-blank-block-descriptions:
+    - error
   jsx-quotes:
     - error
     - prefer-double
