@@ -350,7 +350,9 @@ rules:
     - ignoreTypeOfDescribeName: false
       disallowedWords: []
       mustMatch: {} # { describe: [], it: [], test: [] }
-      mustNotMatch: {} # { describe: [], it: [], test: [] }
+      mustNotMatch: # {}
+        - \.$
+        - Titles should not end with a full-stop (.)
   jsx-quotes:
     - error
     - prefer-double
