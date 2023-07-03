@@ -555,6 +555,9 @@ rules:
     - error
     - defaultDestructuredRootDescription: The root object
       setDefaultDestructuredRootDescription: false
+  jsdoc/require-param-name:
+    - error
+    - contexts: []
   jsx-quotes:
     - error
     - prefer-double
