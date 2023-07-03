@@ -471,6 +471,10 @@ rules:
   jsdoc/no-blank-blocks:
     - error
     - enableFixer: false
+  jsdoc/no-defaults:
+    - error
+    - noOptionalParamNames: false
+      contexts: []
   jsx-quotes:
     - error
     - prefer-double
