@@ -587,6 +587,9 @@ rules:
   jsdoc/require-returns-description:
     - error
     - contexts: []
+  jsdoc/require-returns-type:
+    - error
+    - contexts: []
   jsx-quotes:
     - error
     - prefer-double
