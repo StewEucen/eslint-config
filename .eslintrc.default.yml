@@ -597,6 +597,10 @@ rules:
       next: false
       forceRequireNext: false
       nextWithGeneratorTag: false
+  jsdoc/require-yields-check:
+    - error
+    - checkGeneratorsOnly: false
+      next: false
   jsx-quotes:
     - error
     - prefer-double
