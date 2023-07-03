@@ -13,14 +13,18 @@ const gammaArray = [
   (gamma?.()).third(), // ❌ `no-unsafe-optional-chaining`
 ]
 
-const delta = target?.fourth
-;(
-  delta?.first
-  ?? delta?.second // ❌ `no-unsafe-optional-chaining`
-)()
+{
+  const delta = target?.fourth
+  ;(
+    delta?.first
+    ?? delta?.second // ❌ `no-unsafe-optional-chaining`
+  )()
+}
 
-const epsilon = target?.fifth
-;(epsilon || target?.first)() // ❌ `no-unsafe-optional-chaining`
+{
+  const epsilon = target?.fifth
+  ;(epsilon || target?.first)() // ❌ `no-unsafe-optional-chaining`
+}
 
 const zeta = (target?.first && extraFunc)() // ❌ `no-unsafe-optional-chaining`
 
@@ -100,14 +104,19 @@ const phiValues = [
   target?.first ** operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
 ]
 
-let chi = 0
+function chiFunc () {
+  // eslint-disable-next-line no-restricted-syntax
+  let chi = 0
 
-chi += target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-chi -= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-chi /= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-chi *= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-chi %= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-chi **= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi += target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi -= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi /= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi *= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi %= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi **= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+
+  return chi
+}
 
 async function psiFunc () {
   let base = 0
@@ -127,8 +136,8 @@ module.exports = {
   beta,
   gamma,
   gammaArray,
-  delta,
-  epsilon,
+  // delta,
+  // epsilon,
   zeta,
   eta,
   iota,
@@ -144,6 +153,6 @@ module.exports = {
   Tau,
   upsilonFunc,
   phiValues,
+  chiFunc,
   psiFunc,
-  chi,
 }
