@@ -395,6 +395,8 @@ rules:
   jsdoc/check-property-names:
     - error
     - enableFixer: false
+  jsdoc/check-syntax:
+    - error
   jsx-quotes:
     - error
     - prefer-double
