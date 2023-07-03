@@ -392,6 +392,9 @@ rules:
       enableFixer: false
       disableExtraPropertyReporting: false
       useDefaultObjectProperties: false
+  jsdoc/check-property-names:
+    - error
+    - enableFixer: false
   jsx-quotes:
     - error
     - prefer-double
