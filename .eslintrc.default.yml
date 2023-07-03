@@ -572,6 +572,11 @@ rules:
       forceRequireReturn: false
       forceReturnsWithAsync: false
       contexts: []
+  jsdoc/require-returns-check:
+    - error
+    - exemptAsync: true
+      exemptGenerators: false
+      reportMissingReturnForUndefinedTypes: false
   jsx-quotes:
     - error
     - prefer-double
