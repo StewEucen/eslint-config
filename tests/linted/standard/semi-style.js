@@ -8,10 +8,12 @@ function betaFunc () {
   return 'beta'
 }
 
-// eslint-disable-next-line semi
-alphaFunc(); // ❌ first of `semi-style`
+{
+  // eslint-disable-next-line semi
+  alphaFunc(); // ❌ first of `semi-style`
 
-[1, 2, 3].forEach(it => {}) // ❌ first of `semi-style`
+  [1, 2, 3].forEach(it => {}) // ❌ first of `semi-style`
+}
 
 for (
   let index = 0
