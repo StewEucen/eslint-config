@@ -595,6 +595,15 @@ rules:
     - exemptedBy:
         - inheritdoc
       contexts: []
+  jsdoc/require-yields:
+    - error
+    - exemptedBy: []
+      forceRequireYields: false
+      contexts: []
+      withGeneratorTag: true
+      next: false
+      forceRequireNext: false
+      nextWithGeneratorTag: false
   jsx-quotes:
     - error
     - prefer-double
