@@ -226,7 +226,8 @@ rules:
     - always
   jest/consistent-test-it:
     - error
-    - {}
+    - fn: test
+      withinDescribe: test # it
   jest/expect-expect:
     - error
     - assertFunctionNames:
