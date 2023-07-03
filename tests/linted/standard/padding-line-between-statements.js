@@ -10,8 +10,10 @@ const beta = 2
 const array = [1, 3, 5, 7, 9]
 
 function breakFunc () {
+  // eslint-disable-next-line no-restricted-syntax
   let total = 0
 
+  // eslint-disable-next-line no-restricted-syntax
   for (const value of array) {
     if (value > 5) {
       total += value
@@ -31,8 +33,10 @@ class Delta { // ❌ class/* of `padding-line-between-statements`
 }
 
 function continueFunc () {
+  // eslint-disable-next-line no-restricted-syntax
   let total = 0
 
+  // eslint-disable-next-line no-restricted-syntax
   for (const value of array) {
     if (value > 5) {
       total += value
