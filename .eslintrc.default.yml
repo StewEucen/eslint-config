@@ -428,6 +428,13 @@ rules:
         - of
         - s
         - the
+  jsdoc/match-description:
+    - error
+    - nonemptyTags: true
+      tags: {}
+      # mainDescription: null
+      # matchDescription: null
+      # message: null
   jsx-quotes:
     - error
     - prefer-double
