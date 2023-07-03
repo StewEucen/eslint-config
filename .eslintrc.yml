@@ -358,6 +358,8 @@ rules:
         - Titles should not end with a full-stop (.)
   jsdoc/check-access:
     - error
+  jsdoc/check-alignment:
+    - error
   jsx-quotes:
     - error
     - prefer-double

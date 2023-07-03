@@ -351,6 +351,8 @@ rules:
       mustNotMatch: {} # { describe: [], it: [], test: [] }
   jsdoc/check-access:
     - error
+  jsdoc/check-alignment:
+    - error
   jsx-quotes:
     - error
     - prefer-double
