@@ -559,6 +559,8 @@ rules:
     - error
   jsdoc/require-property-description:
     - error
+  jsdoc/require-property-name:
+    - error
   jsx-quotes:
     - error
     - prefer-double
