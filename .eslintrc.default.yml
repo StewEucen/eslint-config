@@ -479,6 +479,9 @@ rules:
   jsdoc/no-restricted-syntax:
     - error
     - contexts: []
+  jsdoc/no-types:
+    - error
+    - contexts: []
   jsx-quotes:
     - error
     - prefer-double
