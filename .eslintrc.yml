@@ -383,6 +383,15 @@ rules:
         - postHyphen: 1
       preserveMainDescriptionPostDelimiter: false
       wrapIndent: ''
+  jsdoc/check-param-names:
+    - error
+    - allowExtraTrailingParamDocs: false
+      checkDestructured: true
+      checkRestProperty: false
+      # checkTypesPattern: ^$
+      enableFixer: false
+      disableExtraPropertyReporting: false
+      useDefaultObjectProperties: false
   jsx-quotes:
     - error
     - prefer-double
