@@ -608,6 +608,13 @@ rules:
     - error
     - checkGeneratorsOnly: false
       next: false
+  jsdoc/sort-tags:
+    - error
+    - alphabetizeExtras: false
+      linesBetween: 1
+      reportTagGroupSpacing: true
+      reportIntraTagGroupSpacing: true
+      # tagSequence: default tag order
   jsx-quotes:
     - error
     - prefer-double
