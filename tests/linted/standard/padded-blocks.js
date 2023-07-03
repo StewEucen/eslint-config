@@ -24,6 +24,7 @@ class PaddedBlock { // ❌ never `padded-blocks`
 
     }
 
+    // eslint-disable-next-line no-restricted-syntax
     switch (arg) { // ❌ never `padded-blocks`
 
       case 'foo':
