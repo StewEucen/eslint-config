@@ -461,6 +461,9 @@ rules:
       preventAllMultiAsteriskBlocks: false
   jsdoc/no-blank-block-descriptions:
     - error
+  jsdoc/no-blank-blocks:
+    - error
+    - enableFixer: false
   jsx-quotes:
     - error
     - prefer-double
