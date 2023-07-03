@@ -478,6 +478,11 @@ rules:
   jsdoc/no-missing-syntax:
     - error
     - contexts: []
+  jsdoc/no-multi-asterisks:
+    - error
+    - allowWhitespace: false
+      preventAtEnd: true
+      preventAtMiddleLines: true
   jsx-quotes:
     - error
     - prefer-double
