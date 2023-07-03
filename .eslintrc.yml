@@ -458,6 +458,14 @@ rules:
       multilineTags:
         - '*'
       # minimumLengthForMultiline: Infinity
+  jsdoc/no-bad-blocks:
+    - error
+    - ignore:
+        - ts-check
+        - ts-expect-error
+        - ts-ignore
+        - ts-nocheck
+      preventAllMultiAsteriskBlocks: false
   jsx-quotes:
     - error
     - prefer-double
