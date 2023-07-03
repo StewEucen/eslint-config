@@ -308,7 +308,7 @@ rules:
     - error
     - ignore: []
       allowedPrefixes: []
-      ignoreTopLevelDescribe: false
+      ignoreTopLevelDescribe: true # false
   jest/prefer-mock-promise-shorthand:
     - error
   jest/prefer-snapshot-hint:
