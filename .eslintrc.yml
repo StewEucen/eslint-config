@@ -584,6 +584,9 @@ rules:
     - exemptAsync: true
       exemptGenerators: false
       reportMissingReturnForUndefinedTypes: false
+  jsdoc/require-returns-description:
+    - error
+    - contexts: []
   jsx-quotes:
     - error
     - prefer-double
