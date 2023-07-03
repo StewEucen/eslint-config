@@ -282,7 +282,7 @@ rules:
     - {}
   jest/no-standalone-expect:
     - error
-    - {}
+    - additionalTestBlockFunctions: []
   jest/no-test-prefixes:
     - error
   jest/no-test-return-statement:
@@ -329,11 +329,12 @@ rules:
     - error
   jest/require-hook:
     - error
+    - allowedFunctionCalls: []
   jest/require-to-throw-message:
     - error
   jest/require-top-level-describe:
     - error
-    - {}
+    - {} # { maxNumberOfTopLevelDescribes: Infinity }
   jest/valid-describe-callback:
     - error
   jest/valid-expect-in-promise:
