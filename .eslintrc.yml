@@ -420,6 +420,8 @@ rules:
   jsdoc/implements-on-classes:
     - error
     - contexts: []
+  jsdoc/imports-as-dependencies:
+    - error
   jsx-quotes:
     - error
     - prefer-double
