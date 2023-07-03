@@ -397,6 +397,12 @@ rules:
     - enableFixer: false
   jsdoc/check-syntax:
     - error
+  jsdoc/check-tag-names:
+    - error
+    - definedTags: []
+      enableFixer: true
+      jsxTags: false
+      typed: false
   jsx-quotes:
     - error
     - prefer-double
