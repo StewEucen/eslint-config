@@ -494,6 +494,11 @@ rules:
   jsdoc/require-description:
     - error
     - descriptionStyle: body
+  jsdoc/require-description-complete-sentence:
+    - error
+    - abbreviations: []
+      newlineBeforeCapsAssumesBadSentenceEnd: false
+      tags: []
   jsx-quotes:
     - error
     - prefer-double
