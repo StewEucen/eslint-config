@@ -349,6 +349,8 @@ rules:
       disallowedWords: []
       mustMatch: {} # { describe: [], it: [], test: [] }
       mustNotMatch: {} # { describe: [], it: [], test: [] }
+  jsdoc/check-access:
+    - error
   jsx-quotes:
     - error
     - prefer-double

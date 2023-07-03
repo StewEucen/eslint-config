@@ -356,6 +356,8 @@ rules:
       mustNotMatch: # {}
         - \.$
         - Titles should not end with a full-stop (.)
+  jsdoc/check-access:
+    - error
   jsx-quotes:
     - error
     - prefer-double
