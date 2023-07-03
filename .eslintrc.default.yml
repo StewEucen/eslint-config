@@ -410,6 +410,9 @@ rules:
   jsdoc/empty-tags:
     - error
     - tags: []
+  jsdoc/implements-on-classes:
+    - error
+    - contexts: []
   jsx-quotes:
     - error
     - prefer-double
