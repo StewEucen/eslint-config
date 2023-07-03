@@ -330,7 +330,7 @@ rules:
     - error
   jest/require-top-level-describe:
     - error
-    - {}
+    - {} # { maxNumberOfTopLevelDescribes: Infinity }
   jest/valid-describe-callback:
     - error
   jest/valid-expect-in-promise:
