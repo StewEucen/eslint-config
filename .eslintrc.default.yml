@@ -544,6 +544,10 @@ rules:
       unnamedRootBase:
         - root
       useDefaultObjectProperties: false
+  jsdoc/require-param-description:
+    - error
+    - defaultDestructuredRootDescription: The root object
+      setDefaultDestructuredRootDescription: false
   jsx-quotes:
     - error
     - prefer-double
