@@ -476,6 +476,9 @@ rules:
     - allowWhitespace: false
       preventAtEnd: true
       preventAtMiddleLines: true
+  jsdoc/no-restricted-syntax:
+    - error
+    - contexts: []
   jsx-quotes:
     - error
     - prefer-double
