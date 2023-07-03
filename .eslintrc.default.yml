@@ -499,6 +499,15 @@ rules:
     - abbreviations: []
       newlineBeforeCapsAssumesBadSentenceEnd: false
       tags: []
+  jsdoc/require-example:
+    - error
+    - checkConstructors: true
+      checkGetters: false
+      checkSetters: false
+      contexts: []
+      enableFixer: true
+      exemptedBy: []
+      exemptNoArguments: false
   jsx-quotes:
     - error
     - prefer-double
