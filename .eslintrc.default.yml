@@ -616,6 +616,10 @@ rules:
       endLines: 0
       startLines: 0
       tags: {}
+  jsdoc/text-escaping:
+    - error
+    - escapeHTML: false
+      escapeMarkdown: false
   jsx-quotes:
     - error
     - prefer-double
