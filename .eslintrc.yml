@@ -538,6 +538,19 @@ rules:
       fixerMessage: ''
       publicOnly: false
       # minLineCount: undefined
+  jsdoc/require-param:
+    - error
+    - autoIncrementBase: 0
+      checkRestProperty: false
+      checkDestructured: true
+      checkDestructuredRoots: true
+      checkTypesPattern: /^(?:[oO]bject|[aA]rray|PlainObject|Generic(?:Object|Array))$/
+      enableFixer: true
+      enableRootFixer: true
+      enableRestElementFixer: true
+      unnamedRootBase:
+        - root
+      useDefaultObjectProperties: false
   jsx-quotes:
     - error
     - prefer-double
