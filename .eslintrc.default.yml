@@ -482,6 +482,11 @@ rules:
   jsdoc/no-types:
     - error
     - contexts: []
+  jsdoc/no-undefined-types:
+    - error
+    - definedTypes: []
+      disableReporting: false
+      markVariablesAsUsed: true
   jsx-quotes:
     - error
     - prefer-double
