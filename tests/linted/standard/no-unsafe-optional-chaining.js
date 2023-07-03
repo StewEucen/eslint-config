@@ -13,14 +13,18 @@ const gammaArray = [
   (gamma?.()).third(), // ❌ `no-unsafe-optional-chaining`
 ]
 
-const delta = target?.fourth
-;(
-  delta?.first
-  ?? delta?.second // ❌ `no-unsafe-optional-chaining`
-)()
+{
+  const delta = target?.fourth
+  ;(
+    delta?.first
+    ?? delta?.second // ❌ `no-unsafe-optional-chaining`
+  )()
+}
 
-const epsilon = target?.fifth
-;(epsilon || target?.first)() // ❌ `no-unsafe-optional-chaining`
+{
+  const epsilon = target?.fifth
+  ;(epsilon || target?.first)() // ❌ `no-unsafe-optional-chaining`
+}
 
 const zeta = (target?.first && extraFunc)() // ❌ `no-unsafe-optional-chaining`
 
@@ -43,6 +47,7 @@ const xi = 1 in target?.first // ❌ `no-unsafe-optional-chaining`
 const piInstance = {}
 const pi = piInstance instanceof target?.first // ❌ `no-unsafe-optional-chaining`
 
+// eslint-disable-next-line no-restricted-syntax
 for (const it of target?.first) { // ❌ `no-unsafe-optional-chaining`
   if (it) {
     throw new Error('(>_<)')
@@ -100,16 +105,22 @@ const phiValues = [
   target?.first ** operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
 ]
 
-let chi = 0
+function chiFunc () {
+  // eslint-disable-next-line no-restricted-syntax
+  let chi = 0
 
-chi += target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-chi -= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-chi /= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-chi *= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-chi %= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-chi **= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi += target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi -= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi /= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi *= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi %= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi **= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+
+  return chi
+}
 
 async function psiFunc () {
+  // eslint-disable-next-line no-restricted-syntax
   let base = 0
 
   base += await target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
@@ -127,8 +138,8 @@ module.exports = {
   beta,
   gamma,
   gammaArray,
-  delta,
-  epsilon,
+  // delta,
+  // epsilon,
   zeta,
   eta,
   iota,
@@ -144,6 +155,6 @@ module.exports = {
   Tau,
   upsilonFunc,
   phiValues,
+  chiFunc,
   psiFunc,
-  chi,
 }

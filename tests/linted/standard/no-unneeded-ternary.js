@@ -12,20 +12,24 @@ function betaFunc (target) {
     : false
 }
 
-const target = alphaFunc(3)
+function extraFunc () {
+  const target = alphaFunc(3)
 
-const gamma = target // ❌ defaultAssignment:false of `no-unneeded-ternary`
-  ? target
-  : 1
-
-betaFunc(
-  target // ❌ defaultAssignment:false of `no-unneeded-ternary`
+  const gamma = target // ❌ defaultAssignment:false of `no-unneeded-ternary`
     ? target
     : 1
-)
+
+  betaFunc(
+    target // ❌ defaultAssignment:false of `no-unneeded-ternary`
+      ? target
+      : 1
+  )
+
+  return gamma
+}
 
 module.exports = {
   alphaFunc,
   betaFunc,
-  gamma,
+  extraFunc,
 }

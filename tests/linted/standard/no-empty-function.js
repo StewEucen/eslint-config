@@ -5,18 +5,19 @@ function alphaFunc () {} // ❌ `no-empty-function`
 const betaFunc = function () {} // ❌ `no-empty-function`
 const gammaFunc = () => {} // ✅ `no-empty-function`
 
-function *deltaFunc () {} // ❌ `no-empty-function`
+function * deltaFunc () {} // ❌ `no-empty-function`
 
-const epsilonFunc = function *() {} // ❌ `no-empty-function`
+const epsilonFunc = function * () {} // ❌ `no-empty-function`
 
 const zeta = {
   // eslint-disable-next-line object-shorthand
   firstFunc: function () {}, // ❌ `no-empty-function`
   // eslint-disable-next-line object-shorthand
-  secondFunc: function *() {}, // ❌ `no-empty-function`
+  secondFunc: function * () {}, // ❌ `no-empty-function`
+  // eslint-disable-next-line object-shorthand
   thirdFunc: () => {}, // ✅ `no-empty-function`
   fourthFunc () {}, // ❌ `no-empty-function`
-  *fifthFunc () {}, // ❌ `no-empty-function`
+  * fifthFunc () {}, // ❌ `no-empty-function`
 
   // @ts-expect-error
   // eslint-disable-next-line getter-return
@@ -32,7 +33,7 @@ class Eta {
   firstFunc () {} // ❌ `no-empty-function`
 
   // eslint-disable-next-line class-methods-use-this
-  *secondFunc () {} // ❌ `no-empty-function`
+  * secondFunc () {} // ❌ `no-empty-function`
 
   // @ts-expect-error
   // eslint-disable-next-line class-methods-use-this, getter-return
@@ -43,7 +44,7 @@ class Eta {
 
   static fourthFunc () {} // ❌ `no-empty-function`
 
-  static *fifthFunc () {} // ❌ `no-empty-function`
+  static * fifthFunc () {} // ❌ `no-empty-function`
 
   // @ts-expect-error
   // eslint-disable-next-line getter-return

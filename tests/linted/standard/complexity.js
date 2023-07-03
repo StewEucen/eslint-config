@@ -3,19 +3,19 @@
 function alphaFunc (arg) { // ❌ max:8 of `complexity`
   if (arg === 0) {
     return 'zero' // first path
-  } else if (arg === 1) {
+  } else if (arg === 1) { // eslint-disable-line no-restricted-syntax
     return 'one' // second path
-  } else if (arg === 2) {
+  } else if (arg === 2) { // eslint-disable-line no-restricted-syntax
     return 'two' // third path
-  } else if (arg === 3) {
+  } else if (arg === 3) { // eslint-disable-line no-restricted-syntax
     return 'three' // fourth path
-  } else if (arg === 4) {
+  } else if (arg === 4) { // eslint-disable-line no-restricted-syntax
     return 'four' // fifth path
-  } else if (arg === 5) {
+  } else if (arg === 5) { // eslint-disable-line no-restricted-syntax
     return 'five' // sixth path
-  } else if (arg === 6) {
+  } else if (arg === 6) { // eslint-disable-line no-restricted-syntax
     return 'six' // seventh path
-  } else if (arg === 7) {
+  } else if (arg === 7) { // eslint-disable-line no-restricted-syntax
     return 'seven' // eighth path
   } else { // eslint-disable-line no-else-return
     return 'unknown' // ninth path

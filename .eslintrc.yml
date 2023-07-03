@@ -19,7 +19,7 @@ rules:
     - error
     - 2 # 4
     - ignoredNodes: []
-      SwitchCase: 0
+      SwitchCase: 1 # 0
       VariableDeclarator: 1
       outerIIFEBody: 1
       MemberExpression: 1
@@ -47,7 +47,7 @@ rules:
   semi:
     - error
     - never # always
-    - beforeStatementContinuationChars: never
+    - beforeStatementContinuationChars: never # any
   accessor-pairs:
     - error
     - setWithoutGet: true
@@ -769,6 +769,8 @@ rules:
       ignoreOnInitialization: true # false
       allow: # []
         - it
+        - name
+        - target
   no-shadow-restricted-names:
     - error
   no-sparse-arrays:

@@ -14,13 +14,16 @@ const epsilonFunc = Promise.resolve()
 function zetaFunc (it) {
   return it
 }
-zetaFunc((it) => { // ❌ as-needed of `arrow-parens`
-  if (!it) {
-    return null
-  }
 
-  return 999
-})
+{
+  zetaFunc((it) => { // ❌ as-needed of `arrow-parens`
+    if (!it) {
+      return null
+    }
+
+    return 999
+  })
+}
 
 module.exports = {
   alphaFunc,

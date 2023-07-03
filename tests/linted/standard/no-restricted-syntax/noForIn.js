@@ -1,7 +1,7 @@
 'use strict'
 
 function noForInFunc (array) {
-  let total = 0
+  let total = 0 // eslint-disable-line no-restricted-syntax
 
   for (const index in array) { // ❌ { selector: 'ForInStatement' } of `no-restricted-syntax`
     total += array[index]
