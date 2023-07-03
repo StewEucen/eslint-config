@@ -615,6 +615,14 @@ rules:
       reportTagGroupSpacing: true
       reportIntraTagGroupSpacing: true
       # tagSequence: default tag order
+  jsdoc/tag-lines:
+    - error
+    - never
+    - count: 1
+      endLines: 0
+      startLines: 0
+      applyToEndTag: true
+      tags: {}
   jsx-quotes:
     - error
     - prefer-double
