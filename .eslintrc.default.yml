@@ -438,6 +438,19 @@ rules:
   jsdoc/match-name:
     - error
     - match: []
+  jsdoc/multiline-blocks:
+    - error
+    - allowMultipleTags: true
+      noFinalLineText: true
+      noZeroLineText: true
+      noSingleLineBlocks: false
+      singleLineTags:
+        - lends
+        - type
+      noMultilineBlocks: false
+      multilineTags:
+        - '*'
+      # minimumLengthForMultiline: Infinity
   jsx-quotes:
     - error
     - prefer-double
