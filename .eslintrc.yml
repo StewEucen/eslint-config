@@ -564,6 +564,8 @@ rules:
       setDefaultDestructuredRootType: false
   jsdoc/require-property:
     - error
+  jsdoc/require-property-description:
+    - error
   jsx-quotes:
     - error
     - prefer-double
