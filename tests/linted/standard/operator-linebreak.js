@@ -4,6 +4,7 @@ const alpha = 1 + // ❌ before of `operator-linebreak`
   2
 
 function alphaFunc () {
+  // eslint-disable-next-line no-restricted-syntax
   let number = 0
 
   number
