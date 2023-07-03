@@ -415,6 +415,19 @@ rules:
     - contexts: []
   jsdoc/imports-as-dependencies:
     - error
+  jsdoc/informative-docs:
+    - error
+    - aliases:
+        - an
+        - our
+      uselessWords:
+        - a
+        - an
+        - i
+        - in
+        - of
+        - s
+        - the
   jsx-quotes:
     - error
     - prefer-double
