@@ -627,6 +627,9 @@ rules:
     - error
     - escapeHTML: false
       escapeMarkdown: false
+  jsdoc/valid-types:
+    - error
+    - allowEmptyNamepaths: true
   jsx-quotes:
     - error
     - prefer-double
