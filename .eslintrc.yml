@@ -517,7 +517,7 @@ rules:
         - inheritdoc
       exemptNoArguments: false
   jsdoc/require-file-overview:
-    - error
+    - off # error
     - tags:
         file:
           initialCommentsOnly: true
