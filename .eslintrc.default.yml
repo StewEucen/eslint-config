@@ -278,7 +278,7 @@ rules:
     - {}
   jest/no-standalone-expect:
     - error
-    - {}
+    - additionalTestBlockFunctions: []
   jest/no-test-prefixes:
     - error
   jest/no-test-return-statement:
