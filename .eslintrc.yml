@@ -226,7 +226,8 @@ rules:
     - always
   jest/consistent-test-it:
     - error
-    - {}
+    - fn: test
+      withinDescribe: test # it
   jest/expect-expect:
     - error
     - assertFunctionNames:
@@ -308,7 +309,7 @@ rules:
     - error
     - ignore: []
       allowedPrefixes: []
-      ignoreTopLevelDescribe: false
+      ignoreTopLevelDescribe: true # false
   jest/prefer-mock-promise-shorthand:
     - error
   jest/prefer-snapshot-hint:
@@ -348,6 +349,11 @@ rules:
   jest/valid-title:
     - error
     - ignoreTypeOfDescribeName: false
+      disallowedWords: []
+      mustMatch: {} # { describe: [], it: [], test: [] }
+      mustNotMatch: # {}
+        - \.$
+        - Titles should not end with a full-stop (.)
   jsx-quotes:
     - error
     - prefer-double

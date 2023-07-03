@@ -222,7 +222,8 @@ rules:
     - always
   jest/consistent-test-it:
     - error
-    - {}
+    - fn: test
+      withinDescribe: it
   jest/expect-expect:
     - error
     - assertFunctionNames:
@@ -344,6 +345,9 @@ rules:
   jest/valid-title:
     - error
     - ignoreTypeOfDescribeName: false
+      disallowedWords: []
+      mustMatch: {} # { describe: [], it: [], test: [] }
+      mustNotMatch: {} # { describe: [], it: [], test: [] }
   jsx-quotes:
     - error
     - prefer-double
