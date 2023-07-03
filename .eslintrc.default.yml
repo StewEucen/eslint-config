@@ -323,6 +323,7 @@ rules:
     - error
   jest/require-hook:
     - error
+    - allowedFunctionCalls: []
   jest/require-to-throw-message:
     - error
   jest/require-top-level-describe:
