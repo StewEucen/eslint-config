@@ -47,6 +47,7 @@ const xi = 1 in target?.first // ❌ `no-unsafe-optional-chaining`
 const piInstance = {}
 const pi = piInstance instanceof target?.first // ❌ `no-unsafe-optional-chaining`
 
+// eslint-disable-next-line no-restricted-syntax
 for (const it of target?.first) { // ❌ `no-unsafe-optional-chaining`
   if (it) {
     throw new Error('(>_<)')
@@ -119,6 +120,7 @@ function chiFunc () {
 }
 
 async function psiFunc () {
+  // eslint-disable-next-line no-restricted-syntax
   let base = 0
 
   base += await target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
