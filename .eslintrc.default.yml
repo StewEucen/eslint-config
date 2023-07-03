@@ -519,6 +519,18 @@ rules:
     - error
     - always
     - tags: {}
+  jsdoc/require-jsdoc:
+    - error
+    - checkConstructors: true
+      checkGetters: true
+      checkSetters: true
+      contexts: []
+      enableFixer: true
+      exemptEmptyConstructors: true
+      exemptEmptyFunctions: false
+      fixerMessage: ''
+      publicOnly: false
+      # minLineCount: undefined
   jsx-quotes:
     - error
     - prefer-double
