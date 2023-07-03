@@ -260,6 +260,7 @@ rules:
     - error
   jest/no-hooks:
     - error
+    # - allow: [] # ['before', 'beforeEach', 'after', 'afterEach']
   jest/no-identical-title:
     - off # error
   jest/no-interpolation-in-snapshots:
