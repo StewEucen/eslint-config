@@ -475,6 +475,9 @@ rules:
     - error
     - noOptionalParamNames: false
       contexts: []
+  jsdoc/no-missing-syntax:
+    - error
+    - contexts: []
   jsx-quotes:
     - error
     - prefer-double
