@@ -4,11 +4,15 @@ function alphaFunc (first) {
   return first
 }
 
-// @ts-expect-error
-alphaFunc(alpha) // ❌ { variables: true } of `no-use-before-define`
-var alpha = 10 // eslint-disable-line no-var, vars-on-top
+{
+  // @ts-expect-error
+  alphaFunc(alpha) // ❌ { variables: true } of `no-use-before-define`
+  var alpha = 10 // eslint-disable-line no-var, vars-on-top
+}
 
-betaFunc() // ✅ { functions: false } of `no-use-before-define`
+{
+  betaFunc() // ✅ { functions: false } of `no-use-before-define`
+}
 
 function betaFunc () {
   // noop
