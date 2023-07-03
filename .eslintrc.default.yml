@@ -508,6 +508,13 @@ rules:
       enableFixer: true
       exemptedBy: []
       exemptNoArguments: false
+  jsdoc/require-file-overview:
+    - error
+    - tags:
+        file:
+          initialCommentsOnly: true
+          mustExist: true
+          preventDuplicates: true
   jsx-quotes:
     - error
     - prefer-double
