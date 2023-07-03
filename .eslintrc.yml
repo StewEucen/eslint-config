@@ -364,6 +364,25 @@ rules:
     - error
     - excludeTags:
       - example
+  jsdoc/check-line-alignment:
+    - error
+    - never
+    - tags:
+      - param
+      - arg
+      - argument
+      - property
+      - prop
+      - returns
+      - return
+      customSpacings:
+        - postDelimiter: 1
+        - postTag: 1
+        - postType: 1
+        - postName: 1
+        - postHyphen: 1
+      preserveMainDescriptionPostDelimiter: false
+      wrapIndent: ''
   jsx-quotes:
     - error
     - prefer-double
