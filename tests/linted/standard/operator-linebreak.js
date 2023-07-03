@@ -3,35 +3,39 @@
 const alpha = 1 + // ❌ before of `operator-linebreak`
   2
 
-// assignment operators
-let number = 0
+function alphaFunc () {
+  // eslint-disable-next-line no-restricted-syntax
+  let number = 0
 
-number
-  = 3 // ❌ overrides: { =: after } of `operator-linebreak`
-number
-  += 4 // ❌ overrides: { +=: after } of `operator-linebreak`
-number
-  -= 5 // ❌ overrides: { -=: after } of `operator-linebreak`
-number
-  *= 6 // ❌ overrides: { *=: after } of `operator-linebreak`
-number
-  /= 7 // ❌ overrides: { /=: after } of `operator-linebreak`
-number
-  %= 8 // ❌ overrides: { %=: after } of `operator-linebreak`
-number
-  **= 9 // ❌ overrides: { **=: after } of `operator-linebreak`
-number
-  <<= 10 // ❌ overrides: { <<=: after } of `operator-linebreak`
-number
-  >>= 11 // ❌ overrides: { >>=: after } of `operator-linebreak`
-number
-  >>>= 12 // ❌ overrides: { >>>=: after } of `operator-linebreak`
-number
-  &= 13 // ❌ overrides: { &=: after } of `operator-linebreak`
-number
-  |= 15 // ❌ overrides: { |=: after } of `operator-linebreak`
-number
-  ^= 14 // ❌ overrides: { ^=: after } of `operator-linebreak`
+  number
+    = 3 // ❌ overrides: { =: after } of `operator-linebreak`
+  number
+    += 4 // ❌ overrides: { +=: after } of `operator-linebreak`
+  number
+    -= 5 // ❌ overrides: { -=: after } of `operator-linebreak`
+  number
+    *= 6 // ❌ overrides: { *=: after } of `operator-linebreak`
+  number
+    /= 7 // ❌ overrides: { /=: after } of `operator-linebreak`
+  number
+    %= 8 // ❌ overrides: { %=: after } of `operator-linebreak`
+  number
+    **= 9 // ❌ overrides: { **=: after } of `operator-linebreak`
+  number
+    <<= 10 // ❌ overrides: { <<=: after } of `operator-linebreak`
+  number
+    >>= 11 // ❌ overrides: { >>=: after } of `operator-linebreak`
+  number
+    >>>= 12 // ❌ overrides: { >>>=: after } of `operator-linebreak`
+  number
+    &= 13 // ❌ overrides: { &=: after } of `operator-linebreak`
+  number
+    |= 15 // ❌ overrides: { |=: after } of `operator-linebreak`
+  number
+    ^= 14 // ❌ overrides: { ^=: after } of `operator-linebreak`
+
+  return number
+}
 
 // logical operators
 const alphaCondition = true
@@ -98,7 +102,7 @@ const strictNotEqualResult = alphaText !== // ❌ before of `operator-linebreak`
 
 module.exports = {
   alpha,
-  number,
+  alphaFunc,
   orResult,
   andResult,
   ternaryResult,
