@@ -9,6 +9,7 @@ extends:
   - eslint:all
 plugins:
   - jest
+  - jsdoc
 ignorePatterns:
   - playground/
 parserOptions:
