@@ -226,7 +226,8 @@ rules:
     - always
   jest/consistent-test-it:
     - error
-    - {}
+    - fn: test
+      withinDescribe: test # it
   jest/expect-expect:
     - error
     - assertFunctionNames:
@@ -259,9 +260,10 @@ rules:
   jest/no-focused-tests:
     - error
   jest/no-hooks:
-    - error
+    - off # error
+    # - allow: [] # ['before', 'beforeEach', 'after', 'afterEach']
   jest/no-identical-title:
-    - error
+    - off # error
   jest/no-interpolation-in-snapshots:
     - error
   jest/no-jasmine-globals:
@@ -280,7 +282,7 @@ rules:
     - {}
   jest/no-standalone-expect:
     - error
-    - {}
+    - additionalTestBlockFunctions: []
   jest/no-test-prefixes:
     - error
   jest/no-test-return-statement:
@@ -296,7 +298,7 @@ rules:
   jest/prefer-equality-matcher:
     - error
   jest/prefer-expect-assertions:
-    - error
+    - off # error
   jest/prefer-expect-resolves:
     - error
   jest/prefer-hooks-in-order:
@@ -307,7 +309,7 @@ rules:
     - error
     - ignore: []
       allowedPrefixes: []
-      ignoreTopLevelDescribe: false
+      ignoreTopLevelDescribe: true # false
   jest/prefer-mock-promise-shorthand:
     - error
   jest/prefer-snapshot-hint:
@@ -327,11 +329,12 @@ rules:
     - error
   jest/require-hook:
     - error
+    - allowedFunctionCalls: []
   jest/require-to-throw-message:
     - error
   jest/require-top-level-describe:
     - error
-    - {}
+    - {} # { maxNumberOfTopLevelDescribes: Infinity }
   jest/valid-describe-callback:
     - error
   jest/valid-expect-in-promise:
@@ -347,6 +350,11 @@ rules:
   jest/valid-title:
     - error
     - ignoreTypeOfDescribeName: false
+      disallowedWords: []
+      mustMatch: {} # { describe: [], it: [], test: [] }
+      mustNotMatch: # {}
+        - \.$
+        - Titles should not end with a full-stop (.)
   jsx-quotes:
     - error
     - prefer-double
