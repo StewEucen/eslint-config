@@ -561,6 +561,8 @@ rules:
     - error
   jsdoc/require-property-name:
     - error
+  jsdoc/require-property-type:
+    - error
   jsx-quotes:
     - error
     - prefer-double
