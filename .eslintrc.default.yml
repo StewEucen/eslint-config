@@ -396,6 +396,11 @@ rules:
       enableFixer: true
       jsxTags: false
       typed: false
+  jsdoc/check-types:
+    - error
+    - noDefaults: false
+      unifyParentAndChildTypeChecks: false
+      exemptTagContexts: []
   jsx-quotes:
     - error
     - prefer-double
