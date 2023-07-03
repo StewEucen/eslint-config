@@ -407,6 +407,9 @@ rules:
       allowedLicenses: []
       numericOnlyVariation: false
       licensePattern: /([^\\n\\r]*)/gu
+  jsdoc/empty-tags:
+    - error
+    - tags: []
   jsx-quotes:
     - error
     - prefer-double
