@@ -515,6 +515,10 @@ rules:
           initialCommentsOnly: true
           mustExist: true
           preventDuplicates: true
+  jsdoc/require-hyphen-before-param-description:
+    - error
+    - always
+    - tags: {}
   jsx-quotes:
     - error
     - prefer-double
