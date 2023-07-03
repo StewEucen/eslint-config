@@ -494,6 +494,10 @@ rules:
     - definedTypes: []
       disableReporting: false
       markVariablesAsUsed: true
+  jsdoc/require-asterisk-prefix:
+    - error
+    - always
+    - tags: {}
   jsx-quotes:
     - error
     - prefer-double
