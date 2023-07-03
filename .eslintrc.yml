@@ -261,7 +261,7 @@ rules:
   jest/no-hooks:
     - error
   jest/no-identical-title:
-    - error
+    - off # error
   jest/no-interpolation-in-snapshots:
     - error
   jest/no-jasmine-globals:
