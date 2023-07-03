@@ -9,14 +9,20 @@ const beta = 2
 
 const array = [1, 3, 5, 7, 9]
 
-let total = 0
-for (const value of array) {
-  if (value > 5) {
-    total += value
-    break // ❌ */break of `padding-line-between-statements`
+function breakFunc () {
+  let total = 0
+
+  for (const value of array) {
+    if (value > 5) {
+      total += value
+
+      break // ❌ */break of `padding-line-between-statements`
+    }
+
+    total *= value
   }
 
-  total *= value
+  return total
 }
 
 const delta = 4
@@ -24,15 +30,21 @@ class Delta { // ❌ class/* of `padding-line-between-statements`
 
 }
 
-let secondTotal = 0
-for (const value of array) {
-  if (value > 5) {
-    secondTotal += value
-    // eslint-disable-next-line no-continue
-    continue // ❌ */continue of `padding-line-between-statements`
+function continueFunc () {
+  let total = 0
+
+  for (const value of array) {
+    if (value > 5) {
+      total += value
+
+      // eslint-disable-next-line no-continue
+      continue // ❌ */continue of `padding-line-between-statements`
+    }
+
+    total *= value
   }
 
-  secondTotal *= value
+  return total
 }
 
 const epsilon = 5
@@ -64,12 +76,11 @@ function etaFunc (arg) {
 module.exports = {
   alpha,
   beta,
+  breakFunc,
+  continueFunc,
   delta,
   Delta,
   epsilonFunc,
   zetaFunc,
   etaFunc,
-
-  total,
-  secondTotal,
 }
