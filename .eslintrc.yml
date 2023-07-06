@@ -499,8 +499,16 @@ rules:
     - always
     - tags: {}
   jsdoc/require-description:
-    - error
-    - descriptionStyle: body
+    # SInce exists `jsdoc/no-blank-blocks`, so this rule is unnecessary.
+    - off # error
+    - checkConstructors: true
+      checkGetters: true
+      checkSetters: true
+      # When use contexts, this rule will not work.
+      # contexts: []
+      descriptionStyle: body
+      exemptedBy:
+        - inheritdoc
   jsdoc/require-description-complete-sentence:
     - error
     - abbreviations: []
