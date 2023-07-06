@@ -412,7 +412,7 @@ rules:
     - tags: []
   jsdoc/implements-on-classes:
     - error
-    - contexts: []
+    # - contexts: []
   jsdoc/imports-as-dependencies:
     - error
   jsdoc/informative-docs:
