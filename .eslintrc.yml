@@ -474,7 +474,7 @@ rules:
   jsdoc/no-defaults:
     - error
     - noOptionalParamNames: false
-      contexts: []
+      # contexts: []
   jsdoc/no-missing-syntax:
     - error
     - contexts: []
