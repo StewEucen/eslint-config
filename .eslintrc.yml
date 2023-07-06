@@ -626,7 +626,8 @@ rules:
       applyToEndTag: true
       tags: {}
   jsdoc/text-escaping:
-    - error
+    - off # error
+    # Must include either `escapeHTML` or `escapeMarkdown` (or both).
     - escapeHTML: false
       escapeMarkdown: false
   jsdoc/valid-types:
