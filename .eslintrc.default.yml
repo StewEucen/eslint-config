@@ -504,9 +504,10 @@ rules:
     - checkConstructors: true
       checkGetters: false
       checkSetters: false
-      contexts: []
+      # contexts: []
       enableFixer: true
-      exemptedBy: []
+      exemptedBy:
+        - inheritdoc
       exemptNoArguments: false
   jsdoc/require-file-overview:
     - error
