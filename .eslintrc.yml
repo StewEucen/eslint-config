@@ -499,7 +499,8 @@ rules:
     - always
     - tags: {}
   jsdoc/require-description:
-    - error
+    # SInce exists `jsdoc/no-blank-blocks`, so this rule is unnecessary.
+    - off # error
     - checkConstructors: true
       checkGetters: true
       checkSetters: true
