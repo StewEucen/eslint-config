@@ -558,7 +558,7 @@ rules:
       setDefaultDestructuredRootDescription: false
   jsdoc/require-param-name:
     - error
-    - contexts: []
+    # - contexts: []
   jsdoc/require-param-type:
     - error
     - defaultDestructuredRootType: object
