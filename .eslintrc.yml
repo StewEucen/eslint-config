@@ -590,7 +590,7 @@ rules:
     # - contexts: []
   jsdoc/require-returns-type:
     - error
-    - contexts: []
+    # - contexts: []
   jsdoc/require-throws:
     - error
     - exemptedBy:
