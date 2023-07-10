@@ -412,7 +412,7 @@ rules:
     - tags: []
   jsdoc/implements-on-classes:
     - error
-    - contexts: []
+    # - contexts: []
   jsdoc/imports-as-dependencies:
     - error
   jsdoc/informative-docs:
@@ -467,7 +467,7 @@ rules:
   jsdoc/no-defaults:
     - error
     - noOptionalParamNames: false
-      contexts: []
+      # contexts: []
   jsdoc/no-missing-syntax:
     - error
     - contexts: []
@@ -504,9 +504,10 @@ rules:
     - checkConstructors: true
       checkGetters: false
       checkSetters: false
-      contexts: []
+      # contexts: []
       enableFixer: true
-      exemptedBy: []
+      exemptedBy:
+        - inheritdoc
       exemptNoArguments: false
   jsdoc/require-file-overview:
     - error
@@ -550,7 +551,7 @@ rules:
       setDefaultDestructuredRootDescription: false
   jsdoc/require-param-name:
     - error
-    - contexts: []
+    # - contexts: []
   jsdoc/require-param-type:
     - error
     - defaultDestructuredRootType: object
@@ -571,7 +572,7 @@ rules:
         - inheritdoc
       forceRequireReturn: false
       forceReturnsWithAsync: false
-      contexts: []
+      # contexts: []
   jsdoc/require-returns-check:
     - error
     - exemptAsync: true
@@ -579,20 +580,21 @@ rules:
       reportMissingReturnForUndefinedTypes: false
   jsdoc/require-returns-description:
     - error
-    - contexts: []
+    # - contexts: []
   jsdoc/require-returns-type:
     - error
-    - contexts: []
+    # - contexts: []
   jsdoc/require-throws:
     - error
     - exemptedBy:
         - inheritdoc
-      contexts: []
+      # contexts: []
   jsdoc/require-yields:
     - error
-    - exemptedBy: []
+    - exemptedBy:
+        - inheritdoc
       forceRequireYields: false
-      contexts: []
+      # contexts: []
       withGeneratorTag: true
       next: false
       forceRequireNext: false
