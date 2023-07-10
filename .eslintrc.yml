@@ -579,7 +579,7 @@ rules:
         - inheritdoc
       forceRequireReturn: false
       forceReturnsWithAsync: false
-      contexts: []
+      # contexts: []
   jsdoc/require-returns-check:
     - error
     - exemptAsync: true
