@@ -629,8 +629,8 @@ rules:
     - error
     - never
     - count: 1
-      endLines: 0
       startLines: 0
+      endLines: 0
       applyToEndTag: true
       tags: {}
   jsdoc/text-escaping:
