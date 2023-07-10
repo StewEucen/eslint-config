@@ -591,9 +591,10 @@ rules:
       # contexts: []
   jsdoc/require-yields:
     - error
-    - exemptedBy: []
+    - exemptedBy:
+        - inheritdoc
       forceRequireYields: false
-      contexts: []
+      # contexts: []
       withGeneratorTag: true
       next: false
       forceRequireNext: false
