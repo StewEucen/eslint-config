@@ -588,7 +588,7 @@ rules:
     - error
     - exemptedBy:
         - inheritdoc
-      contexts: []
+      # contexts: []
   jsdoc/require-yields:
     - error
     - exemptedBy: []
