@@ -587,7 +587,7 @@ rules:
       reportMissingReturnForUndefinedTypes: false
   jsdoc/require-returns-description:
     - error
-    - contexts: []
+    # - contexts: []
   jsdoc/require-returns-type:
     - error
     - contexts: []
