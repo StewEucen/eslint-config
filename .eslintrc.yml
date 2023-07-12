@@ -364,6 +364,11 @@ rules:
     - error
     - excludeTags:
       - example
+      - param
+      - returns
+      - type
+      - typedef
+      - yields
   jsdoc/check-line-alignment:
     - error
     - never
