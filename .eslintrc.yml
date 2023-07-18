@@ -515,7 +515,7 @@ rules:
       newlineBeforeCapsAssumesBadSentenceEnd: false
       tags: []
   jsdoc/require-example:
-    - error
+    - off # error
     - checkConstructors: true
       checkGetters: false
       checkSetters: false
