@@ -485,7 +485,7 @@ rules:
     - contexts: []
   jsdoc/no-multi-asterisks:
     - error
-    - allowWhitespace: false
+    - allowWhitespace: true # false
       preventAtEnd: true
       preventAtMiddleLines: true
   jsdoc/no-restricted-syntax:
