@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 const alpha = 1 + // ❌ before of `operator-linebreak`
   2
 

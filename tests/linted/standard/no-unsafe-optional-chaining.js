@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 /** @type {Object} */
 const target = {}
 const extraFunc = (...args) => {}

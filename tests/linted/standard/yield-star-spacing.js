@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function * alphaFunc () {
   yield* [1, 3, 5] // ❌ before:true of `yield-star-spacing`
   yield *[7, 9, 11] // ❌ after:true of `yield-star-spacing`

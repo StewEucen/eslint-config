@@ -1,6 +1,8 @@
 'use strict'
 const alpha = 1 // ❌ directive/* of `padding-line-between-statements`
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 const beta = 2
 { // ❌ */block of `padding-line-between-statements`
   // eslint-disable-next-line no-console

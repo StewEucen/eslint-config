@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function extraFunc () {
   const data = {} // ❌ ['data'] of `id-denylist`
   const list = [] // ❌ ['list'] of `id-denylist`
