@@ -1,5 +1,6 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
 
 class MatchDescription {
   /* eslint-disable jsdoc/informative-docs */

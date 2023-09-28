@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function alphaFunc (arg) { // ❌ max:8 of `complexity`
   if (arg === 0) {
     return 'zero' // first path

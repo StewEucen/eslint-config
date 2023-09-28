@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function alphaFunc (hashes, ...values) {
   return hashes
     .map((it, index) => it + emphasize(values[index]))
