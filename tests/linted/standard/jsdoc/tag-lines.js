@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 class TagLines {
   /**
    * There is empty line between `param` and `returns` (8: Expected no lines between tags).

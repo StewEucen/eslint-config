@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function alphaFunc () {} // ❌ `no-empty-function`
 
 const betaFunc = function () {} // ❌ `no-empty-function`

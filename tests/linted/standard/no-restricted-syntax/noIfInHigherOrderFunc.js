@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function everyFunc (array) {
   return array.every(it => {
     if (it < 100) { // ❌ { selector: 'CallExpression[callee.property.name=every] IfStatement' } of `no-restricted-syntax`
