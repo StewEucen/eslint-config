@@ -510,7 +510,7 @@ rules:
       exemptedBy:
         - inheritdoc
   jsdoc/require-description-complete-sentence:
-    - error
+    - off # error
     - abbreviations: []
       newlineBeforeCapsAssumesBadSentenceEnd: false
       tags: []
