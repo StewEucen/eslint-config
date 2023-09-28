@@ -2,7 +2,7 @@
 
 /* eslint-disable jsdoc/require-jsdoc */
 
-/** @type {Object} */
+/** @type {object} */
 const target = {}
 const extraFunc = (...args) => {}
 
