@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 const 漢字 = 'kanji' // ❌ ^[\$\w]+$ of `id-match`
 
 function 関数 () { // ❌ ^[\$\w]+$ of `id-match`

@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function alphaFunc() { // ❌ named:always of `space-before-blocks`
   // noop
 }

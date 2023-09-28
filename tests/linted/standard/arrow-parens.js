@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 const alphaFunc = (it) => {} // ❌ as-needed of `arrow-parens`
 const betaFunc = (it) => it // ❌ as-needed of `arrow-parens`
 const gammaFunc = (it) => { // ❌ as-needed of `arrow-parens`

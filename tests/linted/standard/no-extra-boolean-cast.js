@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 const bool = true
 
 // eslint-disable-next-line no-implicit-coercion
