@@ -442,11 +442,11 @@ rules:
         - the
   jsdoc/match-description:
     - error
-    - nonemptyTags: true
+    - mainDescription: true
+      matchDescription: ^\n?([A-Z`\d_][\s\S]*[.?!`]\s*)?$
+      message: 'JSDoc description does not satisfy the regex pattern.'
+      nonemptyTags: true
       tags: {}
-      # mainDescription: ^$
-      # matchDescription: ^$
-      # message: ''
   jsdoc/match-name:
     - error
     - match: []
