@@ -4,18 +4,18 @@
 
 class ClassMethodUseThis {
   /**
-   * Constructor.
+   * Definition of property.
    */
   constructor () {
     this.alpha = 1
   }
 
   /**
-   * Get value.
+   * Accessor of alpha.
    *
    * @returns {number} - Value.
    */
-  getValue () { // ❌ `class-methods-use-this`
+  getAlpha () { // ❌ `class-methods-use-this`
     return 999
   }
 }
