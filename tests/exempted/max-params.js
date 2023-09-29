@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function oneParameter (first) { // ✅ `max-params`
   return first
 }

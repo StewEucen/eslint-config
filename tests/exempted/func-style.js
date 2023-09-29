@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 const expressionFunc = function () {
   return 'I am expression function'
 }

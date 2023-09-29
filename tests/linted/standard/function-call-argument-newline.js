@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function functionCallArgumentNewline (first, second, third) {
   return first + second + third
 }

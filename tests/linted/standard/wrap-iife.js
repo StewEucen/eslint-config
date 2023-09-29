@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 // eslint-disable-next-line func-names
 const alpha = function () { // ❌ inside of `wrap-iife`
   return 1

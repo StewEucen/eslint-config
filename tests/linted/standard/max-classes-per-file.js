@@ -1,5 +1,7 @@
 'use strict' // ❌ max:1 of `max-classes-per-file`
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 class AlphaClass {
 
 }

@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function alphaFunc (target) {
   return target === 2 // ❌ `no-unneeded-ternary`
     ? true

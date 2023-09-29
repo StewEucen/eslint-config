@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 /** @type {*} */
 const foo = '100'
 
@@ -18,9 +20,9 @@ function extraFunc () {
 
   /**
    * @type {{
-   *   first: *,
+   *   first: number,
    * }}
-   **/
+   */
   const eta = {
     first: 1,
   }
