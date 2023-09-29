@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 class RequireDescriptionCompleteSentence {
   /* eslint-disable jsdoc/informative-docs */
   /**

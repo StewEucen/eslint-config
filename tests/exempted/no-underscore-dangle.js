@@ -1,5 +1,7 @@
 'use strict' // eslint-disable-line max-classes-per-file
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 const alpha_ = 1 // ✅ exempted `no-underscore-dangle`
 const _bate = 2 // ✅ exempted `no-underscore-dangle`
 

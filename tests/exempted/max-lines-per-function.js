@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function maxLinesPerFunctionFunc (it) {
   const array = [
     1000001,
