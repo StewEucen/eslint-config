@@ -2,8 +2,8 @@
 
 /* eslint-disable jsdoc/require-jsdoc */
 
-function functionCallArgumentNewline (alpha, beta, gamma) {
-  return alpha + beta + gamma
+function functionCallArgumentNewline (first, second, third) {
+  return first + second + third
 }
 
 const alpha = functionCallArgumentNewline(100, 200, 300) // ✅ consistent of `function-call-argument-newline`
