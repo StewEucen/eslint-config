@@ -5,6 +5,7 @@
 class TextEscaping {
   /**
    * This description has <div>HTML</div> and `markdown` text.
+   *
    * @param {{
    *   first: number,
    *   second: string,
