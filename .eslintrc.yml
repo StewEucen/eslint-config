@@ -634,8 +634,8 @@ rules:
   jsdoc/sort-tags:
     - error
     - alphabetizeExtras: false
-      linesBetween: 1
-      reportIntraTagGroupSpacing: true
+      linesBetween: 0 # 1 ## because uses jsdoc/tag-lines:never
+      reportIntraTagGroupSpacing: false # true
       reportTagGroupSpacing: true
       # tagSequence: default tag order
   jsdoc/tag-lines:
