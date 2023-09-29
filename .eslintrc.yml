@@ -458,11 +458,12 @@ rules:
         - '*'
       noFinalLineText: true
       noMultilineBlocks: false
-      noSingleLineBlocks: false
+      noSingleLineBlocks: true # false
       noZeroLineText: true
       singleLineTags:
         - lends
         - type
+        - inheritdoc
   jsdoc/no-bad-blocks:
     - error
     - ignore:
