@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function* alphaFunc () { // ❌ before:true of `generator-star-spacing`
   yield 'first'
   yield 'second'

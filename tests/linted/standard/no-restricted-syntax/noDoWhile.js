@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function noDoWhileFunc () {
   // eslint-disable-next-line no-restricted-syntax
   let index = 0

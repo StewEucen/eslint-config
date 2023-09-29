@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 function noForFunc () {
   // eslint-disable-next-line no-restricted-syntax
   let total = 0

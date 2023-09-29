@@ -364,6 +364,11 @@ rules:
     - error
     - excludeTags:
       - example
+      - param
+      - returns
+      - type
+      - typedef
+      - yields
   jsdoc/check-line-alignment:
     - error
     - never
@@ -437,27 +442,28 @@ rules:
         - the
   jsdoc/match-description:
     - error
-    - nonemptyTags: true
+    - mainDescription: true
+      matchDescription: ^\n?([A-Z`\d_][\s\S]*[.?!`]\s*)?$
+      message: 'JSDoc description must start with a capital letter.' # 'JSDoc description does not satisfy the regex pattern.'
+      nonemptyTags: true
       tags: {}
-      # mainDescription: ^$
-      # matchDescription: ^$
-      # message: ''
   jsdoc/match-name:
     - error
     - match: []
   jsdoc/multiline-blocks:
     - error
     - allowMultipleTags: true
+      # minimumLengthForMultiline: Infinity
+      multilineTags:
+        - '*'
       noFinalLineText: true
+      noMultilineBlocks: false
+      noSingleLineBlocks: true # false
       noZeroLineText: true
-      noSingleLineBlocks: false
       singleLineTags:
         - lends
         - type
-      noMultilineBlocks: false
-      multilineTags:
-        - '*'
-      # minimumLengthForMultiline: Infinity
+        - inheritdoc
   jsdoc/no-bad-blocks:
     - error
     - ignore:
@@ -480,7 +486,7 @@ rules:
     - contexts: []
   jsdoc/no-multi-asterisks:
     - error
-    - allowWhitespace: false
+    - allowWhitespace: true # false
       preventAtEnd: true
       preventAtMiddleLines: true
   jsdoc/no-restricted-syntax:
@@ -542,11 +548,18 @@ rules:
       checkSetters: true
       contexts: []
       enableFixer: true
-      exemptEmptyConstructors: true
+      exemptEmptyConstructors: false # true
       exemptEmptyFunctions: false
       fixerMessage: ''
-      publicOnly: false
       # minLineCount: undefined
+      publicOnly: false
+      require:
+        ArrowFunctionExpression: false
+        ClassDeclaration: true # false
+        ClassExpression: false
+        FunctionDeclaration: true
+        FunctionExpression: false
+        MethodDefinition: true # false
   jsdoc/require-param:
     - error
     - autoIncrementBase: 0
@@ -621,16 +634,16 @@ rules:
   jsdoc/sort-tags:
     - error
     - alphabetizeExtras: false
-      linesBetween: 1
+      linesBetween: 0 # 1 ## because uses jsdoc/tag-lines:never
+      reportIntraTagGroupSpacing: false # true
       reportTagGroupSpacing: true
-      reportIntraTagGroupSpacing: true
       # tagSequence: default tag order
   jsdoc/tag-lines:
     - error
     - never
     - count: 1
+      startLines: 1 # 0
       endLines: 0
-      startLines: 0
       applyToEndTag: true
       tags: {}
   jsdoc/text-escaping:

@@ -430,27 +430,27 @@ rules:
         - the
   jsdoc/match-description:
     - error
-    - nonemptyTags: true
+    - mainDescription: true
+      matchDescription: ^\n?([A-Z`\d_][\s\S]*[.?!`]\s*)?$
+      message: 'JSDoc description does not satisfy the regex pattern.'
+      nonemptyTags: true
       tags: {}
-      # mainDescription: null
-      # matchDescription: null
-      # message: null
   jsdoc/match-name:
     - error
     - match: []
   jsdoc/multiline-blocks:
     - error
     - allowMultipleTags: true
+      # minimumLengthForMultiline: Infinity
+      multilineTags:
+        - '*'
       noFinalLineText: true
-      noZeroLineText: true
+      noMultilineBlocks: false
       noSingleLineBlocks: false
+      noZeroLineText: true
       singleLineTags:
         - lends
         - type
-      noMultilineBlocks: false
-      multilineTags:
-        - '*'
-      # minimumLengthForMultiline: Infinity
   jsdoc/no-bad-blocks:
     - error
     - ignore:
@@ -537,8 +537,15 @@ rules:
       exemptEmptyConstructors: true
       exemptEmptyFunctions: false
       fixerMessage: ''
-      publicOnly: false
       # minLineCount: undefined
+      publicOnly: false
+      require:
+        ArrowFunctionExpression: false
+        ClassDeclaration: false
+        ClassExpression: false
+        FunctionDeclaration: true
+        FunctionExpression: false
+        MethodDefinition: false
   jsdoc/require-param:
     - error
     - autoIncrementBase: 0
@@ -614,16 +621,16 @@ rules:
     - error
     - alphabetizeExtras: false
       linesBetween: 1
-      reportTagGroupSpacing: true
       reportIntraTagGroupSpacing: true
+      reportTagGroupSpacing: true
       # tagSequence: default tag order
   jsdoc/tag-lines:
     - error
     - never
     - count: 1
-      applyToEndTag: true
-      endLines: 0
       startLines: 0
+      endLines: 0
+      applyToEndTag: true
       tags: {}
   jsdoc/text-escaping:
     - error
