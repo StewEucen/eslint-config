@@ -1,16 +1,19 @@
 'use strict'
 
 /* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable jsdoc/no-blank-blocks */
 
 class RequireDescription {
-  // eslint-disable-next-line jsdoc/no-blank-blocks
-  /** */ // ✅ `jsdoc/require-description`
+  /**
+   */ // ✅ `jsdoc/require-description`
   constructor () {
     this.third = true
   }
 
-  // eslint-disable-next-line jsdoc/no-blank-blocks, jsdoc/require-param
-  /** */ // ✅ `jsdoc/require-description`
+  /**
+   * @param {object} params - Expanding params.
+   * @returns {*} - Any.
+   */ // ✅ `jsdoc/require-description`
   method (params) {
     const extended = {
       ...params,
@@ -23,8 +26,8 @@ class RequireDescription {
   }
 }
 
-// eslint-disable-next-line jsdoc/no-blank-blocks
-/** */ // ✅ `jsdoc/require-description`
+/**
+ */ // ✅ `jsdoc/require-description`
 function alphaMethod () {
   // noop
 }
