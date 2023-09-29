@@ -12,6 +12,7 @@ const array = [
   5,
 ]
 
+/* eslint-disable-next-line no-restricted-syntax */
 for (const key in array) {
   doSomething(key) // ✅ exempted `guard-for-in`
 }
