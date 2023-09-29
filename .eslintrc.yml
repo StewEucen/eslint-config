@@ -635,8 +635,8 @@ rules:
     - error
     - alphabetizeExtras: false
       linesBetween: 1
-      reportTagGroupSpacing: true
       reportIntraTagGroupSpacing: true
+      reportTagGroupSpacing: true
       # tagSequence: default tag order
   jsdoc/tag-lines:
     - error
