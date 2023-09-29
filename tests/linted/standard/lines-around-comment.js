@@ -3,7 +3,9 @@
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alpha = 'alpha'
-/** // ❌ beforeBlockComment:true of `lines-around-comment`
+/**
+ * ❌ beforeBlockComment:true of `lines-around-comment`
+ *
  * @type {string}
  */
 const beta = 'beta'
