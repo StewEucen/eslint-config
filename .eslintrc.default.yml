@@ -493,7 +493,14 @@ rules:
     - tags: {}
   jsdoc/require-description:
     - error
-    - descriptionStyle: body
+    - checkConstructors: true
+      checkGetters: true
+      checkSetters: true
+      # When use contexts, this rule will not work.
+      # contexts: []
+      descriptionStyle: body
+      exemptedBy:
+        - inheritdoc
   jsdoc/require-description-complete-sentence:
     - error
     - abbreviations: []
@@ -620,6 +627,7 @@ rules:
       tags: {}
   jsdoc/text-escaping:
     - error
+    # Must include either `escapeHTML` or `escapeMarkdown` (or both).
     - escapeHTML: false
       escapeMarkdown: false
   jsdoc/valid-types:
