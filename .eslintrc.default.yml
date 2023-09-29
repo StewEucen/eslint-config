@@ -441,16 +441,16 @@ rules:
   jsdoc/multiline-blocks:
     - error
     - allowMultipleTags: true
+      # minimumLengthForMultiline: Infinity
+      multilineTags:
+        - '*'
       noFinalLineText: true
-      noZeroLineText: true
+      noMultilineBlocks: false
       noSingleLineBlocks: false
+      noZeroLineText: true
       singleLineTags:
         - lends
         - type
-      noMultilineBlocks: false
-      multilineTags:
-        - '*'
-      # minimumLengthForMultiline: Infinity
   jsdoc/no-bad-blocks:
     - error
     - ignore:
