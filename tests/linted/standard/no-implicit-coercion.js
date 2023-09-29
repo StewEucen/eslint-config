@@ -20,9 +20,9 @@ function extraFunc () {
 
   /**
    * @type {{
-   *   first: *,
+   *   first: number,
    * }}
-   **/
+   */
   const eta = {
     first: 1,
   }
