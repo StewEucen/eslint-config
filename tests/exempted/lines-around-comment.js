@@ -1,9 +1,11 @@
 'use strict'
 
+/* eslint-disable jsdoc/require-jsdoc */
+
 const alpha = 'alpha'
 
-/** // ✅ beforeBlockComment:true of `lines-around-comment`
- * @type {string}
+/**
+ * @type {string} - ✅ beforeBlockComment:true of `lines-around-comment`
  */
 const beta = 'beta'
 

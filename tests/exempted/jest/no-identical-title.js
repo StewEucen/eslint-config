@@ -7,7 +7,6 @@ describe('Target', () => {
   })
 })
 
-
 describe('Target', () => { // ✅ exempted `jest/no-identical-title`
   test('to be same', () => {
     expect(true)
