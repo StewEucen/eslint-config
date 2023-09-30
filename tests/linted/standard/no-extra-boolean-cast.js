@@ -27,40 +27,40 @@ function etaFunc (it) {
 }
 
 if (!!bool) { // ❌ `no-extra-boolean-cast`
-  // no-op
+  // noop
 }
 
 if (Boolean(bool)) { // ❌ `no-extra-boolean-cast`
-  // no-op
+  // noop
 }
 
 while (!!bool) { // ❌ `no-extra-boolean-cast`
-  // no-op
+  // noop
 }
 
 do {
-  // no-op
+  // noop
 } while (Boolean(bool)) // ❌ `no-extra-boolean-cast`
 
 for (; !!bool;) { // ❌ `no-extra-boolean-cast`
-  // no-op
+  // noop
 }
 
 // in logical operators
 
 if (!!alpha || beta) { // ❌ enforceForLogicalOperands:true of `no-extra-boolean-cast`
-  // no-op
+  // noop
 }
 
 while (!!alpha && beta) { // ❌ enforceForLogicalOperands:true of `no-extra-boolean-cast`
-  // no-op
+  // noop
 }
 
 if (
   (!!alpha || beta) // ❌ enforceForLogicalOperands:true of `no-extra-boolean-cast`
   && gamma
 ) {
-  // no-op
+  // noop
 }
 
 const theta = alpha && Boolean(bool) // ❌ `no-extra-boolean-cast`

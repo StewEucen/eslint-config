@@ -13,6 +13,7 @@ const messageHash = {
   noIfInHigherOrderFunc: 'Never use if in higher-order function',
   noLet: 'Never use let',
   noNestedIf: 'Never use nested-if including else-if',
+  noSuffix: 'Not allowed to use "Data", "Info", "Item", "List", and "Manager" as suffix of identifier.',
   noSwitch: 'Never use switch',
   noWhile: 'Never use while',
 }
