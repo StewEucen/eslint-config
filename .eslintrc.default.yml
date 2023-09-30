@@ -9,7 +9,6 @@ extends:
   - eslint:all
 plugins:
   - jest
-  - jsdoc
 ignorePatterns:
   - playground/
 parserOptions:
@@ -18,9 +17,9 @@ rules:
   # When adding a new rule, please add a empty inline comment to changed options.
   indent:
     - error
-    - 2 # 4
+    - 4
     - ignoredNodes: []
-      SwitchCase: 1 # 0
+      SwitchCase: 0
       VariableDeclarator: 1
       outerIIFEBody: 1
       MemberExpression: 1
@@ -42,13 +41,13 @@ rules:
       ignoreComments: false
   quotes:
     - error
-    - single # double
+    - double
     - avoidEscape: true
       allowTemplateLiterals: false
   semi:
     - error
-    - never # always
-    - beforeStatementContinuationChars: never # any
+    - always
+    - beforeStatementContinuationChars: any
   accessor-pairs:
     - error
     - setWithoutGet: true
@@ -56,8 +55,8 @@ rules:
       enforceForClassMembers: true
   array-bracket-newline:
     - error
-    - consistent # multiline: true
-                 # minItems: null
+    - multiline: true
+      minItems: null
   array-bracket-spacing:
     - error
     - never
@@ -67,11 +66,11 @@ rules:
   array-callback-return:
     - error
     - allowImplicit: false
-      checkForEach: true # false
+      checkForEach: false
   array-element-newline:
     - error
-    - consistent # always
-    - multiline: true # false
+    - always
+    - multiline: false
       minItems: null
   arrow-body-style:
     - error
@@ -79,7 +78,7 @@ rules:
     - requireReturnForObjectLiteral: false
   arrow-parens:
     - error
-    - as-needed # always
+    - always
     - requireForBlockBody: false
   arrow-spacing:
     - error
@@ -102,7 +101,7 @@ rules:
       ignoreGlobals: false
       allow: []
   capitalized-comments:
-    - off # error
+    - error
     - always
     - ignoreInlineComments: false
       ignoreConsecutiveComments: false
@@ -113,10 +112,10 @@ rules:
       exceptMethods: []
   comma-dangle:
     - error
-    - arrays: always-multiline # never
-      objects: always-multiline # never
-      imports: always-multiline # never
-      exports: always-multiline # never
+    - arrays: never
+      objects: never
+      imports: never
+      exports: never
       functions: never
   comma-spacing:
     - error
@@ -127,14 +126,14 @@ rules:
     - last
   complexity:
     - error
-    - max: 8 # 20
+    - max: 20
   computed-property-spacing:
     - error
     - never
     - enforceForClassMembers: true
   consistent-return:
     - error
-    - treatUndefinedAsUnspecified: true # false
+    - treatUndefinedAsUnspecified: false
   consistent-this:
     - error
     - that
@@ -151,9 +150,9 @@ rules:
     - error
   dot-location:
     - error
-    - property # object
+    - object
   dot-notation:
-    - off # error
+    - error
     - allowKeywords: true
       allowPattern: ^$
   eol-last:
@@ -163,7 +162,7 @@ rules:
     - error
     - always
   for-direction:
-    - off # error
+    - error
   func-call-spacing:
     - error
     - never
@@ -172,35 +171,31 @@ rules:
     - always
   func-names:
     - error
-    - as-needed # always
+    - always
   func-style:
-    - off # error
+    - error
     - expression
     - allowArrowFunctions: false
   function-call-argument-newline:
     - error
-    - consistent # always
+    - always
   function-paren-newline:
     - error
-    - consistent # multiline
+    - multiline
   generator-star-spacing:
     - error
     - before: true
-      after: true # false
+      after: false
   getter-return:
     - error
     - allowImplicit: false
   grouped-accessor-pairs:
     - error
-    - getBeforeSet # anyOrder
+    - anyOrder
   guard-for-in:
-    - off # error
+    - error
   id-denylist:
     - error
-    - callback
-    - data
-    - item
-    - list
     # - callback
     # - data
     # - item
@@ -214,13 +209,13 @@ rules:
       exceptionPatterns: []
   id-match:
     - error
-    - ^[\$\w]+$ # none
-    - properties: true # false
-      classFields: true # false
-      onlyDeclarations: false
-      ignoreDestructuring: false
+    # - ^$
+    # - properties: false
+    #   classFields: false
+    #   onlyDeclarations: false
+    #   ignoreDestructuring: false
   implicit-arrow-linebreak:
-    - off # error
+    - error
     - beside
   init-declarations:
     - error
@@ -228,7 +223,7 @@ rules:
   jest/consistent-test-it:
     - error
     - fn: test
-      withinDescribe: test # it
+      withinDescribe: it
   jest/expect-expect:
     - error
     - assertFunctionNames:
@@ -261,10 +256,10 @@ rules:
   jest/no-focused-tests:
     - error
   jest/no-hooks:
-    - off # error
+    - error
     # - allow: [] # ['before', 'beforeEach', 'after', 'afterEach']
   jest/no-identical-title:
-    - off # error
+    - error
   jest/no-interpolation-in-snapshots:
     - error
   jest/no-jasmine-globals:
@@ -299,7 +294,7 @@ rules:
   jest/prefer-equality-matcher:
     - error
   jest/prefer-expect-assertions:
-    - off # error
+    - error
   jest/prefer-expect-resolves:
     - error
   jest/prefer-hooks-in-order:
@@ -310,7 +305,7 @@ rules:
     - error
     - ignore: []
       allowedPrefixes: []
-      ignoreTopLevelDescribe: true # false
+      ignoreTopLevelDescribe: false
   jest/prefer-mock-promise-shorthand:
     - error
   jest/prefer-snapshot-hint:
@@ -353,9 +348,7 @@ rules:
     - ignoreTypeOfDescribeName: false
       disallowedWords: []
       mustMatch: {} # { describe: [], it: [], test: [] }
-      mustNotMatch: # {}
-        - \.$
-        - Titles should not end with a full-stop (.)
+      mustNotMatch: {} # { describe: [], it: [], test: [] }
   jsdoc/check-access:
     - error
   jsdoc/check-alignment:
@@ -364,11 +357,6 @@ rules:
     - error
     - excludeTags:
       - example
-      - param
-      - returns
-      - type
-      - typedef
-      - yields
   jsdoc/check-line-alignment:
     - error
     - never
@@ -444,7 +432,7 @@ rules:
     - error
     - mainDescription: true
       matchDescription: ^\n?([A-Z`\d_][\s\S]*[.?!`]\s*)?$
-      message: 'JSDoc description must start with a capital letter.' # 'JSDoc description does not satisfy the regex pattern.'
+      message: 'JSDoc description does not satisfy the regex pattern.'
       nonemptyTags: true
       tags: {}
   jsdoc/match-name:
@@ -458,12 +446,11 @@ rules:
         - '*'
       noFinalLineText: true
       noMultilineBlocks: false
-      noSingleLineBlocks: true # false
+      noSingleLineBlocks: false
       noZeroLineText: true
       singleLineTags:
         - lends
         - type
-        - inheritdoc
   jsdoc/no-bad-blocks:
     - error
     - ignore:
@@ -486,7 +473,7 @@ rules:
     - contexts: []
   jsdoc/no-multi-asterisks:
     - error
-    - allowWhitespace: true # false
+    - allowWhitespace: false
       preventAtEnd: true
       preventAtMiddleLines: true
   jsdoc/no-restricted-syntax:
@@ -505,8 +492,7 @@ rules:
     - always
     - tags: {}
   jsdoc/require-description:
-    # SInce exists `jsdoc/no-blank-blocks`, so this rule is unnecessary.
-    - off # error
+    - error
     - checkConstructors: true
       checkGetters: true
       checkSetters: true
@@ -516,12 +502,12 @@ rules:
       exemptedBy:
         - inheritdoc
   jsdoc/require-description-complete-sentence:
-    - off # error
+    - error
     - abbreviations: []
       newlineBeforeCapsAssumesBadSentenceEnd: false
       tags: []
   jsdoc/require-example:
-    - off # error
+    - error
     - checkConstructors: true
       checkGetters: false
       checkSetters: false
@@ -531,7 +517,7 @@ rules:
         - inheritdoc
       exemptNoArguments: false
   jsdoc/require-file-overview:
-    - off # error
+    - error
     - tags:
         file:
           initialCommentsOnly: true
@@ -548,18 +534,18 @@ rules:
       checkSetters: true
       contexts: []
       enableFixer: true
-      exemptEmptyConstructors: false # true
+      exemptEmptyConstructors: true
       exemptEmptyFunctions: false
       fixerMessage: ''
       # minLineCount: undefined
       publicOnly: false
       require:
         ArrowFunctionExpression: false
-        ClassDeclaration: true # false
+        ClassDeclaration: false
         ClassExpression: false
         FunctionDeclaration: true
         FunctionExpression: false
-        MethodDefinition: true # false
+        MethodDefinition: false
   jsdoc/require-param:
     - error
     - autoIncrementBase: 0
@@ -634,20 +620,20 @@ rules:
   jsdoc/sort-tags:
     - error
     - alphabetizeExtras: false
-      linesBetween: 0 # 1 ## because uses jsdoc/tag-lines:never
-      reportIntraTagGroupSpacing: false # true
+      linesBetween: 1
+      reportIntraTagGroupSpacing: true
       reportTagGroupSpacing: true
       # tagSequence: default tag order
   jsdoc/tag-lines:
     - error
     - never
     - count: 1
-      startLines: 1 # 0
+      startLines: 0
       endLines: 0
       applyToEndTag: true
       tags: {}
   jsdoc/text-escaping:
-    - off # error
+    - error
     # Must include either `escapeHTML` or `escapeMarkdown` (or both).
     - escapeHTML: false
       escapeMarkdown: false
@@ -667,7 +653,7 @@ rules:
     - before: true
       after: true
   line-comment-position:
-    - off # error
+    - error
     - position: above
       applyDefaultIgnorePatterns: true
       ignorePattern: ^$
@@ -680,14 +666,14 @@ rules:
       afterBlockComment: false
       beforeLineComment: false
       afterLineComment: false
-      allowArrayStart: true # false
-      allowArrayEnd: false
-      allowBlockStart: true # false
+      allowBlockStart: false
       allowBlockEnd: false
-      allowClassStart: true # false
+      allowClassStart: false
       allowClassEnd: false
-      allowObjectStart: true # false
+      allowObjectStart: false
       allowObjectEnd: false
+      allowArrayStart: false
+      allowArrayEnd: false
       ignorePattern: ''
       applyDefaultIgnorePatterns: true
       # afterHashbangComment: false
@@ -702,21 +688,21 @@ rules:
   max-classes-per-file:
     - error
     - max: 1
-      ignoreExpressions: true # false
+      ignoreExpressions: false
   max-depth:
     - error
     - 4
   max-len:
-    - off # error
+    - error
     - code: 80
       tabWidth: 4
   max-lines:
-    - off # error
+    - error
     - max: 300
       skipBlankLines: false
       skipComments: false
   max-lines-per-function:
-    - off # error
+    - error
     - max: 50
       skipBlankLines: false
       skipComments: false
@@ -726,16 +712,15 @@ rules:
     - 10
   max-params:
     - error
-    # for new Proxy({}, { set (target, property, value, receiver) {} })
-    - 4 # 3
+    - 3
   max-statements:
-    - off # error
+    - error
     - 10
   max-statements-per-line:
     - error
     - max: 1
   multiline-comment-style:
-    - off # error
+    - error
     - starred-block
   multiline-ternary:
     - error
@@ -762,7 +747,7 @@ rules:
   no-await-in-loop:
     - error
   no-bitwise:
-    - off # error
+    - error
     - allow: []
       int32Hint: false
   no-caller:
@@ -793,7 +778,7 @@ rules:
   no-constructor-return:
     - error
   no-continue:
-    - off # error
+    - error
   no-control-regex:
     - error
   no-debugger:
@@ -825,8 +810,7 @@ rules:
     - error
   no-empty-function:
     - error
-    - allow: # []
-      - arrowFunctions
+    - allow: []
   no-empty-pattern:
     - error
   no-eq-null:
@@ -841,11 +825,11 @@ rules:
     - error
   no-extra-boolean-cast:
     - error
-    - enforceForLogicalOperands: true # false
+    - enforceForLogicalOperands: false
   no-extra-label:
     - error
   no-extra-parens:
-    - off # error
+    - error
     - all
     - conditionalAssign: false
       returnAssign: false
@@ -874,7 +858,7 @@ rules:
     - boolean: true
       number: true
       string: true
-      disallowTemplateShorthand: true # false
+      disallowTemplateShorthand: false
       allow: []
   no-implicit-globals:
     - error
@@ -884,7 +868,7 @@ rules:
   no-import-assign:
     - error
   no-inline-comments:
-    - off # error
+    - error
     - ignorePattern: ^$
   no-inner-declarations:
     - error
@@ -899,7 +883,7 @@ rules:
     - error
     - skipComments: false
       skipRegExps: false
-      skipStrings: false # true
+      skipStrings: true
       skipTemplates: false
       # skipJSXText: false
   no-iterator:
@@ -911,7 +895,7 @@ rules:
     - allowLoop: false
       allowSwitch: false
   no-lone-blocks:
-    - off # error
+    - error
   no-lonely-if:
     - error
   no-loop-func:
@@ -919,7 +903,7 @@ rules:
   no-loss-of-precision:
     - error
   no-magic-numbers:
-    - off # error
+    - error
     - detectObjects: false
       enforceConst: false
       ignore: []
@@ -951,9 +935,9 @@ rules:
     - error
   no-multiple-empty-lines:
     - error
-    - max: 1 # 2
-      maxBOF: 0 # 2
-      maxEOF: 0 # 2
+    - max: 2
+      maxBOF: 2
+      maxEOF: 2
   no-negated-condition:
     - error
   no-nested-ternary:
@@ -978,7 +962,7 @@ rules:
     - error
   no-param-reassign:
     - error
-    - props: true # false
+    - props: false
       # ignorePropertyModificationsFor: []
       # ignorePropertyModificationsForRegex: []
   no-plusplus:
@@ -1011,7 +995,7 @@ rules:
     - error
     # - has some options
   no-restricted-properties:
-    - error # with no options
+    - error
     # - object: receiverName
     #   property: propertyName
     #   message: message
@@ -1020,26 +1004,6 @@ rules:
     #   message: message
   no-restricted-syntax:
     - error # with no options
-    - selector: CallExpression[callee.property.name=forEach]
-      message: Never use forEach method
-    - selector: CallExpression[callee.type=MemberExpression][callee.property.name=/^(every|filter|find|findIndex|findLast|findLastIndex|flatMap|forEach|group|groupToMap|map|reduce|reduceRight|some)$/] IfStatement
-      message: Never use if in higher-order function
-    - selector: DoWhileStatement
-      message: Never use do-while
-    - selector: ForInStatement
-      message: Never use for-in
-    - selector: ForOfStatement
-      message: Never use for-of
-    - selector: ForStatement
-      message: Never use for
-    - selector: IfStatement IfStatement
-      message: Never use nested-if including else-if
-    - selector: SwitchStatement
-      message: Never use switch
-    - selector: VariableDeclaration[kind=let]
-      message: Never use let
-    - selector: WhileStatement
-      message: Never use while
   no-return-assign:
     - error
     - except-parens
@@ -1059,13 +1023,10 @@ rules:
     - error
   no-shadow:
     - error
-    - builtinGlobals: true # false
-      hoist: all # functions
-      ignoreOnInitialization: true # false
-      allow: # []
-        - it
-        - name
-        - target
+    - builtinGlobals: false
+      hoist: functions
+      ignoreOnInitialization: false
+      allow: []
   no-shadow-restricted-names:
     - error
   no-sparse-arrays:
@@ -1076,7 +1037,7 @@ rules:
   no-template-curly-in-string:
     - error
   no-ternary:
-    - off # error
+    - error
   no-this-before-super:
     - error
   no-throw-literal:
@@ -1093,7 +1054,7 @@ rules:
   no-undefined:
     - error
   no-underscore-dangle:
-    - off # error
+    - error
     - allow: []
       allowAfterThis: false
       allowAfterSuper: false
@@ -1109,7 +1070,7 @@ rules:
     - error
   no-unneeded-ternary:
     - error
-    - defaultAssignment: false # true
+    - defaultAssignment: true
   no-unreachable:
     - error
   no-unreachable-loop:
@@ -1121,7 +1082,7 @@ rules:
     - enforceForOrderingRelations: false
   no-unsafe-optional-chaining:
     - error
-    - disallowArithmeticOperators: true # false
+    - disallowArithmeticOperators: false
   no-unused-expressions:
     - error
     - allowShortCircuit: false
@@ -1136,15 +1097,15 @@ rules:
     - error
     - vars: all
       # varsIgnorePattern: none
-      args: none # after-used
+      args: after-used
       # argsIgnorePattern: none
       caughtErrors: none
       # caughtErrorsIgnorePattern: none
-      ignoreRestSiblings: true # false
-      destructuredArrayIgnorePattern: ^_ # none
+      ignoreRestSiblings: false
+      # destructuredArrayIgnorePattern: none
   no-use-before-define:
     - error
-    - functions: false # true
+    - functions: true
       classes: true
       variables: true
       allowNamedExports: false
@@ -1211,22 +1172,22 @@ rules:
         # minProperties: Infinity
   object-curly-spacing:
     - error
-    - always # never
-    - arraysInObjects: true # false
-      objectsInObjects: true # false
+    - never
+    - arraysInObjects: false
+      objectsInObjects: false
   object-property-newline:
     - error
-    - allowAllPropertiesOnSameLine: true # false
+    - allowAllPropertiesOnSameLine: false
   object-shorthand:
     - error
     - always
     - avoidQuotes: false
       ignoreConstructors: false
-      avoidExplicitReturnArrows: true # false
+      avoidExplicitReturnArrows: false
       # methodsIgnorePattern: ^$
   one-var:
     - error
-    - never # always
+    - always
   one-var-declaration-per-line:
     - error
     - initializations
@@ -1235,42 +1196,17 @@ rules:
     - always
   operator-linebreak:
     - error
-    - before # after
-    - overrides: # replace all from default
-        =: after
-        +=: after
-        -=: after
-        '*=': after
-        /=: after
-        '%=': after
-        '**=': after
-        <<=: after
-        '>>=': after
-        '>>>=': after
-        '&=': after
-        '|=': after
-        ^=: after
+    - after
+    - overrides:
+        ?: before
+        :: before
   padded-blocks:
     - error
-    - never # always
+    - always
     - allowSingleLineBlocks: false
   padding-line-between-statements:
     - error
     # - none
-    - blankLine: always
-      prev: directive
-      next: "*"
-    - blankLine: always
-      prev: "*"
-      next:
-        - block
-        - break
-        - class
-        - continue
-        - function
-        - return
-        - throw
-        - try
   prefer-arrow-callback:
     - error
     - allowNamedFunctions: false
@@ -1287,7 +1223,7 @@ rules:
   prefer-exponentiation-operator:
     - error
   prefer-named-capture-group:
-    - off # error
+    - error
   prefer-numeric-literals:
     - error
   prefer-object-has-own:
@@ -1308,13 +1244,13 @@ rules:
     - error
   quote-props:
     - error
-    - as-needed # always
+    - always
     - keywords: false
       unnecessary: true
       numbers: false
   radix:
     - error
-    - as-needed # always
+    - always
   require-atomic-updates:
     - error
     - allowProperties: false
@@ -1333,7 +1269,7 @@ rules:
       after: true
   semi-style:
     - error
-    - first # last
+    - last
   sort-imports:
     - error
     - ignoreCase: false
@@ -1346,14 +1282,14 @@ rules:
         - single
       allowSeparatedGroups: false
   sort-keys:
-    - off # error
+    - error
     - asc
     - caseSensitive: true
       minKeys: 2
       natural: false
       allowLineSeparatedGroups: false
   sort-vars:
-    - off # error
+    - error
     - ignoreCase: false
   space-before-blocks:
     - error
@@ -1379,18 +1315,8 @@ rules:
   spaced-comment:
     - error
     - always
-    - line:
-        exceptions:
-          - /
-          - '-'
-          - =
-          - '+'
-      block:
-        exceptions:
-          - '*'
-        balanced: true
-    # - markers: []
-    #   exceptions: []
+    - markers: []
+      exceptions: []
   strict:
     - error
     - safe
@@ -1405,14 +1331,14 @@ rules:
     - never
   template-tag-spacing:
     - error
-    - always # never
+    - never
   unicode-bom:
     - error
     - never
   use-isnan:
     - error
     - enforceForSwitchCase: true
-      enforceForIndexOf: true # false
+      enforceForIndexOf: false
   valid-typeof:
     - error
     - requireStringLiterals: false
@@ -1420,13 +1346,13 @@ rules:
     - error
   wrap-iife:
     - error
-    - inside # outside
-    - functionPrototypeMethods: true # false
+    - outside
+    - functionPrototypeMethods: false
   wrap-regex:
-    - off # error
+    - error
   yield-star-spacing:
     - error
-    - before: true # false
+    - before: false
       after: true
   yoda:
     - error

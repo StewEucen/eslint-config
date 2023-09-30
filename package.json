@@ -4,7 +4,9 @@
   "description": "ESLint config by Stew Eucen.",
   "main": ".eslintrc.yml",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "l": "npm run lint",
+    "lint": "npx eslint --ignore-pattern /tests/linted/ .",
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,11 @@
   },
   "homepage": "https://github.com/StewEucen/eslint-config#readme",
   "devDependencies": {
-    "eslint": "^8.24.0"
+    "@openreachtech/eslint-inspector": "^1.0.2",
+    "@types/jest": "^29.1.1",
+    "eslint": "^8.24.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-jsdoc": "^46.4.3",
+    "jest": "^29.1.2"
   }
 }
