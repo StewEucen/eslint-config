@@ -1,6 +1,7 @@
 'use strict'
 
 /* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable no-restricted-syntax */
 
 function alphaFunc (it) {
   it = 'alpha' // ❌ `no-param-reassign`
@@ -13,7 +14,6 @@ function betaFunc (it) {
 function gammaFunc (it) {
   const array = [1, 3, 5]
 
-  // eslint-disable-next-line no-restricted-syntax
   for (it in array) { // ❌ `no-param-reassign`
     // noop
   }
@@ -22,7 +22,6 @@ function gammaFunc (it) {
 function deltaFunc (it) {
   const array = [1, 3, 5]
 
-  // eslint-disable-next-line no-restricted-syntax
   for (it of array) { // ❌ `no-param-reassign`
     // noop
   }
@@ -43,7 +42,6 @@ function etaFunc (it) {
 function thetaFunc (it) {
   const array = [1, 3, 5]
 
-  // eslint-disable-next-line no-restricted-syntax
   for (it.first in array) { // ❌ `no-param-reassign`
     // noop
   }
@@ -52,7 +50,6 @@ function thetaFunc (it) {
 function iotaFunc (it) {
   const array = [1, 3, 5]
 
-  // eslint-disable-next-line no-restricted-syntax
   for (it.first of array) { // ❌ `no-param-reassign`
     // noop
   }
