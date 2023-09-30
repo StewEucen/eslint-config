@@ -96,27 +96,27 @@ const operand = 1
 
 const phiValues = [
   // eslint-disable-next-line no-implicit-coercion
-  +target?.first, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  -target?.first, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  +target?.first, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  -target?.first, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
 
-  target?.first + operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  target?.first - operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  target?.first / operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  target?.first * operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  target?.first % operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  target?.first ** operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  target?.first + operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  target?.first - operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  target?.first / operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  target?.first * operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  target?.first % operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  target?.first ** operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
 ]
 
 function chiFunc () {
   // eslint-disable-next-line no-restricted-syntax
   let chi = 0
 
-  chi += target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  chi -= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  chi /= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  chi *= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  chi %= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  chi **= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi += target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  chi -= target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  chi /= target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  chi *= target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  chi %= target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  chi **= target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
 
   return chi
 }
@@ -125,13 +125,13 @@ async function psiFunc () {
   // eslint-disable-next-line no-restricted-syntax
   let base = 0
 
-  base += await target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  base += await target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
 
   return [
     base,
     // eslint-disable-next-line no-implicit-coercion
-    +await target?.first, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-    -await target?.first + operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+    +await target?.first, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+    -await target?.first + operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
   ]
 }
 
