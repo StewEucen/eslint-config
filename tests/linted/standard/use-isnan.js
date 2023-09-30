@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable no-restricted-syntax */
+
 const alpha = 0
 
 // @ts-expect-error
@@ -20,7 +22,6 @@ if (alpha !== Number.NaN) { // ❌ `use-isnan`
   // ...
 }
 
-// eslint-disable-next-line no-restricted-syntax
 switch (alpha) {
   case NaN: // ❌ use-enforceForSwitchCase:true of `use-isnan`
     break
@@ -31,7 +32,6 @@ switch (alpha) {
     break
 }
 
-// eslint-disable-next-line no-restricted-syntax
 switch (NaN) { // ❌ use-enforceForSwitchCase:true of `use-isnan`
   case 1:
     break
@@ -41,7 +41,6 @@ switch (NaN) { // ❌ use-enforceForSwitchCase:true of `use-isnan`
     break
 }
 
-// eslint-disable-next-line no-restricted-syntax
 switch (alpha) {
   case Number.NaN: // ❌ use-enforceForSwitchCase:true of `use-isnan`
     break
@@ -52,7 +51,6 @@ switch (alpha) {
     break
 }
 
-// eslint-disable-next-line no-restricted-syntax
 switch (Number.NaN) { // ❌ use-enforceForSwitchCase:true of `use-isnan`
   case 1:
     break

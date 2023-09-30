@@ -4,7 +4,7 @@
 
 class TextEscaping {
   /**
-   * This description has <div>HTML</div> and `markdown` text.
+   * This description has <div>HTML</div> and `markdown` text. // ✅ exempted `jsdoc/text-escaping`
    *
    * @param {{
    *   first: number,

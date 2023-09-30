@@ -9,7 +9,7 @@ const alpha = {
 }
 
 function betaFunc () {
-  return alpha.
+  return alpha. // ❌ `dot-location` - Expected dot to be on same line as object.
     method()
 }
 

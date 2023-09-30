@@ -1,6 +1,8 @@
 'use strict'
 
 /* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable no-implicit-coercion */
+/* eslint-disable no-restricted-syntax */
 
 /** @type {object} */
 const target = {}
@@ -49,7 +51,6 @@ const xi = 1 in target?.first // ❌ `no-unsafe-optional-chaining`
 const piInstance = {}
 const pi = piInstance instanceof target?.first // ❌ `no-unsafe-optional-chaining`
 
-// eslint-disable-next-line no-restricted-syntax
 for (const it of target?.first) { // ❌ `no-unsafe-optional-chaining`
   if (it) {
     throw new Error('(>_<)')
@@ -95,43 +96,40 @@ async function upsilonFunc () {
 const operand = 1
 
 const phiValues = [
-  // eslint-disable-next-line no-implicit-coercion
-  +target?.first, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  -target?.first, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  +target?.first, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  -target?.first, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
 
-  target?.first + operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  target?.first - operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  target?.first / operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  target?.first * operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  target?.first % operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  target?.first ** operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  target?.first + operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  target?.first - operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  target?.first / operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  target?.first * operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  target?.first % operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  target?.first ** operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
 ]
 
 function chiFunc () {
-  // eslint-disable-next-line no-restricted-syntax
   let chi = 0
 
-  chi += target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  chi -= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  chi /= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  chi *= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  chi %= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-  chi **= target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  chi += target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  chi -= target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  chi /= target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  chi *= target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  chi %= target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+  chi **= target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
 
   return chi
 }
 
 async function psiFunc () {
-  // eslint-disable-next-line no-restricted-syntax
   let base = 0
 
-  base += await target?.first // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+  base += await target?.first // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
 
   return [
     base,
-    // eslint-disable-next-line no-implicit-coercion
-    +await target?.first, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
-    -await target?.first + operand, // ❌ disallowArithmeticOperators:tru of `no-unsafe-optional-chaining`
+
+    +await target?.first, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
+    -await target?.first + operand, // ❌ disallowArithmeticOperators:true of `no-unsafe-optional-chaining`
   ]
 }
 

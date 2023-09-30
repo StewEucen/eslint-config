@@ -1,5 +1,6 @@
 'use strict'
 
+/* eslint-disable eqeqeq */
 /* eslint-disable jsdoc/require-jsdoc */
 
 const alpha = 1 + // ❌ before of `operator-linebreak`
@@ -91,10 +92,8 @@ const greaterThanOrEqualResult = 1 >= // ❌ before of `operator-linebreak`
 const alphaText = 'alpha'
 const betaText = 'beta'
 
-// eslint-disable-next-line eqeqeq
 const equalResult = alphaText == // ❌ before of `operator-linebreak`
   betaText
-// eslint-disable-next-line eqeqeq
 const notEqualResult = alphaText != // ❌ before of `operator-linebreak`
   betaText
 const strictEqualResult = alphaText === // ❌ before of `operator-linebreak`

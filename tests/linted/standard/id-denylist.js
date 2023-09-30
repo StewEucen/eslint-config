@@ -1,6 +1,7 @@
 'use strict'
 
 /* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable no-unused-private-class-members */
 
 function extraFunc () {
   const data = {} // ❌ ['data'] of `id-denylist`
@@ -38,10 +39,8 @@ class Gamma {
     return this.value
   }
 
-  // eslint-disable-next-line no-unused-private-class-members
   #list = [] // ❌ ['list'] of `id-denylist`
 
-  // eslint-disable-next-line no-unused-private-class-members
   #item () { // ❌ ['item'] of `id-denylist`
     return this.value
   }

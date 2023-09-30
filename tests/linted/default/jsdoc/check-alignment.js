@@ -5,7 +5,7 @@
 /**
  * Alpha function.
  *
-  * @param {number} first - First number. // ✅ `jsdoc/check-alignment`
+  * @param {number} first - First number. // ❌ `jsdoc/check-alignment`
  */
 function alphaFunc (first) {
 
@@ -14,7 +14,7 @@ function alphaFunc (first) {
 /**
  * Beta function.
  *
-* @param {number} first - First number. // ✅ `jsdoc/check-alignment`
+* @param {number} first - First number. // ❌ `jsdoc/check-alignment`
  */
 function betaFunc (first) {
 
@@ -23,8 +23,8 @@ function betaFunc (first) {
 /**
  * Gamma function.
  *
- * @param {number} first - First number. // ✅ `jsdoc/check-alignment`
-  */
+ * @param {number} first - First number.
+  */ // ❌ `jsdoc/check-alignment`
 function gammaFunc (first) {
 
 }
@@ -32,8 +32,8 @@ function gammaFunc (first) {
 /**
  * Delta function.
  *
- * @param {number} first - First number. // ✅ `jsdoc/check-alignment`
-*/
+ * @param {number} first - First number.
+*/ // ❌ `jsdoc/check-alignment`
 function deltaFunc (first) {
 
 }

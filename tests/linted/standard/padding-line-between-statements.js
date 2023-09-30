@@ -2,20 +2,19 @@
 const alpha = 1 // ❌ directive/* of `padding-line-between-statements`
 
 /* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable no-console */
+/* eslint-disable no-restricted-syntax */
 
 const beta = 2
 { // ❌ */block of `padding-line-between-statements`
-  // eslint-disable-next-line no-console
   console.log(beta)
 }
 
 const array = [1, 3, 5, 7, 9]
 
 function breakFunc () {
-  // eslint-disable-next-line no-restricted-syntax
   let total = 0
 
-  // eslint-disable-next-line no-restricted-syntax
   for (const value of array) {
     if (value > 5) {
       total += value
@@ -35,10 +34,8 @@ class Delta { // ❌ class/* of `padding-line-between-statements`
 }
 
 function continueFunc () {
-  // eslint-disable-next-line no-restricted-syntax
   let total = 0
 
-  // eslint-disable-next-line no-restricted-syntax
   for (const value of array) {
     if (value > 5) {
       total += value
@@ -72,7 +69,6 @@ function etaFunc (arg) {
 
     return times
   } catch (error) {
-    // eslint-disable-next-line no-console
     console.error(error)
   }
 
