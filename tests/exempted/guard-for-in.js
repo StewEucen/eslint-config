@@ -3,7 +3,7 @@
 /* eslint-disable jsdoc/require-jsdoc */
 
 function doSomething (key) {
-  // no-op
+  // noop
 }
 
 const array = [
