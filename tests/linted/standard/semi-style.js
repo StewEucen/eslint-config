@@ -2,6 +2,7 @@
 
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable no-restricted-syntax */
+/* eslint-disable semi */
 
 function alphaFunc () {
   return 'alpha'
@@ -12,7 +13,6 @@ function betaFunc () {
 }
 
 {
-  // eslint-disable-next-line semi
   alphaFunc(); // ❌ first of `semi-style`
 
   [1, 2, 3].forEach(it => {}) // ❌ first of `semi-style`
@@ -28,7 +28,6 @@ for (
 
 class Gamma {
   static {
-    // eslint-disable-next-line semi
     alphaFunc(); // ❌ first of `semi-style`
     betaFunc()
   }
