@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable arrow-body-style */
+
 const extraMethodName = 'extraMethodName'
 const extra = 1
 
@@ -38,12 +40,10 @@ const gamma = {
 // avoidExplicitReturnArrows: true
 
 const delta = {
-  // eslint-disable-next-line arrow-body-style
   firstFunc: (first, second) => { // ❌ avoidExplicitReturnArrows:true of `object-shorthand`
     return first + second
   },
 
-  // eslint-disable-next-line arrow-body-style
   secondFunc: first => { // ❌ avoidExplicitReturnArrows:true of `object-shorthand`
     return first * 2
   },

@@ -1,6 +1,7 @@
 'use strict'
 
 /* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable no-restricted-syntax */
 
 function setupAlpha (options) {
   /* ... */
@@ -11,7 +12,6 @@ function setupBeta (options) {
 }
 
 describe('no-hooks', () => {
-  // eslint-disable-next-line no-restricted-syntax
   let target = null
 
   beforeEach(() => { // ✅ exempted `jest/no-hooks`
@@ -28,7 +28,6 @@ describe('no-hooks', () => {
   })
 
   describe('with extra', () => {
-    // eslint-disable-next-line no-restricted-syntax
     let extra = null
 
     beforeEach(() => { // ✅ exempted `jest/no-hooks`

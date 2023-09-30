@@ -1062,8 +1062,8 @@ rules:
       enforceInMethodNames: false
       enforceInClassFields: false
       allowFunctionParams: true
-      # allowInArrayDestructuring: true
-      # allowInObjectDestructuring: true
+      allowInArrayDestructuring: true
+      allowInObjectDestructuring: true
   no-unexpected-multiline:
     - error
   no-unmodified-loop-condition:

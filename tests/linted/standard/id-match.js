@@ -1,5 +1,6 @@
 'use strict'
 
+/* eslint-disable camelcase */
 /* eslint-disable jsdoc/require-jsdoc */
 
 const 漢字 = 'kanji' // ❌ ^[\$\w]+$ of `id-match`
@@ -8,7 +9,6 @@ function 関数 () { // ❌ ^[\$\w]+$ of `id-match`
   // noop
 }
 
-// eslint-disable-next-line camelcase
 const snake_case = 'snake' // ✅ ^[\$\w]+$ of `id-match`
 const _value = 0 // ✅ ^[\$\w]+$ of `id-match`
 const $value = 0 // ✅ ^[\$\w]+$ of `id-match`
@@ -27,7 +27,7 @@ const {
 module.exports = {
   漢字, // ❌ properties:tre, ^[\$\w]+$ of `id-match`
   関数, // ❌ properties:tre, ^[\$\w]+$ of `id-match`
-  // eslint-disable-next-line camelcase
+
   snake_case, // ✅ properties:tre, ^[\$\w]+$ of `id-match`
   _value, // ✅ properties:tre, ^[\$\w]+$ of `id-match`
   $value, // ✅ properties:tre, ^[\$\w]+$ of `id-match`
