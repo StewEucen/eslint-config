@@ -32,6 +32,11 @@
     "xdescribe",
     "xtest",
 
+    "ENSP",
+    "EMSP",
+    "PUNCSP",
+    "ZWSP",
+
     "eucen",
     "openreach",
     "openreachtech",
