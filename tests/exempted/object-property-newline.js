@@ -6,10 +6,10 @@ const alpha = {
   third: '3rd',
 }
 
-const beta = { fourth: '4th', fifth: '5th', sixth: '6th' }
+const beta = { fourth: '4th', fifth: '5th', sixth: '6th' } // ✅ allowAllPropertiesOnSameLine:true of `object-property-newline`
 
 const gamma = {
-  seventh: '7th', eighth: '8th', ninth: '9th',
+  seventh: '7th', eighth: '8th', ninth: '9th', // ✅ allowAllPropertiesOnSameLine:true of `object-property-newline`
 }
 
 module.exports = {
