@@ -1012,24 +1012,12 @@ rules:
     # - has some options
   no-restricted-properties:
     - error # with no options
-    - object: describe
-      property: skip
-      message: Remove `describe.skip`
-    - object: describe
-      property: only
-      message: Remove `describe.only`
-    - object: test
-      property: only
-      message: Remove `test.only`
-    - object: test
-      property: skip
-      message: Remove `test.skip`
-    - object: it
-      property: only
-      message: Remove `it.only`
-    - object: it
-      property: skip
-      message: Remove `it.skip`
+    # - object: receiverName
+    #   property: propertyName
+    #   message: message
+    # - object: receiverName
+    #   property: propertyName
+    #   message: message
   no-restricted-syntax:
     - error # with no options
     - selector: CallExpression[callee.property.name=forEach]
