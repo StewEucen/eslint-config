@@ -752,7 +752,7 @@ rules:
     - always
   newline-per-chained-call:
     - error
-    - ignoreChainWithDepth: 2
+    - ignoreChainWithDepth: 1 # 2
   no-alert:
     - error
   no-array-constructor:
