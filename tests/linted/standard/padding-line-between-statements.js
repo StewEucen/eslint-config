@@ -2,11 +2,11 @@
 const alpha = 1 // ❌ directive/* of `padding-line-between-statements`
 
 /* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable no-console */
 /* eslint-disable no-restricted-syntax */
 
 const beta = 2
 { // ❌ */block of `padding-line-between-statements`
-  // eslint-disable-next-line no-console
   console.log(beta)
 }
 
@@ -69,7 +69,6 @@ function etaFunc (arg) {
 
     return times
   } catch (error) {
-    // eslint-disable-next-line no-console
     console.error(error)
   }
 
