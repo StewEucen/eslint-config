@@ -14,7 +14,8 @@ const beta = (target?.beta).first // ❌ `no-unsafe-optional-chaining`
 const gamma = target.second
 const gammaArray = [
   (gamma?.()).second, // ❌ `no-unsafe-optional-chaining`
-  (gamma?.()).third(), // ❌ `no-unsafe-optional-chaining`
+  (gamma?.()) // ❌ `no-unsafe-optional-chaining`
+    .third(),
 ]
 
 {
