@@ -13,7 +13,7 @@ function betaFunc () {
 }
 
 function gammaFunc () {
-  return alpha['method']()
+  return alpha['method']() // ✅ exempted `dot-notation`
 }
 
 module.exports = {
