@@ -1091,7 +1091,7 @@ rules:
   no-undef-init:
     - error
   no-undefined:
-    - error
+    - off # error
   no-underscore-dangle:
     - off # error
     - allow: []
