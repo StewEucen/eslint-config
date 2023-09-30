@@ -1,5 +1,7 @@
 'use strict'
 
+/* eslint-disable object-shorthand */
+
 ////////////////////////////////////////////////////////////////////////////////
 // ObjectExpression: {
 //   multiline: true,
@@ -19,14 +21,12 @@ const gamma = { first: 1, second: 2,
 const delta = { // ❌ `object-curly-newline`
   first: 1, second: 2 }
 
-// eslint-disable-next-line object-shorthand
 const epsilon = { firstFunc: function () {
   return 1
 },
 } // ❌ `object-curly-newline`
 
 const zeta = { // ❌ `object-curly-newline`
-  // eslint-disable-next-line object-shorthand
   firstFunc: function () {
     return 1
   } }
