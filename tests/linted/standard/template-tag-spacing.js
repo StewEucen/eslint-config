@@ -2,6 +2,7 @@
 
 /* eslint-disable jsdoc/require-jsdoc */
 
+/* eslint-disable-next-line openreachtech/newline-per-parameter */
 function alphaFunc (hashes, ...values) {
   return hashes
     .map((it, index) => it + emphasize(values[index]))
