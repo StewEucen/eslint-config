@@ -1237,6 +1237,8 @@ rules:
     - error
   openreachtech/indent-in-infix-expression:
     - error
+  openreachtech/newline-per-parameter:
+    - error
   operator-assignment:
     - error
     - always
