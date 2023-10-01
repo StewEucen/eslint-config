@@ -1235,6 +1235,8 @@ rules:
     - initializations
   openreachtech/empty-line-after-super:
     - error
+  openreachtech/indent-in-infix-expression:
+    - error
   operator-assignment:
     - error
     - always
