@@ -10,6 +10,7 @@ extends:
 plugins:
   - jest
   - jsdoc
+  - openreachtech
 ignorePatterns:
   - playground/
 parserOptions:
