@@ -2,6 +2,11 @@
   "name": "@steweucen/eslint-config",
   "version": "1.0.1",
   "description": "ESLint config by Stew Eucen.",
+  "files": [
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "main": ".eslintrc.yml",
   "scripts": {
     "l": "npm run lint",
