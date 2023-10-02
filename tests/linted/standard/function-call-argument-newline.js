@@ -15,7 +15,24 @@ const beta = functionCallArgumentNewline(
   200, 300 // ❌ consistent of `function-call-argument-newline`
 )
 
+// --------------------------------------------------------------------------
+
+const gamma = functionCallArgumentNewline(100, 200, 300) // ✅ consistent of `function-call-argument-newline`
+
+const delta = functionCallArgumentNewline( // ✅ consistent of `function-call-argument-newline`
+  100, 200, 300
+)
+
+const epsilon = functionCallArgumentNewline( // ✅ consistent of `function-call-argument-newline`
+  100,
+  200,
+  300
+)
+
 module.exports = {
   alpha,
   beta,
+  gamma,
+  delta,
+  epsilon,
 }
