@@ -1,6 +1,7 @@
 'use strict'
 
 /* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable openreachtech/no-unexpected-multiline */
 
 /*
  * Binary expressions
