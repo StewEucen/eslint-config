@@ -2,6 +2,7 @@
 
 /* eslint-disable jsdoc/require-jsdoc */
 
+/* eslint-disable-next-line openreachtech/newline-per-parameter */
 function functionCallArgumentNewline (first, second, third) {
   return first + second + third
 }

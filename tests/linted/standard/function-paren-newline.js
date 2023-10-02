@@ -1,6 +1,7 @@
 'use strict'
 
 /* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable openreachtech/newline-per-parameter */
 
 function alphaFunc (alpha, beta, gamma
 ) { // ❌ consistent of `function-paren-newline`
