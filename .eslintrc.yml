@@ -1241,6 +1241,8 @@ rules:
     - error
   openreachtech/no-if-in-oneline:
     - error
+  openreachtech/no-unexpected-multiline:
+    - error
   operator-assignment:
     - error
     - always
