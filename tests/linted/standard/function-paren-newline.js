@@ -1,6 +1,7 @@
 'use strict'
 
 /* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable openreachtech/newline-per-parameter */
 
 function alphaFunc (alpha, beta, gamma
 ) { // ❌ consistent of `function-paren-newline`
@@ -12,7 +13,21 @@ function betaFunc (
   return alpha + beta + gamma
 }
 
+// --------------------------------------------------------------------------
+
+function gammaFunc (alpha, beta, gamma) { // ✅ consistent of `function-paren-newline`
+  return alpha + beta + gamma
+}
+
+function deltaFunc (
+  alpha, beta, gamma
+) { // ✅ consistent of `function-paren-newline`
+  return alpha + beta + gamma
+}
+
 module.exports = {
   alphaFunc,
   betaFunc,
+  gammaFunc,
+  deltaFunc,
 }

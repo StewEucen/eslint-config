@@ -1,6 +1,6 @@
 {
   "name": "@steweucen/eslint-config",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "ESLint config by Stew Eucen.",
   "files": [
     "LICENSE",
@@ -27,12 +27,15 @@
     "url": "https://github.com/StewEucen/eslint-config/issues"
   },
   "homepage": "https://github.com/StewEucen/eslint-config#readme",
+  "dependencies": {
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-jsdoc": "^46.4.3",
+    "eslint-plugin-openreachtech": "0.1.0"
+  },
   "devDependencies": {
     "@openreachtech/eslint-inspector": "^1.0.2",
     "@types/jest": "^29.1.1",
     "eslint": "^8.24.0",
-    "eslint-plugin-jest": "^27.2.1",
-    "eslint-plugin-jsdoc": "^46.4.3",
     "jest": "^29.1.2"
   }
 }
