@@ -1239,6 +1239,8 @@ rules:
     - error
   openreachtech/newline-per-parameter:
     - error
+  openreachtech/no-if-in-oneline:
+    - error
   operator-assignment:
     - error
     - always
