@@ -7,7 +7,7 @@
  */
 
 function alphaFunc (first, second) { // ❌ `openreachtech/newline-per-parameter`
-  // noop
+  return first + second
 }
 
 /*
@@ -15,7 +15,7 @@ function alphaFunc (first, second) { // ❌ `openreachtech/newline-per-parameter
  */
 
 function betaFunc ([first, second]) { // ❌ `openreachtech/newline-per-parameter`
-  // noop
+  return first + second
 }
 
 /*
@@ -23,14 +23,16 @@ function betaFunc ([first, second]) { // ❌ `openreachtech/newline-per-paramete
  */
 
 function gammaFunc ({ first, second }) { // ❌ `openreachtech/newline-per-parameter`
-  // noop
+  return first + second
 }
 
 function deltaFunc ({
   first,
   second: { third, fourth }, // ❌ `openreachtech/newline-per-parameter`
 }) {
-  // noop
+  return first
+    + third
+    + fourth
 }
 
 module.exports = {
