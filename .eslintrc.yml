@@ -2,7 +2,7 @@ root: true
 env:
   browser: true
   commonjs: true
-  es2022: true
+  es2024: true
   jest: true
   node: true
 extends:
@@ -211,7 +211,9 @@ rules:
     - min: 2
       # max: Infinity
       properties: always
-      exceptions: []
+      exceptions: # []
+        - _
+        - $
       exceptionPatterns: []
   id-match:
     - error
@@ -465,6 +467,7 @@ rules:
         - lends
         - type
         - inheritdoc
+        - override
   jsdoc/no-bad-blocks:
     - error
     - ignore:
@@ -1067,7 +1070,9 @@ rules:
       ignoreOnInitialization: true # false
       allow: # []
         - it
+        - length
         - name
+        - status
         - target
   no-shadow-restricted-names:
     - error
@@ -1225,7 +1230,7 @@ rules:
     - always
     - avoidQuotes: false
       ignoreConstructors: false
-      avoidExplicitReturnArrows: true # false
+      avoidExplicitReturnArrows: false
       # methodsIgnorePattern: ^$
   one-var:
     - error
