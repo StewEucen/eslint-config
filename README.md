@@ -36,7 +36,3 @@
 ## License
 
 * MIT © Stew Eucen
-
-## Branch Operation
-
-* Use GitHub Flow.
