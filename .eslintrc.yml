@@ -2,7 +2,7 @@ root: true
 env:
   browser: true
   commonjs: true
-  es2022: true
+  es2024: true
   jest: true
   node: true
 extends:
