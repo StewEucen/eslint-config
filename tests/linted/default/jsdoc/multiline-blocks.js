@@ -20,8 +20,7 @@ class AlphaLendsClass extends Object {
   }
 }
 
-// ❌ noSingleLineBlocks:true of `jsdoc/multiline-blocks`
-/** @returns {string} - Alpha value. */
+/** @returns {string} - Alpha value. */ // ❌ noSingleLineBlocks:true of `jsdoc/multiline-blocks`
 function alphaFunc () {
   return 'alpha'
 }
