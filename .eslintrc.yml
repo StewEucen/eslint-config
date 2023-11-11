@@ -467,6 +467,7 @@ rules:
         - lends
         - type
         - inheritdoc
+        - override
   jsdoc/no-bad-blocks:
     - error
     - ignore:
