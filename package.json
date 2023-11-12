@@ -1,6 +1,6 @@
 {
   "name": "@steweucen/eslint-config",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "ESLint config by Stew Eucen.",
   "files": [
     "LICENSE",
