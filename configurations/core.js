@@ -150,31 +150,31 @@ module.exports = {
     ],
     'no-console': [
       'error',
-      {
-        allow: undefined, // When disable `allow` field, give undefined instead of empty array
-        // [
-        //   'assert',
-        //   'clear',
-        //   'Console',
-        //   'count',
-        //   'countReset',
-        //   'debug',
-        //   'dir',
-        //   'dirxml',
-        //   'error',
-        //   'group',
-        //   'groupCollapsed',
-        //   'groupEnd',
-        //   'info',
-        //   'log',
-        //   'table',
-        //   'time',
-        //   'timeEnd',
-        //   'timeLog',
-        //   'trace',
-        //   'warn',
-        // ],
-      },
+      // {
+      //   allow: undefined, // When disable `allow` field, give undefined instead of empty array
+      //   // [
+      //   //   'assert',
+      //   //   'clear',
+      //   //   'Console',
+      //   //   'count',
+      //   //   'countReset',
+      //   //   'debug',
+      //   //   'dir',
+      //   //   'dirxml',
+      //   //   'error',
+      //   //   'group',
+      //   //   'groupCollapsed',
+      //   //   'groupEnd',
+      //   //   'info',
+      //   //   'log',
+      //   //   'table',
+      //   //   'time',
+      //   //   'timeEnd',
+      //   //   'timeLog',
+      //   //   'trace',
+      //   //   'warn',
+      //   // ],
+      // },
     ],
     'no-continue': [
       'off', // 'error'
@@ -383,7 +383,7 @@ module.exports = {
           'xxx',
         ],
         location: 'start',
-        decoration: undefined, // When disable `decoration` field, give undefined instead of empty array
+        // decoration: undefined, // When disable `decoration` field, give undefined instead of empty array
       },
     ],
     'prefer-named-capture-group': [
