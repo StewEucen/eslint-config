@@ -1,6 +1,5 @@
 'use strict'
 
-/* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable openreachtech/no-unexpected-multiline */
 /* eslint-disable @stylistic/indent-binary-ops */
 
