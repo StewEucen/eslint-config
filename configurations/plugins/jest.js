@@ -43,12 +43,6 @@ module.exports = {
     'jest/prefer-strict-equal': [
       'off', // 'error'
     ],
-    'jest/require-hook': [
-      'off', // 'error'
-      {
-        allowedFunctionCalls: [],
-      },
-    ],
     'jest/valid-title': [
       'error',
       {
