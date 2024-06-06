@@ -27,5 +27,5 @@ jobs:
       - run: npm ci --legacy-peer-deps
         env:
           NODE_AUTH_TOKEN: ${{ secrets.TO_REPO_OF_ORT_PRIVATE }}
-      # - run: npm run lint
+      - run: npm run lint
       - run: npm test
