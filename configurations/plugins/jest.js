@@ -33,7 +33,7 @@ module.exports = {
       'off', // 'error'
     ],
     'jest/prefer-lowercase-title': [
-      'off', // 'error'
+      'error',
       {
         ignore: [],
         allowedPrefixes: [],

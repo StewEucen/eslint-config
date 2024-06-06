@@ -12,7 +12,7 @@ module.exports = {
       'off', // 'error'
     ],
     'jsdoc/match-description': [
-      'off', // 'error'
+      'error',
       {
         mainDescription: true,
         matchDescription: '^\\n?([A-Z`\\d_][\\s\\S]*[.?!`]\\s*)?$',
