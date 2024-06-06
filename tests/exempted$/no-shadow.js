@@ -1,6 +1,6 @@
 'use strict'
 
-/* eslint-disable function-paren-newline */
+/* eslint-disable @stylistic/function-paren-newline */
 
 /**
  * It function.
