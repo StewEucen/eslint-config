@@ -11,26 +11,8 @@ module.exports = {
     'jsdoc/imports-as-dependencies': [
       'off', // 'error'
     ],
-    'jsdoc/informative-docs': [
-      'off', // 'error'
-      {
-        aliases: [
-          'an',
-          'our',
-        ],
-        uselessWords: [
-          'a',
-          'an',
-          'i',
-          'in',
-          'of',
-          's',
-          'the',
-        ],
-      },
-    ],
     'jsdoc/match-description': [
-      'off', // 'error'
+      'error',
       {
         mainDescription: true,
         matchDescription: '^\\n?([A-Z`\\d_][\\s\\S]*[.?!`]\\s*)?$',
@@ -141,7 +123,7 @@ module.exports = {
         checkSetters: true,
         contexts: [
           // 'ArrowFunctionExpression',
-          // 'ClassDeclaration',
+          'ClassDeclaration',
           // 'ClassExpression',
           'FunctionDeclaration',
           // 'FunctionExpression',

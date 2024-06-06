@@ -23,13 +23,6 @@ module.exports = {
         ignorePattern: '',
       },
     ],
-    'class-methods-use-this': [
-      'off', // 'error'
-      {
-        enforceForClassFields: true,
-        exceptMethods: [],
-      },
-    ],
     complexity: [
       'error',
       {
@@ -324,9 +317,6 @@ module.exports = {
       },
     ],
     'no-ternary': [
-      'off', // 'error'
-    ],
-    'no-undefined': [
       'off', // 'error'
     ],
     'no-underscore-dangle': [

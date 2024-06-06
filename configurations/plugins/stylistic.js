@@ -53,7 +53,7 @@ module.exports = {
       'consistent', // 'always'
     ],
     '@stylistic/function-paren-newline': [
-      'off', // 'error'
+      'error',
       'consistent', // 'multiline'
     ],
     '@stylistic/generator-star-spacing': [
