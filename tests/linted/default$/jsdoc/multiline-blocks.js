@@ -33,4 +33,5 @@ function alphaFunc () {
 module.exports = {
   alpha,
   alphaFunc,
+  AlphaLendsClass,
 }
