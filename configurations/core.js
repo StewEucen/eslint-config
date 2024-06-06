@@ -280,7 +280,7 @@ module.exports = {
         message: 'Never use for',
       },
       {
-        selector: 'Identifier[name=/.+(Data|Info|Item|List|Manager)$/]',
+        selector: 'Identifier[name=/.+(Data|Info|[gs]etItem|List|Manager)$/]',
         message: 'Not allowed to use "Data", "Info", "Item", "List", and "Manager" as suffix of identifier.',
       },
       {
