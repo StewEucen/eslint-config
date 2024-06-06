@@ -4,18 +4,18 @@
 /* eslint-disable no-shadow */
 /* eslint-disable no-shadow-restricted-names */
 
-const alpha = undefined // ✅ exempted `no-undefined`
+const alpha = undefined // ❌`no-undefined`
 
 {
   // eslint-disable-next-line no-unused-vars
-  const undefined = 'string value' // ✅ exempted `no-undefined`
+  const undefined = 'string value' // ❌`no-undefined`
 }
 
-if (alpha === undefined) { // ✅ exempted `no-undefined`
+if (alpha === undefined) { // ❌`no-undefined`
   // noop
 }
 
-function betaFunc (undefined) { // ✅ exempted `no-undefined`
+function betaFunc (undefined) { // ❌`no-undefined`
   // noop
 }
 
@@ -24,7 +24,7 @@ function gammaFunc (first) {
 }
 
 // eslint-disable-next-line jest/require-hook
-gammaFunc(undefined) // ✅ exempted `no-undefined`
+gammaFunc(undefined) // ❌`no-undefined`
 
 module.exports = {
   alpha,
