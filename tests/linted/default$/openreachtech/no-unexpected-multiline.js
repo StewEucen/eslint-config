@@ -2,7 +2,8 @@
 
 /* eslint-disable jsdoc/require-jsdoc */
 /* eslint-disable openreachtech/indent-in-infix-expression */
-/* eslint-disable space-infix-ops */
+/* eslint-disable @stylistic/indent-binary-ops */
+/* eslint-disable @stylistic/space-infix-ops */
 
 // -----------------------------------------------------------------------------
 // @ts-expect-error
