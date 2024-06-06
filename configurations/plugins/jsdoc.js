@@ -123,7 +123,7 @@ module.exports = {
         checkSetters: true,
         contexts: [
           // 'ArrowFunctionExpression',
-          // 'ClassDeclaration',
+          'ClassDeclaration',
           // 'ClassExpression',
           'FunctionDeclaration',
           // 'FunctionExpression',
