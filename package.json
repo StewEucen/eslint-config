@@ -1,8 +1,9 @@
 {
   "name": "@steweucen/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ESLint config by Stew Eucen.",
   "files": [
+    "configurations/",
     "./eslint.config.mjs"
   ],
   "main": "eslint.config.js",
