@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "ESLint config by Stew Eucen.",
   "files": [
+    "configurations/",
     "./eslint.config.mjs"
   ],
   "main": "eslint.config.js",
