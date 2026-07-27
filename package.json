@@ -45,5 +45,11 @@
     "@types/jest": "^30.0.0",
     "eslint": "^9.39.5",
     "jest": "^30.4.2"
+  },
+  "overrides": {
+    "brace-expansion": "^5.0.8",
+    "minimatch": "^10.2.5",
+    "flatted": "^3.4.3",
+    "test-exclude": "^7.0.1"
   }
 }
