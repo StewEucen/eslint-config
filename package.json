@@ -41,7 +41,7 @@
     "eslint-plugin-openreachtech": "0.1.0"
   },
   "devDependencies": {
-    "@openreachtech/eslint-inspector": "^2.1.1",
+    "@openreachtech/eslint-inspector": "^2.1.2",
     "@types/jest": "^30.0.0",
     "eslint": "^9.39.5",
     "jest": "^30.4.2"
